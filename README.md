@@ -36,9 +36,72 @@ cd parity-aware-bpe
 pip install -e .
 ```
 
+### Windows troubleshooting (`pip install -e .`)
+
+If installation fails while trying to build `numpy`/`cmake` from source and your traceback contains paths like `C:\msys64\ucrt64\...`, you are likely using an MSYS2 Python environment. In that setup, prebuilt wheels for some dependencies are often unavailable, which triggers source builds and SSL/certificate errors.
+
+Recommended fix (PowerShell, using regular CPython from `python.org`):
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip setuptools wheel
+pip install --only-binary=:all: numpy tokenizers tqdm mock
+pip install -e . --no-deps
+```
+
+If script execution is blocked in PowerShell, run:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
 
 Usage Instructions
 ------------------
+
+### Quick start after creating `data_tiny/`
+
+If you already created these files:
+
+- `data_tiny/train.en`
+- `data_tiny/train.de`
+- `data_tiny/dev.en`
+- `data_tiny/dev.de`
+
+run this minimal smoke test first.
+
+1) Train parity-aware BPE:
+
+```bash
+python3 parity_aware_bpe/parity_aware_learn_bpe.py \
+  --symbols 100 \
+  --variant base \
+  --input data_tiny/train.en data_tiny/train.de \
+  --dev data_tiny/dev.en data_tiny/dev.de \
+  --output merges.parity.txt
+```
+
+2) Train classical BPE baseline:
+
+`learn_bpe.py` accepts a single `--input` file, so concatenate the tiny train files first.
+
+```bash
+cat data_tiny/train.en data_tiny/train.de > data_tiny/train.concat
+
+python3 parity_aware_bpe/learn_bpe.py \
+  --symbols 100 \
+  --input data_tiny/train.concat \
+  --output merges.classic.txt
+```
+
+3) Verify outputs exist:
+
+```bash
+wc -l merges.parity.txt merges.classic.txt
+```
+
+If these commands work, you can scale up to your full corpora and also try `--variant window`.
 
 The arguments of `parity-aware-bpe` are as follows:
 
