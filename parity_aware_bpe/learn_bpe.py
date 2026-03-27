@@ -213,6 +213,8 @@ def update_pair_statistics(pair, changed, stats, indices):
             i += 1
 
 
+###HERE IS MOST PROBABLY THE CHANGE####
+
 def get_pair_statistics(vocab):
     """Count frequency of all symbol pairs, and create index"""
 

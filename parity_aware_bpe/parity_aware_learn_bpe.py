@@ -44,6 +44,7 @@ logger.addHandler(ch)
 from tokenizers.pre_tokenizers import Whitespace, ByteLevel
 from tokenizers import pre_tokenizers
 
+BYTELEVEL_PRETOKENIZER_ENABLED = True
 
 
 try:
@@ -117,6 +118,10 @@ def create_parser(subparsers=None):
     parser.add_argument(
         '--verbose', '-v', action="store_true",
         help="verbose mode.")
+    parser.add_argument(
+        '--utf8-merge-check-strategy', type=str, default='none',
+        choices=['none', 'max', 'rescan', 'local'],
+        help="Where to apply UTF-8 merge validity filtering. 'max' checks only the selected best pair, 'rescan' rescans all candidates after each update, and 'local' filters pairs when they are inserted or updated. Default: %(default)s")
 
     return parser
 
@@ -254,7 +259,82 @@ def pre_merge(vocab, bpe_codes):
 
     return new_vocab
 
-def update_pair_statistics(pair, changed, stats, indices):
+@functools.lru_cache(maxsize=1)
+def get_bytelevel_char_to_byte():
+    """Return the inverse GPT-2 byte-level mapping used by Hugging Face ByteLevel."""
+    byte_values = list(range(ord("!"), ord("~") + 1))
+    byte_values += list(range(ord("¡"), ord("¬") + 1))
+    byte_values += list(range(ord("®"), ord("ÿ") + 1))
+
+    codepoints = byte_values[:]
+    extra = 0
+    for byte in range(256):
+        if byte not in byte_values:
+            byte_values.append(byte)
+            codepoints.append(256 + extra)
+            extra += 1
+
+    return {chr(codepoint): byte for byte, codepoint in zip(byte_values, codepoints)}
+
+
+@functools.lru_cache(maxsize=200000)
+def is_valid_utf8_symbol(symbol):
+    """Check whether a byte-level symbol is a standalone valid UTF-8 byte sequence."""
+    if not BYTELEVEL_PRETOKENIZER_ENABLED:
+        return True
+
+    decoder = get_bytelevel_char_to_byte()
+    try:
+        raw_bytes = bytes(decoder[char] for char in symbol)
+    except KeyError:
+        return True
+
+    try:
+        raw_bytes.decode('utf-8')
+        return True
+    except UnicodeDecodeError:
+        return False
+
+
+def is_valid_utf8_pair(pair):
+    return is_valid_utf8_symbol(''.join(pair))
+
+
+def invalidate_pair(pair, stats, big_stats, indices, array_length):
+    """Permanently zero a rejected pair so it is no longer considered for merging."""
+    if pair in stats:
+        stats[pair] = numpy.zeros(array_length, dtype=int)
+    if big_stats is not None and pair in big_stats:
+        big_stats[pair] = numpy.zeros(array_length, dtype=int)
+    if indices is not None and pair in indices:
+        indices[pair] = defaultdict(int)
+
+
+def invalidate_pairs_globally(stats, big_stats, indices, array_length):
+    """Rescan the full candidate pool and zero any pair that is not UTF-8-valid."""
+    pairs_to_check = set(stats.keys())
+    if big_stats is not None:
+        pairs_to_check.update(big_stats.keys())
+
+    for pair in pairs_to_check:
+        if not is_valid_utf8_pair(pair):
+            invalidate_pair(pair, stats, big_stats, indices, array_length)
+
+
+def select_most_frequent_pair(stats, max_index, merge_check_strategy, big_stats, indices, array_length):
+    """Select the current best pair, optionally rejecting invalid pairs at selection time."""
+    most_frequent = max(stats, key=lambda x: (stats[x][max_index], x))
+    if merge_check_strategy != 'max':
+        return most_frequent
+
+    while stats[most_frequent][max_index] > 0 and not is_valid_utf8_pair(most_frequent):
+        invalidate_pair(most_frequent, stats, big_stats, indices, array_length)
+        most_frequent = max(stats, key=lambda x: (stats[x][max_index], x))
+
+    return most_frequent
+
+
+def update_pair_statistics(pair, changed, stats, indices, merge_check_strategy='none'):
     """ Minimally updates the indices and frequency of symbol pairs.
     If we merge a pair of symbols, only pairs that overlap with occurrences
     of this pair are affected, and need to be updated.
@@ -309,18 +389,20 @@ def update_pair_statistics(pair, changed, stats, indices):
             # assuming a symbol sequence "A BC D", if "B C" is merged, increase the frequency of "A BC"
             if i:
                 prev = word[i-1:i+1]
-                stats[prev] += freq
-                indices[prev][j] += 1
+                if merge_check_strategy != 'local' or is_valid_utf8_pair(prev):
+                    stats[prev] += freq
+                    indices[prev][j] += 1
             # assuming a symbol sequence "A BC B", if "B C" is merged, increase the frequency of "BC B"
             # however, if the sequence is A BC BC, skip this step because the count of "BC BC" will be incremented by the previous code block
             if i < len(word)-1 and word[i+1] != new_pair:
                 nex = word[i:i+2]
-                stats[nex] += freq
-                indices[nex][j] += 1
+                if merge_check_strategy != 'local' or is_valid_utf8_pair(nex):
+                    stats[nex] += freq
+                    indices[nex][j] += 1
             i += 1
 
 
-def get_pair_statistics(vocab):
+def get_pair_statistics(vocab, merge_check_strategy='none'):
     """ Counts frequency of all symbol pairs, and create index.
     Args:
         vocab (list): A list of tuples, where each tuple contains a word (as a tuple of characters) and its frequency in each language.
@@ -339,8 +421,10 @@ def get_pair_statistics(vocab):
     for i, (word, freq) in enumerate(vocab):
         prev_char = word[0]
         for char in word[1:]:
-            stats[prev_char, char] += freq
-            indices[prev_char, char][i] += 1
+            pair = (prev_char, char)
+            if merge_check_strategy != 'local' or is_valid_utf8_pair(pair):
+                stats[pair] += freq
+                indices[pair][i] += 1
             prev_char = char
 
     return stats, indices
@@ -441,7 +525,7 @@ def open_file(filename, mode):
         f.close()
 
 
-def preprocess_input_data(infiles, devfiles, is_dict=False, total_symbols=False, num_global=0, num_workers=1, bpe_file=None):
+def preprocess_input_data(infiles, devfiles, is_dict=False, total_symbols=False, num_global=0, num_workers=1, bpe_file=None, merge_check_strategy='none'):
     """ Reads input files and creates vocabulary data structure.
     Args:
         infiles (list[str]): A list of input file paths.
@@ -529,8 +613,10 @@ def preprocess_input_data(infiles, devfiles, is_dict=False, total_symbols=False,
                 dev_vocab[key][i] = dev_vocabs[i].get(key, 0)
 
     sorted_vocab = sorted(vocab.items(), key=lambda x: sum(x[1]), reverse=True)
-    stats, indices = get_pair_statistics(sorted_vocab)
+    stats, indices = get_pair_statistics(sorted_vocab, merge_check_strategy=merge_check_strategy)
     big_stats = copy.deepcopy(stats)
+    if merge_check_strategy == 'rescan':
+        invalidate_pairs_globally(stats, big_stats, indices, array_length)
 
     if total_symbols:
         uniq_char_internal = set()
@@ -555,7 +641,7 @@ def preprocess_input_data(infiles, devfiles, is_dict=False, total_symbols=False,
         lengths = None
     return (dev_vocab, sorted_vocab, stats, indices, big_stats, threshold, lengths, array_length)
 
-def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=False, is_dict=False, total_symbols=False, num_global=0, ratio=None, num_workers=1, bpe_file=None):
+def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=False, is_dict=False, total_symbols=False, num_global=0, ratio=None, num_workers=1, bpe_file=None, merge_check_strategy='none'):
     """
     Learn `num_symbols` merge operations using Parity-aware BPE from the provided training and development files
     and write the learned BPE operations to `outfile`.
@@ -591,13 +677,13 @@ def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=
             The function writes the learned BPE merge rules to the specified `outfile`.
     """
     logger.info("Learning parity-aware BPE with the following parameters:"
-          "\n  num_symbols: {0}, min_frequency: {1}, verbose: {2}, is_dict: {3}, total_symbols: {4}, num_global: {5}, num_workers: {6}".format(
-              num_symbols, min_frequency, verbose, is_dict, total_symbols, num_global, num_workers))
+          "\n  num_symbols: {0}, min_frequency: {1}, verbose: {2}, is_dict: {3}, total_symbols: {4}, num_global: {5}, num_workers: {6}, utf8_merge_check_strategy: {7}".format(
+              num_symbols, min_frequency, verbose, is_dict, total_symbols, num_global, num_workers, merge_check_strategy))
     
     # version numbering allows bckward compatibility
     outfile.write('#version: 0.2\n')
     dev_vocab, sorted_vocab, stats, indices, big_stats, threshold, lengths, array_length = \
-        preprocess_input_data(infiles, devfiles, is_dict, total_symbols, num_global, num_workers, bpe_file)
+        preprocess_input_data(infiles, devfiles, is_dict, total_symbols, num_global, num_workers, bpe_file, merge_check_strategy=merge_check_strategy)
 
     if not ratio is None:
         initial_lengths = functools.reduce(numpy.add, [len(key)*value for key, value in sorted_vocab])
@@ -625,13 +711,13 @@ def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=
                     if verbose:
                         sys.stderr.write('lengths {0}: picking best subword in corpus {1} \n'.format(lengths, max_index))
 
-            most_frequent = max(stats, key=lambda x: (stats[x][max_index], x))
+            most_frequent = select_most_frequent_pair(stats, max_index, merge_check_strategy, big_stats, indices, array_length)
 
         # we probably missed the best pair because of pruning; go back to full statistics
         if not stats or (i and stats[most_frequent][max_index] < threshold[max_index]):
             prune_stats(stats, big_stats, threshold, full_sync=True)
             stats = copy.deepcopy(big_stats)
-            most_frequent = max(stats, key=lambda x: (stats[x][max_index], x))
+            most_frequent = select_most_frequent_pair(stats, max_index, merge_check_strategy, big_stats, indices, array_length)
 
             # threshold is inspired by Zipfian assumption, but should only affect how often we re-sync with full big_stats
             for l in range(array_length):
@@ -657,7 +743,9 @@ def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=
             length_change = replace_pair_dict(most_frequent, dev_vocab)
             lengths -= length_change
 
-        update_pair_statistics(most_frequent, changes, stats, indices)
+        update_pair_statistics(most_frequent, changes, stats, indices, merge_check_strategy=merge_check_strategy)
+        if merge_check_strategy == 'rescan':
+            invalidate_pairs_globally(stats, big_stats, indices, array_length)
         
         if not i % 100:
             prune_stats(stats, big_stats, threshold)
@@ -698,7 +786,7 @@ def select_language_index(lengths, selected_indices, selection_threshold, window
 
     return final_index
 
-def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size=100, alpha=2, min_frequency=2, verbose=False, is_dict=False, total_symbols=False, num_global=0, ratio=None, num_workers=1, bpe_file=None):
+def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size=100, alpha=2, min_frequency=2, verbose=False, is_dict=False, total_symbols=False, num_global=0, ratio=None, num_workers=1, bpe_file=None, merge_check_strategy='none'):
     """
     Learn `num_symbols` merge operations using Parity-aware BPE (moving-window balancing variant) from the provided training and development files
     and write the learned BPE operations to `outfile`.
@@ -739,8 +827,8 @@ def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size
     """
     logger.info("Using Parity-aware BPE (moving-window variant) with window size {0} and alpha {1}".format(window_size, alpha))
     logger.info("Learning parity-aware BPE with the following parameters:"
-          "\n  num_symbols: {0}, min_frequency: {1}, verbose: {2}, is_dict: {3}, total_symbols: {4}, num_global: {5}, num_workers: {6}".format(
-              num_symbols, min_frequency, verbose, is_dict, total_symbols, num_global, num_workers))
+          "\n  num_symbols: {0}, min_frequency: {1}, verbose: {2}, is_dict: {3}, total_symbols: {4}, num_global: {5}, num_workers: {6}, utf8_merge_check_strategy: {7}".format(
+              num_symbols, min_frequency, verbose, is_dict, total_symbols, num_global, num_workers, merge_check_strategy))
     
     # if continuing learning on top of existing BPE file, contents of BPE file are included in output
     if bpe_file:
@@ -751,7 +839,7 @@ def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size
         outfile.write('#version: 0.2\n')
 
     dev_vocab, sorted_vocab, stats, indices, big_stats, threshold, lengths, array_length = \
-        preprocess_input_data(infiles, devfiles, is_dict, total_symbols, num_global, num_workers, bpe_file)
+        preprocess_input_data(infiles, devfiles, is_dict, total_symbols, num_global, num_workers, bpe_file, merge_check_strategy=merge_check_strategy)
 
     if not ratio is None:
         initial_lengths = functools.reduce(numpy.add, [len(key)*value for key, value in sorted_vocab])
@@ -787,13 +875,13 @@ def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size
                     if verbose:
                         sys.stderr.write('lengths {0}: picking best subword in corpus {1} \n'.format(lengths, max_index))
 
-            most_frequent = max(stats, key=lambda x: (stats[x][max_index], x))
+            most_frequent = select_most_frequent_pair(stats, max_index, merge_check_strategy, big_stats, indices, array_length)
 
         # we probably missed the best pair because of pruning; go back to full statistics
         if not stats or (i and stats[most_frequent][max_index] < threshold[max_index]):
             prune_stats(stats, big_stats, threshold, full_sync=True)
             stats = copy.deepcopy(big_stats)
-            most_frequent = max(stats, key=lambda x: (stats[x][max_index], x))
+            most_frequent = select_most_frequent_pair(stats, max_index, merge_check_strategy, big_stats, indices, array_length)
 
             # threshold is inspired by Zipfian assumption, but should only affect how often we re-sync with full big_stats
             for l in range(array_length):
@@ -819,7 +907,9 @@ def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size
             length_change = replace_pair_dict(most_frequent, dev_vocab)
             lengths -= length_change
 
-        update_pair_statistics(most_frequent, changes, stats, indices)
+        update_pair_statistics(most_frequent, changes, stats, indices, merge_check_strategy=merge_check_strategy)
+        if merge_check_strategy == 'rescan':
+            invalidate_pairs_globally(stats, big_stats, indices, array_length)
         
         if not i % 100:
             prune_stats(stats, big_stats, threshold)
@@ -891,11 +981,12 @@ if __name__ == '__main__':
             raise ValueError("pretokenizer {0} is not implemented".format(pretokenizer))
 
     pre_tokenizer = pre_tokenizers.Sequence(pretokenizer_list)
+    BYTELEVEL_PRETOKENIZER_ENABLED = 'bytelevel' in args.pretokenize
 
     if args.variant == 'base':
-        learn_bpe(args.input, args.output, args.dev, args.symbols, args.min_frequency, args.verbose, num_global=args.global_merges, is_dict=args.dict_input, total_symbols=args.total_symbols, ratio=args.ratio, num_workers=args.num_workers, bpe_file=bpe_file)
+        learn_bpe(args.input, args.output, args.dev, args.symbols, args.min_frequency, args.verbose, num_global=args.global_merges, is_dict=args.dict_input, total_symbols=args.total_symbols, ratio=args.ratio, num_workers=args.num_workers, bpe_file=bpe_file, merge_check_strategy=args.utf8_merge_check_strategy)
     elif args.variant == 'window':
-        learn_bpe_moving_window(args.input, args.output, args.dev, args.symbols, args.window_size, args.alpha, args.min_frequency, args.verbose, num_global=args.global_merges, is_dict=args.dict_input, total_symbols=args.total_symbols, ratio=args.ratio, num_workers=args.num_workers, bpe_file=bpe_file)
+        learn_bpe_moving_window(args.input, args.output, args.dev, args.symbols, args.window_size, args.alpha, args.min_frequency, args.verbose, num_global=args.global_merges, is_dict=args.dict_input, total_symbols=args.total_symbols, ratio=args.ratio, num_workers=args.num_workers, bpe_file=bpe_file, merge_check_strategy=args.utf8_merge_check_strategy)
     else:
         raise ValueError("Unknown BPE variant: {0}. Use 'base' or 'window'.".format(args.variant))
 
