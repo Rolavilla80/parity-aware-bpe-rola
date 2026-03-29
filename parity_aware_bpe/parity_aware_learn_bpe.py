@@ -21,6 +21,7 @@ import functools
 import operator
 import numpy
 import logging
+import csv
 
 from multiprocessing import Pool, cpu_count
 from collections import defaultdict, Counter, deque
@@ -122,7 +123,10 @@ def create_parser(subparsers=None):
         '--utf8-merge-check-strategy', type=str, default='none',
         choices=['none', 'max', 'rescan', 'local'],
         help="Where to apply UTF-8 merge validity filtering. 'max' checks only the selected best pair, 'rescan' rescans all candidates after each update, and 'local' filters pairs when they are inserted or updated. Default: %(default)s")
-
+    parser.add_argument(
+        '--merge-log', type=str, default=None,
+        help="Optional CSV path for logging selected merges and their UTF-8 classification."
+    )
     return parser
 
 def get_vocabulary(fobj, is_dict=False, num_workers=1):
@@ -276,7 +280,119 @@ def get_bytelevel_char_to_byte():
 
     return {chr(codepoint): byte for byte, codepoint in zip(byte_values, codepoints)}
 
+def symbol_to_raw_bytes(symbol):
+    decoder = get_bytelevel_char_to_byte()
+    return bytes(decoder[ch] for ch in symbol)
 
+
+def valid_utf8_char_len(raw, i):
+    for length in (1, 2, 3, 4):
+        if i + length <= len(raw):
+            try:
+                raw[i:i+length].decode("utf-8")
+                return length
+            except UnicodeDecodeError:
+                pass
+    return 0
+
+
+def is_valid_utf8_char_prefix(raw):
+    """
+    True iff raw is a proper prefix of exactly one UTF-8 character.
+    """
+    n = len(raw)
+    if n == 0 or n > 3:
+        return False
+
+    b0 = raw[0]
+
+    # 1-byte ASCII cannot be an unfinished prefix
+    if 0x00 <= b0 <= 0x7F:
+        return False
+
+    # len 1: valid lead byte of a multi-byte char
+    if n == 1:
+        return (0xC2 <= b0 <= 0xDF) or (0xE0 <= b0 <= 0xEF) or (0xF0 <= b0 <= 0xF4)
+
+    b1 = raw[1]
+
+    def cont(x):
+        return 0x80 <= x <= 0xBF
+
+    # len 2
+    if n == 2:
+        # prefix of a 3-byte char
+        if b0 == 0xE0:
+            return 0xA0 <= b1 <= 0xBF
+        if 0xE1 <= b0 <= 0xEC or 0xEE <= b0 <= 0xEF:
+            return cont(b1)
+        if b0 == 0xED:
+            return 0x80 <= b1 <= 0x9F
+
+        # prefix of a 4-byte char
+        if b0 == 0xF0:
+            return 0x90 <= b1 <= 0xBF
+        if 0xF1 <= b0 <= 0xF3:
+            return cont(b1)
+        if b0 == 0xF4:
+            return 0x80 <= b1 <= 0x8F
+
+        return False
+
+    # len 3: prefix of a 4-byte char only
+    if n == 3:
+        b2 = raw[2]
+        if not cont(b2):
+            return False
+
+        if b0 == 0xF0:
+            return 0x90 <= b1 <= 0xBF
+        if 0xF1 <= b0 <= 0xF3:
+            return cont(b1)
+        if b0 == 0xF4:
+            return 0x80 <= b1 <= 0x8F
+
+        return False
+
+    return False
+
+
+@functools.lru_cache(maxsize=200000)
+def utf8_symbol_state(symbol):
+    """
+    Returns:
+      'complete'  -> valid UTF-8 string
+      'prefix'    -> full UTF-8 chars plus one unfinished char prefix at the end
+      'invalid'   -> broken structure
+    """
+    if not BYTELEVEL_PRETOKENIZER_ENABLED:
+        return "complete"
+
+    try:
+        raw = symbol_to_raw_bytes(symbol)
+    except KeyError:
+        return "complete"
+
+    i = 0
+    while i < len(raw):
+        length = valid_utf8_char_len(raw, i)
+        if length > 0:
+            i += length
+            continue
+
+        # whatever remains must be a valid unfinished prefix at the end
+        return "prefix" if is_valid_utf8_char_prefix(raw[i:]) else "invalid"
+
+    return "complete"
+
+
+def is_admissible_utf8_symbol(symbol):
+    return utf8_symbol_state(symbol) in ("complete", "prefix")
+
+
+def is_admissible_utf8_pair(pair):
+    return is_admissible_utf8_symbol("".join(pair))
+    
 @functools.lru_cache(maxsize=200000)
 def is_valid_utf8_symbol(symbol):
     """Check whether a byte-level symbol is a standalone valid UTF-8 byte sequence."""
@@ -299,6 +415,93 @@ def is_valid_utf8_symbol(symbol):
 def is_valid_utf8_pair(pair):
     return is_valid_utf8_symbol(''.join(pair))
 
+def symbol_utf8_type(symbol):
+    return 'complete' if is_valid_utf8_symbol(symbol) else 'incomplete'
+
+
+def symbol_to_hex(symbol):
+    if not BYTELEVEL_PRETOKENIZER_ENABLED:
+        return ''
+    decoder = get_bytelevel_char_to_byte()
+    try:
+        return ' '.join(f'{decoder[ch]:02X}' for ch in symbol)
+    except KeyError:
+        return ''
+
+
+def classify_merge_pair(pair):
+    left_state = utf8_symbol_state(pair[0])
+    right_state = utf8_symbol_state(pair[1])
+    merged_state = utf8_symbol_state(''.join(pair))
+    merged_valid = is_valid_utf8_pair(pair)
+
+    if merged_state == "complete":
+        category = "good"
+    elif merged_state == "prefix":
+        category = "recoverable"
+    else:
+        category = "bad"
+
+    return {
+        "left_state": left_state,
+        "right_state": right_state,
+        "merged_state": merged_state,
+        "merged_valid": merged_valid,
+        "category": category,
+        "left_hex": symbol_to_hex(pair[0]),
+        "right_hex": symbol_to_hex(pair[1]),
+        "merged_hex": symbol_to_hex(''.join(pair)),
+    }
+
+
+def open_merge_log(path):
+    if not path:
+        return None, None
+
+    f = open(path, 'w', encoding='utf-8', newline='')
+    writer = csv.writer(f)
+    writer.writerow([
+        'step',
+        'selected_language_index',
+        'left_symbol',
+        'right_symbol',
+        'merged_symbol',
+        'left_hex',
+        'right_hex',
+        'merged_hex',
+        'left_state',
+        'right_state',
+        'merged_state',
+        'merged_valid_utf8',
+        'category',
+        'selected_frequency',
+        'frequency_vector'
+    ])
+    return f, writer
+
+
+def write_merge_log(writer, step, max_index, pair, pair_stats):
+    if writer is None:
+        return
+
+    info = classify_merge_pair(pair)
+    writer.writerow([
+        step,
+        max_index,
+        pair[0],
+        pair[1],
+        ''.join(pair),
+        info['left_hex'],
+        info['right_hex'],
+        info['merged_hex'],
+        info['left_state'],
+        info['right_state'],
+        info['merged_state'],
+        info['merged_valid'],
+        info['category'],
+        int(pair_stats[max_index]),
+        ';'.join(map(str, pair_stats.tolist()))
+    ])
 
 def invalidate_pair(pair, stats, big_stats, indices, array_length):
     """Permanently zero a rejected pair so it is no longer considered for merging."""
@@ -317,7 +520,7 @@ def invalidate_pairs_globally(stats, big_stats, indices, array_length):
         pairs_to_check.update(big_stats.keys())
 
     for pair in pairs_to_check:
-        if not is_valid_utf8_pair(pair):
+        if not is_admissible_utf8_pair(pair):
             invalidate_pair(pair, stats, big_stats, indices, array_length)
 
 
@@ -327,7 +530,7 @@ def select_most_frequent_pair(stats, max_index, merge_check_strategy, big_stats,
     if merge_check_strategy != 'max':
         return most_frequent
 
-    while stats[most_frequent][max_index] > 0 and not is_valid_utf8_pair(most_frequent):
+    while stats[most_frequent][max_index] > 0 and not is_admissible_utf8_pair(most_frequent):
         invalidate_pair(most_frequent, stats, big_stats, indices, array_length)
         most_frequent = max(stats, key=lambda x: (stats[x][max_index], x))
 
@@ -389,14 +592,14 @@ def update_pair_statistics(pair, changed, stats, indices, merge_check_strategy='
             # assuming a symbol sequence "A BC D", if "B C" is merged, increase the frequency of "A BC"
             if i:
                 prev = word[i-1:i+1]
-                if merge_check_strategy != 'local' or is_valid_utf8_pair(prev):
+                if merge_check_strategy != 'local' or is_admissible_utf8_pair(prev):
                     stats[prev] += freq
                     indices[prev][j] += 1
             # assuming a symbol sequence "A BC B", if "B C" is merged, increase the frequency of "BC B"
             # however, if the sequence is A BC BC, skip this step because the count of "BC BC" will be incremented by the previous code block
             if i < len(word)-1 and word[i+1] != new_pair:
                 nex = word[i:i+2]
-                if merge_check_strategy != 'local' or is_valid_utf8_pair(nex):
+                if merge_check_strategy != 'local' or is_admissible_utf8_pair(nex):
                     stats[nex] += freq
                     indices[nex][j] += 1
             i += 1
@@ -422,7 +625,7 @@ def get_pair_statistics(vocab, merge_check_strategy='none'):
         prev_char = word[0]
         for char in word[1:]:
             pair = (prev_char, char)
-            if merge_check_strategy != 'local' or is_valid_utf8_pair(pair):
+            if merge_check_strategy != 'local' or is_admissible_utf8_pair(pair):
                 stats[pair] += freq
                 indices[pair][i] += 1
             prev_char = char
@@ -641,7 +844,7 @@ def preprocess_input_data(infiles, devfiles, is_dict=False, total_symbols=False,
         lengths = None
     return (dev_vocab, sorted_vocab, stats, indices, big_stats, threshold, lengths, array_length)
 
-def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=False, is_dict=False, total_symbols=False, num_global=0, ratio=None, num_workers=1, bpe_file=None, merge_check_strategy='none'):
+def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=False, is_dict=False, total_symbols=False, num_global=0, ratio=None, num_workers=1, bpe_file=None, merge_check_strategy='none', merge_log=None):    
     """
     Learn `num_symbols` merge operations using Parity-aware BPE from the provided training and development files
     and write the learned BPE operations to `outfile`.
@@ -677,13 +880,15 @@ def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=
             The function writes the learned BPE merge rules to the specified `outfile`.
     """
     logger.info("Learning parity-aware BPE with the following parameters:"
-          "\n  num_symbols: {0}, min_frequency: {1}, verbose: {2}, is_dict: {3}, total_symbols: {4}, num_global: {5}, num_workers: {6}, utf8_merge_check_strategy: {7}".format(
-              num_symbols, min_frequency, verbose, is_dict, total_symbols, num_global, num_workers, merge_check_strategy))
+        "\n  num_symbols: {0}, min_frequency: {1}, verbose: {2}, is_dict: {3}, total_symbols: {4}, num_global: {5}, num_workers: {6}, utf8_merge_check_strategy: {7}".format(
+            num_symbols, min_frequency, verbose, is_dict, total_symbols, num_global, num_workers, merge_check_strategy))
     
     # version numbering allows bckward compatibility
     outfile.write('#version: 0.2\n')
     dev_vocab, sorted_vocab, stats, indices, big_stats, threshold, lengths, array_length = \
         preprocess_input_data(infiles, devfiles, is_dict, total_symbols, num_global, num_workers, bpe_file, merge_check_strategy=merge_check_strategy)
+
+    merge_log_file, merge_log_writer = open_merge_log(merge_log)
 
     if not ratio is None:
         initial_lengths = functools.reduce(numpy.add, [len(key)*value for key, value in sorted_vocab])
@@ -733,6 +938,8 @@ def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=
             sys.stderr.write('pair {0}: {1} {2} -> {1}{2} (frequency {3})\n'.format(i, most_frequent[0], most_frequent[1], stats[most_frequent]))
 
         outfile.write('{0} {1}\n'.format(*most_frequent))
+
+        write_merge_log(merge_log_writer, i, max_index, most_frequent, stats[most_frequent])
         
         changes = replace_pair(most_frequent, sorted_vocab, indices)
 
@@ -751,6 +958,9 @@ def learn_bpe(infiles, outfile, devfiles, num_symbols, min_frequency=2, verbose=
             prune_stats(stats, big_stats, threshold)
 
         stats[most_frequent] = numpy.zeros(array_length, dtype=int)
+    
+    if merge_log_file is not None:
+        merge_log_file.close()
     
 
 def select_language_index(lengths, selected_indices, selection_threshold, window_size):
@@ -786,7 +996,7 @@ def select_language_index(lengths, selected_indices, selection_threshold, window
 
     return final_index
 
-def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size=100, alpha=2, min_frequency=2, verbose=False, is_dict=False, total_symbols=False, num_global=0, ratio=None, num_workers=1, bpe_file=None, merge_check_strategy='none'):
+def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size=100, alpha=2, min_frequency=2, verbose=False, is_dict=False, total_symbols=False, num_global=0, ratio=None, num_workers=1, bpe_file=None, merge_check_strategy='none', merge_log=None):    
     """
     Learn `num_symbols` merge operations using Parity-aware BPE (moving-window balancing variant) from the provided training and development files
     and write the learned BPE operations to `outfile`.
@@ -840,6 +1050,8 @@ def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size
 
     dev_vocab, sorted_vocab, stats, indices, big_stats, threshold, lengths, array_length = \
         preprocess_input_data(infiles, devfiles, is_dict, total_symbols, num_global, num_workers, bpe_file, merge_check_strategy=merge_check_strategy)
+
+    merge_log_file, merge_log_writer = open_merge_log(merge_log)
 
     if not ratio is None:
         initial_lengths = functools.reduce(numpy.add, [len(key)*value for key, value in sorted_vocab])
@@ -897,6 +1109,8 @@ def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size
             sys.stderr.write('pair {0}: {1} {2} -> {1}{2} (frequency {3})\n'.format(i, most_frequent[0], most_frequent[1], stats[most_frequent]))
 
         outfile.write('{0} {1}\n'.format(*most_frequent))
+
+        write_merge_log(merge_log_writer, i, max_index, most_frequent, stats[most_frequent])
         
         changes = replace_pair(most_frequent, sorted_vocab, indices)
 
@@ -915,6 +1129,9 @@ def learn_bpe_moving_window(infiles, outfile, devfiles, num_symbols, window_size
             prune_stats(stats, big_stats, threshold)
 
         stats[most_frequent] = numpy.zeros(array_length, dtype=int)
+
+    if merge_log_file is not None:
+        merge_log_file.close()
 
 if __name__ == '__main__':
 
@@ -984,9 +1201,31 @@ if __name__ == '__main__':
     BYTELEVEL_PRETOKENIZER_ENABLED = 'bytelevel' in args.pretokenize
 
     if args.variant == 'base':
-        learn_bpe(args.input, args.output, args.dev, args.symbols, args.min_frequency, args.verbose, num_global=args.global_merges, is_dict=args.dict_input, total_symbols=args.total_symbols, ratio=args.ratio, num_workers=args.num_workers, bpe_file=bpe_file, merge_check_strategy=args.utf8_merge_check_strategy)
+        learn_bpe(
+            args.input, args.output, args.dev, args.symbols,
+            args.min_frequency, args.verbose,
+            num_global=args.global_merges,
+            is_dict=args.dict_input,
+            total_symbols=args.total_symbols,
+            ratio=args.ratio,
+            num_workers=args.num_workers,
+            bpe_file=bpe_file,
+            merge_check_strategy=args.utf8_merge_check_strategy,
+            merge_log=args.merge_log
+        )
     elif args.variant == 'window':
-        learn_bpe_moving_window(args.input, args.output, args.dev, args.symbols, args.window_size, args.alpha, args.min_frequency, args.verbose, num_global=args.global_merges, is_dict=args.dict_input, total_symbols=args.total_symbols, ratio=args.ratio, num_workers=args.num_workers, bpe_file=bpe_file, merge_check_strategy=args.utf8_merge_check_strategy)
+        learn_bpe_moving_window(
+            args.input, args.output, args.dev, args.symbols,
+            args.window_size, args.alpha, args.min_frequency, args.verbose,
+            num_global=args.global_merges,
+            is_dict=args.dict_input,
+            total_symbols=args.total_symbols,
+            ratio=args.ratio,
+            num_workers=args.num_workers,
+            bpe_file=bpe_file,
+            merge_check_strategy=args.utf8_merge_check_strategy,
+            merge_log=args.merge_log
+        )
     else:
         raise ValueError("Unknown BPE variant: {0}. Use 'base' or 'window'.".format(args.variant))
 

@@ -1,0 +1,101 @@
+step,selected_language_index,left_symbol,right_symbol,merged_symbol,left_hex,right_hex,merged_hex,left_type,right_type,merged_valid_utf8,category,selected_frequency,frequency_vector
+0,0,Ġ,t,Ġt,20,74,20 74,complete,complete,True,good,242758,242758;2176
+1,0,h,e,he,68,65,68 65,complete,complete,True,good,173623,173623;1581
+2,0,Ġ,a,Ġa,20,61,20 61,complete,complete,True,good,166670,166670;2229
+3,0,o,n,on,6F,6E,6F 6E,complete,complete,True,good,157398,157398;1858
+4,0,i,n,in,69,6E,69 6E,complete,complete,True,good,151782,151782;1907
+5,0,Ġt,he,Ġthe,20 74,68 65,20 74 68 65,complete,complete,True,good,129918,129918;805
+6,0,r,e,re,72,65,72 65,complete,complete,True,good,123685,123685;1477
+7,0,a,t,at,61,74,61 74,complete,complete,True,good,112883,112883;1259
+8,0,Ġ,o,Ġo,20,6F,20 6F,complete,complete,True,good,103322,103322;964
+9,0,e,n,en,65,6E,65 6E,complete,complete,True,good,95109,95109;1145
+10,0,e,r,er,65,72,65 72,complete,complete,True,good,90976,90976;1441
+11,0,Ġ,",","Ġ,",20,2C,20 2C,complete,complete,True,good,89957,89957;4513
+12,0,Ġ,.,Ġ.,20,2E,20 2E,complete,complete,True,good,88249,88249;22055
+13,0,i,on,ion,69,6F 6E,69 6F 6E,complete,complete,True,good,85796,85796;611
+14,0,Ġ,s,Ġs,20,73,20 73,complete,complete,True,good,83570,83570;1223
+15,1,ä,¸,ä¸,E4,B8,E4 B8,incomplete,incomplete,False,bad,124644,0;124644
+16,0,i,t,it,69,74,69 74,complete,complete,True,good,81288,81288;893
+17,0,Ġo,f,Ġof,20 6F,66,20 6F 66,complete,complete,True,good,76299,76299;492
+18,1,ï,¼,ï¼,EF,BC,EF BC,incomplete,incomplete,False,bad,101693,0;101693
+19,0,n,d,nd,6E,64,6E 64,complete,complete,True,good,72151,72151;770
+20,1,Ġ,ï¼,Ġï¼,20,EF BC,20 EF BC,complete,incomplete,False,mixed,97546,0;97546
+21,0,o,r,or,6F,72,6F 72,complete,complete,True,good,70734,70734;1154
+22,1,ç,ļ,çļ,E7,9A,E7 9A,incomplete,incomplete,False,bad,95585,0;95585
+23,0,e,s,es,65,73,65 73,complete,complete,True,good,68741,68741;828
+24,0,Ġ,c,Ġc,20,63,20 63,complete,complete,True,good,67719,67719;1221
+25,1,çļ,Ħ,çļĦ,E7 9A,84,E7 9A 84,incomplete,incomplete,True,good,95330,0;95330
+26,0,a,l,al,61,6C,61 6C,complete,complete,True,good,65613,65613;1026
+27,1,ä,º,äº,E4,BA,E4 BA,incomplete,incomplete,False,bad,81887,0;81887
+28,0,Ġ,p,Ġp,20,70,20 70,complete,complete,True,good,63438,63438;701
+29,1,Ġ,å,Ġå,20,E5,20 E5,complete,incomplete,False,mixed,77772,0;77772
+30,0,e,d,ed,65,64,65 64,complete,complete,True,good,62615,62615;566
+31,1,ã,Ģ,ãĢ,E3,80,E3 80,incomplete,incomplete,False,bad,76846,0;76846
+32,0,Ġ,w,Ġw,20,77,20 77,complete,complete,True,good,62302,62302;914
+33,0,Ġ,in,Ġin,20,69 6E,20 69 6E,complete,complete,True,good,59940,59940;413
+34,1,Ġ,ãĢ,ĠãĢ,20,E3 80,20 E3 80,complete,incomplete,False,mixed,72517,0;72517
+35,0,i,s,is,69,73,69 73,complete,complete,True,good,58069,58069;911
+36,1,Ġï¼,Į,Ġï¼Į,20 EF BC,8C,20 EF BC 8C,incomplete,incomplete,True,good,68020,0;68020
+37,0,o,u,ou,6F,75,6F 75,complete,complete,True,good,57050,57050;1115
+38,1,ä,»,ä»,E4,BB,E4 BB,incomplete,incomplete,False,bad,65531,0;65531
+39,0,a,n,an,61,6E,61 6E,complete,complete,True,good,56218,56218;1288
+40,1,æ,ľ,æľ,E6,9C,E6 9C,incomplete,incomplete,False,bad,53760,0;53760
+41,0,Ġa,nd,Ġand,20 61,6E 64,20 61 6E 64,complete,complete,True,good,54438,54438;366
+42,1,å,ħ,åħ,E5,85,E5 85,incomplete,incomplete,False,bad,50805,0;50805
+43,0,Ġt,o,Ġto,20 74,6F,20 74 6F,complete,complete,True,good,52937,52937;459
+44,1,å,ı,åı,E5,8F,E5 8F,incomplete,incomplete,False,bad,47921,0;47921
+45,0,Ġ,f,Ġf,20,66,20 66,complete,complete,True,good,51972,51972;830
+46,1,ä,½,ä½,E4,BD,E4 BD,incomplete,incomplete,False,bad,45047,0;45047
+47,0,in,g,ing,69 6E,67,69 6E 67,complete,complete,True,good,51945,51945;596
+48,1,Ġ,æ,Ġæ,20,E6,20 E6,complete,incomplete,False,mixed,44827,0;44827
+49,0,Ġ,b,Ġb,20,62,20 62,complete,complete,True,good,48643,48643;1262
+50,1,å,®,å®,E5,AE,E5 AE,incomplete,incomplete,False,bad,43859,0;43859
+51,0,a,r,ar,61,72,61 72,complete,complete,True,good,48270,48270;1093
+52,1,è,¿,è¿,E8,BF,E8 BF,incomplete,incomplete,False,bad,43640,0;43640
+53,0,en,t,ent,65 6E,74,65 6E 74,complete,complete,True,good,47841,47841;397
+54,1,å,Ī,åĪ,E5,88,E5 88,incomplete,incomplete,False,bad,43425,0;43425
+55,0,at,ion,ation,61 74,69 6F 6E,61 74 69 6F 6E,complete,complete,True,good,45812,45812;315
+56,1,ĠãĢ,Ĥ,ĠãĢĤ,20 E3 80,82,20 E3 80 82,incomplete,incomplete,True,good,41973,0;41973
+57,0,i,c,ic,69,63,69 63,complete,complete,True,good,45465,45465;615
+58,1,ä,¼,ä¼,E4,BC,E4 BC,incomplete,incomplete,False,bad,39862,0;39862
+59,1,è,®,è®,E8,AE,E8 AE,incomplete,incomplete,False,bad,39575,0;39575
+60,0,Ġ,m,Ġm,20,6D,20 6D,complete,complete,True,good,45124,45124;726
+61,1,å,Ľ,åĽ,E5,9B,E5 9B,incomplete,incomplete,False,bad,38806,0;38806
+62,0,Ġ,re,Ġre,20,72 65,20 72 65,complete,complete,True,good,44120,44120;293
+63,1,å,Ĳ,åĲ,E5,90,E5 90,incomplete,incomplete,False,bad,37285,0;37285
+64,0,Ġ,d,Ġd,20,64,20 64,complete,complete,True,good,43301,43301;1009
+65,1,å,Ĭ,åĬ,E5,8A,E5 8A,incomplete,incomplete,False,bad,36716,0;36716
+66,0,o,m,om,6F,6D,6F 6D,complete,complete,True,good,40062,40062;543
+67,1,Ĵ,Į,ĴĮ,92,8C,92 8C,incomplete,incomplete,False,bad,35285,0;35285
+68,0,e,c,ec,65,63,65 63,complete,complete,True,good,34934,34934;386
+69,1,ç,»,ç»,E7,BB,E7 BB,incomplete,incomplete,False,bad,35266,0;35266
+70,0,l,e,le,6C,65,6C 65,complete,complete,True,good,32615,32615;487
+71,1,å,ĴĮ,åĴĮ,E5,92 8C,E5 92 8C,incomplete,incomplete,True,good,33865,0;33865
+72,0,Ġt,h,Ġth,20 74,68,20 74 68,complete,complete,True,good,32545,32545;429
+73,0,Ġ,I,ĠI,20,49,20 49,complete,complete,True,good,31945,31945;1196
+74,1,å,ľ,åľ,E5,9C,E5 9C,incomplete,incomplete,False,bad,30931,0;30931
+75,0,v,e,ve,76,65,76 65,complete,complete,True,good,30118,30118;325
+76,1,ä¼,ļ,ä¼ļ,E4 BC,9A,E4 BC 9A,incomplete,incomplete,True,good,29804,0;29804
+77,0,r,o,ro,72,6F,72 6F,complete,complete,True,good,30014,30014;399
+78,1,å,¤,å¤,E5,A4,E5 A4,incomplete,incomplete,False,bad,29492,0;29492
+79,0,Ġ,C,ĠC,20,43,20 43,complete,complete,True,good,28913,28913;2226
+80,1,åĽ,½,åĽ½,E5 9B,BD,E5 9B BD,incomplete,incomplete,True,good,28606,0;28606
+81,0,Ġ,h,Ġh,20,68,20 68,complete,complete,True,good,28630,28630;625
+82,1,æ,ĸ,æĸ,E6,96,E6 96,incomplete,incomplete,False,bad,27510,0;27510
+83,0,Ġ,S,ĠS,20,53,20 53,complete,complete,True,good,28186,28186;1669
+84,1,æ,ĺ,æĺ,E6,98,E6 98,incomplete,incomplete,False,bad,27125,0;27125
+85,0,a,s,as,61,73,61 73,complete,complete,True,good,27749,27749;513
+86,1,Ī,ĳ,Īĳ,88,91,88 91,incomplete,incomplete,False,bad,24567,1;24567
+87,0,Ġ,A,ĠA,20,41,20 41,complete,complete,True,good,27498,27498;3023
+88,1,è,¯,è¯,E8,AF,E8 AF,incomplete,incomplete,False,bad,24464,0;24464
+89,0,i,l,il,69,6C,69 6C,complete,complete,True,good,26558,26558;462
+90,1,ä,¹,ä¹,E4,B9,E4 B9,incomplete,incomplete,False,bad,24197,0;24197
+91,0,m,ent,ment,6D,65 6E 74,6D 65 6E 74,complete,complete,True,good,25999,25999;177
+92,1,ä¸,Ģ,ä¸Ģ,E4 B8,80,E4 B8 80,incomplete,incomplete,True,good,23306,0;23306
+93,0,Ġ,T,ĠT,20,54,20 54,complete,complete,True,good,25948,25948;628
+94,1,è,¡,è¡,E8,A1,E8 A1,incomplete,incomplete,False,bad,23095,0;23095
+95,0,Ġ,n,Ġn,20,6E,20 6E,complete,complete,True,good,25654,25654;325
+96,1,å,ĳ,åĳ,E5,91,E5 91,incomplete,incomplete,False,bad,22609,0;22609
+97,0,Ġ,-,Ġ-,20,2D,20 2D,complete,complete,True,good,25581,25581;8567
+98,1,Ġ,ç,Ġç,20,E7,20 E7,complete,incomplete,False,mixed,22429,0;22429
+99,0,Ġ,',Ġ',20,27,20 27,complete,complete,True,good,23094,23094;928

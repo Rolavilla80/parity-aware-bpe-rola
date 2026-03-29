@@ -1,0 +1,1001 @@
+step,selected_language_index,left_symbol,right_symbol,merged_symbol,left_hex,right_hex,merged_hex,left_type,right_type,merged_valid_utf8,category,selected_frequency,frequency_vector
+0,0,Ġ,t,Ġt,20,74,20 74,complete,complete,True,good,242758,242758;2176
+1,0,h,e,he,68,65,68 65,complete,complete,True,good,173623,173623;1581
+2,0,Ġ,a,Ġa,20,61,20 61,complete,complete,True,good,166670,166670;2229
+3,0,o,n,on,6F,6E,6F 6E,complete,complete,True,good,157398,157398;1858
+4,0,i,n,in,69,6E,69 6E,complete,complete,True,good,151782,151782;1907
+5,0,Ġt,he,Ġthe,20 74,68 65,20 74 68 65,complete,complete,True,good,129918,129918;805
+6,0,r,e,re,72,65,72 65,complete,complete,True,good,123685,123685;1477
+7,0,a,t,at,61,74,61 74,complete,complete,True,good,112883,112883;1259
+8,0,Ġ,o,Ġo,20,6F,20 6F,complete,complete,True,good,103322,103322;964
+9,0,e,n,en,65,6E,65 6E,complete,complete,True,good,95109,95109;1145
+10,0,e,r,er,65,72,65 72,complete,complete,True,good,90976,90976;1441
+11,0,Ġ,",","Ġ,",20,2C,20 2C,complete,complete,True,good,89957,89957;4513
+12,0,Ġ,.,Ġ.,20,2E,20 2E,complete,complete,True,good,88249,88249;22055
+13,0,i,on,ion,69,6F 6E,69 6F 6E,complete,complete,True,good,85796,85796;611
+14,0,Ġ,s,Ġs,20,73,20 73,complete,complete,True,good,83570,83570;1223
+15,1,0,0,00,30,30,30 30,complete,complete,True,good,11857,11651;11857
+16,1,Ġ,/,Ġ/,20,2F,20 2F,complete,complete,True,good,11358,11583;11358
+17,1,Ġ,2,Ġ2,20,32,20 32,complete,complete,True,good,9664,15917;9664
+18,1,Ġ,1,Ġ1,20,31,20 31,complete,complete,True,good,9022,14489;9022
+19,1,Ġ,-,Ġ-,20,2D,20 2D,complete,complete,True,good,8567,25581;8567
+20,1,Ġ,),Ġ),20,29,20 29,complete,complete,True,good,7036,13307;7036
+21,1,Ġ,(,Ġ(,20,28,20 28,complete,complete,True,good,6473,13774;6473
+22,1,Ġ2,00,Ġ200,20 32,30 30,20 32 30 30,complete,complete,True,good,4754,8741;4754
+23,1,2,00,200,32,30 30,32 30 30,complete,complete,True,good,4142,20;4142
+24,1,Ġ,3,Ġ3,20,33,20 33,complete,complete,True,good,3279,4242;3279
+25,1,Ġ,5,Ġ5,20,35,20 35,complete,complete,True,good,3099,4038;3099
+26,1,Ġ,A,ĠA,20,41,20 41,complete,complete,True,good,3023,27498;3023
+27,1,Ġ,?,Ġ?,20,3F,20 3F,complete,complete,True,good,2923,10189;2923
+28,1,Ġ,4,Ġ4,20,34,20 34,complete,complete,True,good,2844,3215;2844
+29,1,9,9,99,39,39,39 39,complete,complete,True,good,2753,2709;2753
+30,1,.,.,..,2E,2E,2E 2E,complete,complete,True,good,2731,3334;2731
+31,1,Ġ.,..,Ġ...,20 2E,2E 2E,20 2E 2E 2E,complete,complete,True,good,2664,3231;2664
+32,1,Ġ,6,Ġ6,20,36,20 36,complete,complete,True,good,2335,2736;2335
+33,1,Ġ,C,ĠC,20,43,20 43,complete,complete,True,good,2226,28913;2226
+34,1,1,2,12,31,32,31 32,complete,complete,True,good,1690,169;1690
+35,1,Ġ,S,ĠS,20,53,20 53,complete,complete,True,good,1669,28186;1669
+36,1,1,0,10,31,30,31 30,complete,complete,True,good,1548,252;1548
+37,1,a,n,an,61,6E,61 6E,complete,complete,True,good,1471,63118;1471
+38,1,Â,·,Â·,C2,B7,C2 B7,incomplete,incomplete,True,good,1466,8;1466
+39,1,Ġ,Â·,ĠÂ·,20,C2 B7,20 C2 B7,complete,complete,True,good,1462,8;1462
+40,1,Ġ,7,Ġ7,20,37,20 37,complete,complete,True,good,1447,1679;1447
+41,1,Ġ,b,Ġb,20,62,20 62,complete,complete,True,good,1262,48643;1262
+42,1,Ġ,!,Ġ!,20,21,20 21,complete,complete,True,good,1235,5098;1235
+43,1,Ġ,c,Ġc,20,63,20 63,complete,complete,True,good,1221,67719;1221
+44,1,Ġ,8,Ġ8,20,38,20 38,complete,complete,True,good,1220,1411;1220
+45,1,Ġ,I,ĠI,20,49,20 49,complete,complete,True,good,1196,31945;1196
+46,1,Ġ,"""","Ġ""",20,22,20 22,complete,complete,True,good,1192,1421;1192
+47,1,Ġ,9,Ġ9,20,39,20 39,complete,complete,True,good,1160,1412;1160
+48,1,o,r,or,6F,72,6F 72,complete,complete,True,good,1154,70734;1154
+49,1,o,u,ou,6F,75,6F 75,complete,complete,True,good,1115,57050;1115
+50,1,1,1,11,31,31,31 31,complete,complete,True,good,1103,140;1103
+51,1,Ġ1,99,Ġ199,20 31,39 39,20 31 39 39,complete,complete,True,good,1096,2129;1096
+52,1,a,r,ar,61,72,61 72,complete,complete,True,good,1093,48270;1093
+53,1,1,99,199,31,39 39,31 39 39,complete,complete,True,good,1047,7;1047
+54,1,a,l,al,61,6C,61 6C,complete,complete,True,good,1026,65613;1026
+55,1,Ġ1,0,Ġ10,20 31,30,20 31 30,complete,complete,True,good,1014,1416;1014
+56,1,Ġ,d,Ġd,20,64,20 64,complete,complete,True,good,1009,43301;1009
+57,1,Ġ,',Ġ',20,27,20 27,complete,complete,True,good,928,23094;928
+58,1,1,9,19,31,39,31 39,complete,complete,True,good,920,84;920
+59,1,Ġ,w,Ġw,20,77,20 77,complete,complete,True,good,914,62302;914
+60,1,i,s,is,69,73,69 73,complete,complete,True,good,911,58069;911
+61,1,Ġ,E,ĠE,20,45,20 45,complete,complete,True,good,900,8701;900
+62,1,Ġ,M,ĠM,20,4D,20 4D,complete,complete,True,good,899,14136;899
+63,1,Ġ1,9,Ġ19,20 31,39,20 31 39,complete,complete,True,good,898,1542;898
+64,1,i,t,it,69,74,69 74,complete,complete,True,good,893,81288;893
+65,1,1,5,15,31,35,31 35,complete,complete,True,good,893,164;893
+66,1,Ġ,L,ĠL,20,4C,20 4C,complete,complete,True,good,877,6594;877
+67,1,Ġ,f,Ġf,20,66,20 66,complete,complete,True,good,830,51972;830
+68,1,e,s,es,65,73,65 73,complete,complete,True,good,828,68741;828
+69,1,Ġ,P,ĠP,20,50,20 50,complete,complete,True,good,789,14274;789
+70,1,2,0,20,32,30,32 30,complete,complete,True,good,778,129;778
+71,1,Ġ,B,ĠB,20,42,20 42,complete,complete,True,good,766,8483;766
+72,1,Ġ,m,Ġm,20,6D,20 6D,complete,complete,True,good,726,45124;726
+73,1,Ġ,D,ĠD,20,44,20 44,complete,complete,True,good,722,10943;722
+74,1,Ġ,%,Ġ%,20,25,20 25,complete,complete,True,good,707,249;707
+75,1,Ġ,p,Ġp,20,70,20 70,complete,complete,True,good,701,63438;701
+76,1,3,0,30,33,30,33 30,complete,complete,True,good,662,120;662
+77,1,Ġ200,1,Ġ2001,20 32 30 30,31,20 32 30 30 31,complete,complete,True,good,661,1079;661
+78,1,Ġ,T,ĠT,20,54,20 54,complete,complete,True,good,628,25948;628
+79,1,Ġ,h,Ġh,20,68,20 68,complete,complete,True,good,625,28630;625
+80,1,i,c,ic,69,63,69 63,complete,complete,True,good,615,45465;615
+81,1,1,3,13,31,33,31 33,complete,complete,True,good,611,112;611
+82,1,Ġ,:,Ġ:,20,3A,20 3A,complete,complete,True,good,605,4110;605
+83,1,in,g,ing,69 6E,67,69 6E 67,complete,complete,True,good,596,51963;596
+84,1,1,4,14,31,34,31 34,complete,complete,True,good,588,106;588
+85,1,n,d,nd,6E,64,6E 64,complete,complete,True,good,587,65251;587
+86,1,Ġ200,5,Ġ2005,20 32 30 30,35,20 32 30 30 35,complete,complete,True,good,578,1029;578
+87,1,Ġ,R,ĠR,20,52,20 52,complete,complete,True,good,578,11102;578
+88,1,Ġ,H,ĠH,20,48,20 48,complete,complete,True,good,577,9993;577
+89,1,e,d,ed,65,64,65 64,complete,complete,True,good,566,62615;566
+90,1,1,8,18,31,38,31 38,complete,complete,True,good,556,84;556
+91,1,Ġ,l,Ġl,20,6C,20 6C,complete,complete,True,good,550,25612;550
+92,1,o,m,om,6F,6D,6F 6D,complete,complete,True,good,548,40177;548
+93,1,d,d,dd,64,64,64 64,complete,complete,True,good,547,3503;547
+94,1,Ġ,00,Ġ00,20,30 30,20 30 30,complete,complete,True,good,546,592;546
+95,1,e,l,el,65,6C,65 6C,complete,complete,True,good,537,27188;537
+96,1,Ġ1,2,Ġ12,20 31,32,20 31 32,complete,complete,True,good,533,870;533
+97,1,Ġ200,0,Ġ2000,20 32 30 30,30,20 32 30 30 30,complete,complete,True,good,532,1023;532
+98,1,Ġ2,0,Ġ20,20 32,30,20 32 30,complete,complete,True,good,531,993;531
+99,1,1,6,16,31,36,31 36,complete,complete,True,good,531,90;531
+100,1,1,7,17,31,37,31 37,complete,complete,True,good,515,99;515
+101,1,a,s,as,61,73,61 73,complete,complete,True,good,513,27749;513
+102,1,Ġ200,4,Ġ2004,20 32 30 30,34,20 32 30 30 34,complete,complete,True,good,512,970;512
+103,1,Ġ,g,Ġg,20,67,20 67,complete,complete,True,good,504,19550;504
+104,1,i,l,il,69,6C,69 6C,complete,complete,True,good,503,28113;503
+105,1,Ġ1,5,Ġ15,20 31,35,20 31 35,complete,complete,True,good,498,1057;498
+106,1,200,4,2004,32 30 30,34,32 30 30 34,complete,complete,True,good,496,0;496
+107,1,Ġ200,3,Ġ2003,20 32 30 30,33,20 32 30 30 33,complete,complete,True,good,495,878;495
+108,1,Ġo,f,Ġof,20 6F,66,20 6F 66,complete,complete,True,good,492,76299;492
+109,1,200,0,2000,32 30 30,30,32 30 30 30,complete,complete,True,good,489,3;489
+110,1,Ġ200,2,Ġ2002,20 32 30 30,32,20 32 30 30 32,complete,complete,True,good,487,964;487
+111,1,Ġ,y,Ġy,20,79,20 79,complete,complete,True,good,481,16523;481
+112,1,Ġ1,3,Ġ13,20 31,33,20 31 33,complete,complete,True,good,473,759;473
+113,1,Ġ,W,ĠW,20,57,20 57,complete,complete,True,good,473,12239;473
+114,1,200,5,2005,32 30 30,35,32 30 30 35,complete,complete,True,good,471,2;471
+115,1,Ġ200,7,Ġ2007,20 32 30 30,37,20 32 30 30 37,complete,complete,True,good,469,810;469
+116,1,200,2,2002,32 30 30,32,32 30 30 32,complete,complete,True,good,469,0;469
+117,1,200,6,2006,32 30 30,36,32 30 30 36,complete,complete,True,good,463,1;463
+118,1,a,d,ad,61,64,61 64,complete,complete,True,good,462,13822;462
+119,1,Ġ,N,ĠN,20,4E,20 4E,complete,complete,True,good,458,12825;458
+120,1,e,t,et,65,74,65 74,complete,complete,True,good,457,20228;457
+121,1,Ġt,o,Ġto,20 74,6F,20 74 6F,complete,complete,True,good,454,52822;454
+122,1,Ġ,[,Ġ[,20,5B,20 5B,complete,complete,True,good,446,786;446
+123,1,2,5,25,32,35,32 35,complete,complete,True,good,446,84;446
+124,1,Ġt,h,Ġth,20 74,68,20 74 68,complete,complete,True,good,429,32545;429
+125,1,ĠA,dd,ĠAdd,20 41,64 64,20 41 64 64,complete,complete,True,good,427,671;427
+126,1,Ġ200,6,Ġ2006,20 32 30 30,36,20 32 30 30 36,complete,complete,True,good,422,863;422
+127,1,Ġy,ou,Ġyou,20 79,6F 75,20 79 6F 75,complete,complete,True,good,421,13710;421
+128,1,Ġ,F,ĠF,20,46,20 46,complete,complete,True,good,420,8065;420
+129,1,Ġ,e,Ġe,20,65,20 65,complete,complete,True,good,417,21814;417
+130,1,Ġ1,6,Ġ16,20 31,36,20 31 36,complete,complete,True,good,414,653;414
+131,1,Ġ,in,Ġin,20,69 6E,20 69 6E,complete,complete,True,good,413,59922;413
+132,1,Ġ,G,ĠG,20,47,20 47,complete,complete,True,good,409,12751;409
+133,1,200,3,2003,32 30 30,33,32 30 30 33,complete,complete,True,good,409,0;409
+134,1,Ġ1,8,Ġ18,20 31,38,20 31 38,complete,complete,True,good,408,712;408
+135,1,a,m,am,61,6D,61 6D,complete,complete,True,good,408,12316;408
+136,1,200,1,2001,32 30 30,31,32 30 30 31,complete,complete,True,good,402,0;402
+137,1,Ġ1,4,Ġ14,20 31,34,20 31 34,complete,complete,True,good,399,703;399
+138,1,r,o,ro,72,6F,72 6F,complete,complete,True,good,399,30014;399
+139,1,en,t,ent,65 6E,74,65 6E 74,complete,complete,True,good,397,47841;397
+140,1,Ġ00,0,Ġ000,20 30 30,30,20 30 30 30,complete,complete,True,good,395,495;395
+141,1,Ġ,],Ġ],20,5D,20 5D,complete,complete,True,good,393,731;393
+142,1,u,s,us,75,73,75 73,complete,complete,True,good,390,17704;390
+143,1,o,l,ol,6F,6C,6F 6C,complete,complete,True,good,386,19224;386
+144,1,2,3,23,32,33,32 33,complete,complete,True,good,382,46;382
+145,1,Ġ1,7,Ġ17,20 31,37,20 31 37,complete,complete,True,good,378,627;378
+146,1,u,n,un,75,6E,75 6E,complete,complete,True,good,378,10100;378
+147,1,Ġ1,1,Ġ11,20 31,31,20 31 31,complete,complete,True,good,373,560;373
+148,1,2,2,22,32,32,32 32,complete,complete,True,good,370,49;370
+149,1,200,7,2007,32 30 30,37,32 30 30 37,complete,complete,True,good,369,2;369
+150,1,3,1,31,33,31,33 31,complete,complete,True,good,367,43;367
+151,1,Ġa,nd,Ġand,20 61,6E 64,20 61 6E 64,complete,complete,True,good,366,54438;366
+152,1,e,c,ec,65,63,65 63,complete,complete,True,good,364,33217;364
+153,1,r,i,ri,72,69,72 69,complete,complete,True,good,359,19619;359
+154,1,5,0,50,35,30,35 30,complete,complete,True,good,357,153;357
+155,1,Ġ,J,ĠJ,20,4A,20 4A,complete,complete,True,good,351,4464;351
+156,1,Ġ,O,ĠO,20,4F,20 4F,complete,complete,True,good,346,8537;346
+157,1,200,8,2008,32 30 30,38,32 30 30 38,complete,complete,True,good,343,3;343
+158,1,Ġ2,4,Ġ24,20 32,34,20 32 34,complete,complete,True,good,342,441;342
+159,1,o,s,os,6F,73,6F 73,complete,complete,True,good,337,12913;337
+160,1,a,c,ac,61,63,61 63,complete,complete,True,good,327,17385;327
+161,1,a,y,ay,61,79,61 79,complete,complete,True,good,326,9859;326
+162,1,Ġ,n,Ġn,20,6E,20 6E,complete,complete,True,good,325,25654;325
+163,1,ĠC,N,ĠCN,20 43,4E,20 43 4E,complete,complete,True,good,322,336;322
+164,1,2,7,27,32,37,32 37,complete,complete,True,good,320,64;320
+165,1,2,6,26,32,36,32 36,complete,complete,True,good,320,65;320
+166,1,Ġ2,3,Ġ23,20 32,33,20 32 33,complete,complete,True,good,317,518;317
+167,1,u,t,ut,75,74,75 74,complete,complete,True,good,317,19983;317
+168,1,at,ion,ation,61 74,69 6F 6E,61 74 69 6F 6E,complete,complete,True,good,315,45812;315
+169,1,2,8,28,32,38,32 38,complete,complete,True,good,314,56;314
+170,1,2,1,21,32,31,32 31,complete,complete,True,good,313,54;313
+171,1,Ġ5,8,Ġ58,20 35,38,20 35 38,complete,complete,True,good,309,349;309
+172,1,2,4,24,32,34,32 34,complete,complete,True,good,303,52;303
+173,1,Ġ200,8,Ġ2008,20 32 30 30,38,20 32 30 30 38,complete,complete,True,good,301,644;301
+174,1,Ġ2,6,Ġ26,20 32,36,20 32 36,complete,complete,True,good,299,449;299
+175,1,o,t,ot,6F,74,6F 74,complete,complete,True,good,297,16303;297
+176,1,i,m,im,69,6D,69 6D,complete,complete,True,good,295,16886;295
+177,1,l,e,le,6C,65,6C 65,complete,complete,True,good,294,22229;294
+178,1,Ġ,re,Ġre,20,72 65,20 72 65,complete,complete,True,good,293,44120;293
+179,1,Ġ2,8,Ġ28,20 32,38,20 32 38,complete,complete,True,good,291,392;291
+180,1,Ġ,on,Ġon,20,6F 6E,20 6F 6E,complete,complete,True,good,290,20205;290
+181,1,2,9,29,32,39,32 39,complete,complete,True,good,289,47;289
+182,1,Ġ2,5,Ġ25,20 32,35,20 32 35,complete,complete,True,good,287,512;287
+183,1,Ġ3,0,Ġ30,20 33,30,20 33 30,complete,complete,True,good,286,683;286
+184,1,v,e,ve,76,65,76 65,complete,complete,True,good,280,21677;280
+185,1,i,d,id,69,64,69 64,complete,complete,True,good,277,16948;277
+186,1,6,0,60,36,30,36 30,complete,complete,True,good,275,79;275
+187,1,Ġ,*,Ġ*,20,2A,20 2A,complete,complete,True,good,271,247;271
+188,1,Ġ199,9,Ġ1999,20 31 39 39,39,20 31 39 39 39,complete,complete,True,good,270,500;270
+189,1,Ġ2,7,Ġ27,20 32,37,20 32 37,complete,complete,True,good,268,404;268
+190,1,u,r,ur,75,72,75 72,complete,complete,True,good,267,16564;267
+191,1,o,w,ow,6F,77,6F 77,complete,complete,True,good,266,12079;266
+192,1,Ġ5,5,Ġ55,20 35,35,20 35 35,complete,complete,True,good,265,362;265
+193,1,Ġ,Y,ĠY,20,59,20 59,complete,complete,True,good,262,5988;262
+194,1,8,0,80,38,30,38 30,complete,complete,True,good,261,86;261
+195,1,Ġ5,9,Ġ59,20 35,39,20 35 39,complete,complete,True,good,257,315;257
+196,1,Ġ,K,ĠK,20,4B,20 4B,complete,complete,True,good,257,2648;257
+197,1,f,s,fs,66,73,66 73,complete,complete,True,good,254,161;254
+198,1,Ġ,0,Ġ0,20,30,20 30,complete,complete,True,good,253,413;253
+199,1,Ġ2,9,Ġ29,20 32,39,20 32 39,complete,complete,True,good,249,360;249
+200,1,Ġ2,1,Ġ21,20 32,31,20 32 31,complete,complete,True,good,249,383;249
+201,1,t,er,ter,74,65 72,74 65 72,complete,complete,True,good,247,14579;247
+202,1,i,g,ig,69,67,69 67,complete,complete,True,good,245,12318;245
+203,1,Ġ5,7,Ġ57,20 35,37,20 35 37,complete,complete,True,good,244,331;244
+204,1,Ġ6,2,Ġ62,20 36,32,20 36 32,complete,complete,True,good,237,262;237
+205,1,Ġ6,0,Ġ60,20 36,30,20 36 30,complete,complete,True,good,235,359;235
+206,1,199,9,1999,31 39 39,39,31 39 39 39,complete,complete,True,good,235,0;235
+207,1,4,0,40,34,30,34 30,complete,complete,True,good,232,89;232
+208,1,Ġ5,6,Ġ56,20 35,36,20 35 36,complete,complete,True,good,227,297;227
+209,1,h,t,ht,68,74,68 74,complete,complete,True,good,226,9646;226
+210,1,e,v,ev,65,76,65 76,complete,complete,True,good,226,11723;226
+211,1,a,b,ab,61,62,61 62,complete,complete,True,good,223,10374;223
+212,1,Ġ3,3,Ġ33,20 33,33,20 33 33,complete,complete,True,good,217,190;217
+213,1,w,w,ww,77,77,77 77,complete,complete,True,good,211,218;211
+214,1,Ġo,r,Ġor,20 6F,72,20 6F 72,complete,complete,True,good,207,8989;207
+215,1,Ġ6,3,Ġ63,20 36,33,20 36 33,complete,complete,True,good,207,215;207
+216,1,Ġ2,2,Ġ22,20 32,32,20 32 32,complete,complete,True,good,206,371;206
+217,1,i,r,ir,69,72,69 72,complete,complete,True,good,206,12897;206
+218,1,F,F,FF,46,46,46 46,complete,complete,True,good,206,39;206
+219,1,Ġ,U,ĠU,20,55,20 55,complete,complete,True,good,205,11180;205
+220,1,c,h,ch,63,68,63 68,complete,complete,True,good,200,7590;200
+221,1,5,5,55,35,35,35 35,complete,complete,True,good,200,40;200
+222,1,Ġ,he,Ġhe,20,68 65,20 68 65,complete,complete,True,good,196,9071;196
+223,1,u,l,ul,75,6C,75 6C,complete,complete,True,good,196,13470;196
+224,1,Ġ200,9,Ġ2009,20 32 30 30,39,20 32 30 30 39,complete,complete,True,good,195,369;195
+225,1,a,k,ak,61,6B,61 6B,complete,complete,True,good,195,7338;195
+226,1,_,_,__,5F,5F,5F 5F,complete,complete,True,good,193,161;193
+227,1,a,h,ah,61,68,61 68,complete,complete,True,good,192,1784;192
+228,1,Ġ19,8,Ġ198,20 31 39,38,20 31 39 38,complete,complete,True,good,191,347;191
+229,1,Ġth,at,Ġthat,20 74 68,61 74,20 74 68 61 74,complete,complete,True,good,190,17697;190
+230,1,Ġ4,0,Ġ40,20 34,30,20 34 30,complete,complete,True,good,190,264;190
+231,1,u,m,um,75,6D,75 6D,complete,complete,True,good,190,11135;190
+232,1,or,d,ord,6F 72,64,6F 72 64,complete,complete,True,good,190,3933;190
+233,1,7,3,73,37,33,37 33,complete,complete,True,good,187,156;187
+234,1,Ġ3,4,Ġ34,20 33,34,20 33 34,complete,complete,True,good,186,176;186
+235,1,Ġ3,9,Ġ39,20 33,39,20 33 39,complete,complete,True,good,184,169;184
+236,1,an,d,and,61 6E,64,61 6E 64,complete,complete,True,good,182,6899;182
+237,1,o,d,od,6F,64,6F 64,complete,complete,True,good,180,7164;180
+238,1,i,e,ie,69,65,69 65,complete,complete,True,good,179,4538;179
+239,1,Ġ5,4,Ġ54,20 35,34,20 35 34,complete,complete,True,good,178,217;178
+240,1,5,7,57,35,37,35 37,complete,complete,True,good,178,39;178
+241,1,Ġw,ww,Ġwww,20 77,77 77,20 77 77 77,complete,complete,True,good,177,218;177
+242,1,o,c,oc,6F,63,6F 63,complete,complete,True,good,176,8749;176
+243,1,Ġ,un,Ġun,20,75 6E,20 75 6E,complete,complete,True,good,175,2916;175
+244,1,Ġ3,7,Ġ37,20 33,37,20 33 37,complete,complete,True,good,174,175;174
+245,1,6,7,67,36,37,36 37,complete,complete,True,good,174,101;174
+246,1,t,e,te,74,65,74 65,complete,complete,True,good,173,11372;173
+247,1,Ġ,{,Ġ{,20,7B,20 7B,complete,complete,True,good,172,12;172
+248,1,s,h,sh,73,68,73 68,complete,complete,True,good,172,1879;172
+249,1,200,9,2009,32 30 30,39,32 30 30 39,complete,complete,True,good,172,0;172
+250,1,l,y,ly,6C,79,6C 79,complete,complete,True,good,170,14311;170
+251,1,Ġf,or,Ġfor,20 66,6F 72,20 66 6F 72,complete,complete,True,good,169,21057;169
+252,1,Ġb,e,Ġbe,20 62,65,20 62 65,complete,complete,True,good,169,16293;169
+253,1,Ġ6,1,Ġ61,20 36,31,20 36 31,complete,complete,True,good,169,206;169
+254,1,19,8,198,31 39,38,31 39 38,complete,complete,True,good,169,0;169
+255,1,Ġor,g,Ġorg,20 6F 72,67,20 6F 72 67,complete,complete,True,good,166,2433;166
+256,1,Ġ,it,Ġit,20,69 74,20 69 74,complete,complete,True,good,166,15188;166
+257,1,Ġ3,5,Ġ35,20 33,35,20 33 35,complete,complete,True,good,165,162;165
+258,1,Ġ199,8,Ġ1998,20 31 39 39,38,20 31 39 39 38,complete,complete,True,good,165,306;165
+259,1,Ġ4,5,Ġ45,20 34,35,20 34 35,complete,complete,True,good,164,180;164
+260,1,v,er,ver,76,65 72,76 65 72,complete,complete,True,good,164,11716;164
+261,1,Ġ3,8,Ġ38,20 33,38,20 33 38,complete,complete,True,good,162,149;162
+262,1,Ġ,is,Ġis,20,69 73,20 69 73,complete,complete,True,good,162,13197;162
+263,1,I,I,II,49,49,49 49,complete,complete,True,good,161,479;161
+264,1,Ġ5,0,Ġ50,20 35,30,20 35 30,complete,complete,True,good,160,314;160
+265,1,Ġ4,7,Ġ47,20 34,37,20 34 37,complete,complete,True,good,159,164;159
+266,1,ĠT,he,ĠThe,20 54,68 65,20 54 68 65,complete,complete,True,good,158,14744;158
+267,1,3,5,35,33,35,33 35,complete,complete,True,good,158,47;158
+268,1,ĠI,n,ĠIn,20 49,6E,20 49 6E,complete,complete,True,good,157,7313;157
+269,1,Ġ,j,Ġj,20,6A,20 6A,complete,complete,True,good,155,4041;155
+270,1,a,g,ag,61,67,61 67,complete,complete,True,good,155,7373;155
+271,1,Ġ4,3,Ġ43,20 34,33,20 34 33,complete,complete,True,good,154,144;154
+272,1,Ġ3,6,Ġ36,20 33,36,20 33 36,complete,complete,True,good,154,138;154
+273,1,Ġ4,8,Ġ48,20 34,38,20 34 38,complete,complete,True,good,152,196;152
+274,1,h,at,hat,68,61 74,68 61 74,complete,complete,True,good,152,5090;152
+275,1,Ġ,k,Ġk,20,6B,20 6B,complete,complete,True,good,151,4947;151
+276,1,m,ent,ment,6D,65 6E 74,6D 65 6E 74,complete,complete,True,good,151,23293;151
+277,1,Ð,¸,Ð¸,D0,B8,D0 B8,incomplete,incomplete,True,good,150,0;150
+278,1,Ġf,n,Ġfn,20 66,6E,20 66 6E,complete,complete,True,good,149,1;149
+279,1,Ġ,V,ĠV,20,56,20 56,complete,complete,True,good,149,1808;149
+280,1,C,C,CC,43,43,43 43,complete,complete,True,good,149,367;149
+281,1,ĠE,S,ĠES,20 45,53,20 45 53,complete,complete,True,good,148,240;148
+282,1,9,0,90,39,30,39 30,complete,complete,True,good,148,35;148
+283,1,5,6,56,35,36,35 36,complete,complete,True,good,148,28;148
+284,1,Ġ4,4,Ġ44,20 34,34,20 34 34,complete,complete,True,good,147,131;147
+285,1,Ġ,X,ĠX,20,58,20 58,complete,complete,True,good,147,348;147
+286,1,5,8,58,35,38,35 38,complete,complete,True,good,147,20;147
+287,1,199,8,1998,31 39 39,38,31 39 39 38,complete,complete,True,good,147,0;147
+288,1,Ġ3,2,Ġ32,20 33,32,20 33 32,complete,complete,True,good,145,135;145
+289,1,s,t,st,73,74,73 74,complete,complete,True,good,145,10979;145
+290,1,il,l,ill,69 6C,6C,69 6C 6C,complete,complete,True,good,145,7711;145
+291,1,Ġs,t,Ġst,20 73,74,20 73 74,complete,complete,True,good,144,10809;144
+292,1,o,p,op,6F,70,6F 70,complete,complete,True,good,144,14183;144
+293,1,Ġh,t,Ġht,20 68,74,20 68 74,complete,complete,True,good,143,194;143
+294,1,Ġ3,1,Ġ31,20 33,31,20 33 31,complete,complete,True,good,143,380;143
+295,1,us,t,ust,75 73,74,75 73 74,complete,complete,True,good,143,6601;143
+296,1,ĠY,ou,ĠYou,20 59,6F 75,20 59 6F 75,complete,complete,True,good,142,3833;142
+297,1,Ġd,e,Ġde,20 64,65,20 64 65,complete,complete,True,good,141,5175;141
+298,1,6,3,63,36,33,36 33,complete,complete,True,good,141,89;141
+299,1,fs,c,fsc,66 73,63,66 73 63,complete,complete,True,good,140,0;140
+300,1,c,e,ce,63,65,63 65,complete,complete,True,good,140,16771;140
+301,1,4,8,48,34,38,34 38,complete,complete,True,good,140,33;140
+302,1,Ġm,e,Ġme,20 6D,65,20 6D 65,complete,complete,True,good,139,9603;139
+303,1,u,p,up,75,70,75 70,complete,complete,True,good,139,7829;139
+304,1,a,p,ap,61,70,61 70,complete,complete,True,good,138,7894;138
+305,1,ĠC,O,ĠCO,20 43,4F,20 43 4F,complete,complete,True,good,135,334;135
+306,1,Ġ,;,Ġ;,20,3B,20 3B,complete,complete,True,good,135,5742;135
+307,1,4,9,49,34,39,34 39,complete,complete,True,good,135,54;135
+308,1,4,5,45,34,35,34 35,complete,complete,True,good,135,35;135
+309,1,u,b,ub,75,62,75 62,complete,complete,True,good,134,6724;134
+310,1,ĠA,l,ĠAl,20 41,6C,20 41 6C,complete,complete,True,good,133,2307;133
+311,1,i,f,if,69,66,69 66,complete,complete,True,good,133,8907;133
+312,1,sh,ad,shad,73 68,61 64,73 68 61 64,complete,complete,True,good,132,3;132
+313,1,ec,t,ect,65 63,74,65 63 74,complete,complete,True,good,132,12186;132
+314,1,b,ord,bord,62,6F 72 64,62 6F 72 64,complete,complete,True,good,132,2;132
+315,1,an,t,ant,61 6E,74,61 6E 74,complete,complete,True,good,132,7051;132
+316,1,he,r,her,68 65,72,68 65 72,complete,complete,True,good,131,8589;131
+317,1,6,2,62,36,32,36 32,complete,complete,True,good,131,28;131
+318,1,ĠA,C,ĠAC,20 41,43,20 41 43,complete,complete,True,good,129,172;129
+319,1,Ġ5,1,Ġ51,20 35,31,20 35 31,complete,complete,True,good,129,137;129
+320,1,Ġ199,7,Ġ1997,20 31 39 39,37,20 31 39 39 37,complete,complete,True,good,129,230;129
+321,1,l,d,ld,6C,64,6C 64,complete,complete,True,good,129,10817;129
+322,1,3,7,37,33,37,33 37,complete,complete,True,good,129,31;129
+323,1,Ġ,},Ġ},20,7D,20 7D,complete,complete,True,good,128,12;128
+324,1,or,t,ort,6F 72,74,6F 72 74,complete,complete,True,good,128,12952;128
+325,1,el,l,ell,65 6C,6C,65 6C 6C,complete,complete,True,good,128,4221;128
+326,1,3,3,33,33,33,33 33,complete,complete,True,good,127,43;127
+327,1,is,t,ist,69 73,74,69 73 74,complete,complete,True,good,125,8147;125
+328,1,e,e,ee,65,65,65 65,complete,complete,True,good,125,4106;125
+329,1,Ġ4,6,Ġ46,20 34,36,20 34 36,complete,complete,True,good,124,118;124
+330,1,a,H,aH,61,48,61 48,complete,complete,True,good,123,9;123
+331,1,5,9,59,35,39,35 39,complete,complete,True,good,123,27;123
+332,1,Ġ,#,Ġ#,20,23,20 23,complete,complete,True,good,122,200;122
+333,1,7,7,77,37,37,37 37,complete,complete,True,good,122,52;122
+334,1,ĠP,ro,ĠPro,20 50,72 6F,20 50 72 6F,complete,complete,True,good,121,2737;121
+335,1,q,u,qu,71,75,71 75,complete,complete,True,good,121,8062;121
+336,1,ar,t,art,61 72,74,61 72 74,complete,complete,True,good,121,9207;121
+337,1,Ġ4,2,Ġ42,20 34,32,20 34 32,complete,complete,True,good,120,119;120
+338,1,bord,1,bord1,62 6F 72 64,31,62 6F 72 64 31,complete,complete,True,good,120,0;120
+339,1,bord1,shad,bord1shad,62 6F 72 64 31,73 68 61 64,62 6F 72 64 31 73 68 61 64,complete,complete,True,good,120,0;120
+340,1,1,00,100,31,30 30,31 30 30,complete,complete,True,good,120,2;120
+341,1,i,a,ia,69,61,69 61,complete,complete,True,good,119,4621;119
+342,1,r,a,ra,72,61,72 61,complete,complete,True,good,117,7535;117
+343,1,5,3,53,35,33,35 33,complete,complete,True,good,117,21;117
+344,1,Ġ-,-,Ġ--,20 2D,2D,20 2D 2D,complete,complete,True,good,116,489;116
+345,1,t,p,tp,74,70,74 70,complete,complete,True,good,116,160;116
+346,1,5,4,54,35,34,35 34,complete,complete,True,good,116,23;116
+347,1,Ġw,e,Ġwe,20 77,65,20 77 65,complete,complete,True,good,115,7415;115
+348,1,Ã,©,Ã©,C3,A9,C3 A9,incomplete,incomplete,True,good,115,412;115
+349,1,6,1,61,36,31,36 31,complete,complete,True,good,114,36;114
+350,1,Ġg,o,Ġgo,20 67,6F,20 67 6F,complete,complete,True,good,113,4943;113
+351,1,es,t,est,65 73,74,65 73 74,complete,complete,True,good,113,9055;113
+352,1,7,0,70,37,30,37 30,complete,complete,True,good,113,56;113
+353,1,ĠR,ev,ĠRev,20 52,65 76,20 52 65 76,complete,complete,True,good,112,421;112
+354,1,om,e,ome,6F 6D,65,6F 6D 65,complete,complete,True,good,112,4946;112
+355,1,es,s,ess,65 73,73,65 73 73,complete,complete,True,good,112,10323;112
+356,1,/,/,//,2F,2F,2F 2F,complete,complete,True,good,112,123;112
+357,1,Ġ,Ð¸,ĠÐ¸,20,D0 B8,20 D0 B8,complete,complete,True,good,111,0;111
+358,1,re,s,res,72 65,73,72 65 73,complete,complete,True,good,111,11516;111
+359,1,i,k,ik,69,6B,69 6B,complete,complete,True,good,111,2394;111
+360,1,Ġa,l,Ġal,20 61,6C,20 61 6C,complete,complete,True,good,110,10981;110
+361,1,Ġ:,//,Ġ://,20 3A,2F 2F,20 3A 2F 2F,complete,complete,True,good,110,123;110
+362,1,Ġ4,9,Ġ49,20 34,39,20 34 39,complete,complete,True,good,110,129;110
+363,1,or,r,orr,6F 72,72,6F 72 72,complete,complete,True,good,110,822;110
+364,1,i,al,ial,69,61 6C,69 61 6C,complete,complete,True,good,110,9368;110
+365,1,ac,k,ack,61 63,6B,61 63 6B,complete,complete,True,good,110,2316;110
+366,1,3,9,39,33,39,33 39,complete,complete,True,good,110,20;110
+367,1,5,1,51,35,31,35 31,complete,complete,True,good,109,39;109
+368,1,Ġ199,6,Ġ1996,20 31 39 39,36,20 31 39 39 36,complete,complete,True,good,108,211;108
+369,1,ĠC,h,ĠCh,20 43,68,20 43 68,complete,complete,True,good,107,3075;107
+370,1,Ġd,o,Ġdo,20 64,6F,20 64 6F,complete,complete,True,good,106,3573;106
+371,1,o,k,ok,6F,6B,6F 6B,complete,complete,True,good,106,2489;106
+372,1,199,7,1997,31 39 39,37,31 39 39 37,complete,complete,True,good,106,1;106
+373,1,ĠH,e,ĠHe,20 48,65,20 48 65,complete,complete,True,good,105,2814;105
+374,1,it,h,ith,69 74,68,69 74 68,complete,complete,True,good,105,12462;105
+375,1,Ġth,is,Ġthis,20 74 68,69 73,20 74 68 69 73,complete,complete,True,good,104,5405;104
+376,1,a,v,av,61,76,61 76,complete,complete,True,good,104,1902;104
+377,1,199,6,1996,31 39 39,36,31 39 39 36,complete,complete,True,good,104,0;104
+378,1,Ġ5,3,Ġ53,20 35,33,20 35 33,complete,complete,True,good,103,160;103
+379,1,re,n,ren,72 65,6E,72 65 6E,complete,complete,True,good,103,7351;103
+380,1,Ġ199,5,Ġ1995,20 31 39 39,35,20 31 39 39 35,complete,complete,True,good,102,195;102
+381,1,ĠN,o,ĠNo,20 4E,6F,20 4E 6F,complete,complete,True,good,101,2384;101
+382,1,e,p,ep,65,70,65 70,complete,complete,True,good,101,5048;101
+383,1,c,H,cH,63,48,63 48,complete,complete,True,good,101,2;101
+384,1,a,w,aw,61,77,61 77,complete,complete,True,good,101,2789;101
+385,1,Ġ1,00,Ġ100,20 31,30 30,20 31 30 30,complete,complete,True,good,100,208;100
+386,1,4,6,46,34,36,34 36,complete,complete,True,good,100,27;100
+387,1,199,0,1990,31 39 39,30,31 39 39 30,complete,complete,True,good,100,0;100
+388,1,it,y,ity,69 74,79,69 74 79,complete,complete,True,good,99,11221;99
+389,1,Ġ4,1,Ġ41,20 34,31,20 34 31,complete,complete,True,good,98,112;98
+390,1,u,c,uc,75,63,75 63,complete,complete,True,good,98,7531;98
+391,1,o,b,ob,6F,62,6F 62,complete,complete,True,good,98,2625;98
+392,1,a,ve,ave,61,76 65,61 76 65,complete,complete,True,good,98,6472;98
+393,1,4,7,47,34,37,34 37,complete,complete,True,good,98,26;98
+394,1,ou,r,our,6F 75,72,6F 75 72,complete,complete,True,good,97,6140;97
+395,1,Ġa,n,Ġan,20 61,6E,20 61 6E,complete,complete,True,good,96,9055;96
+396,1,ĠC,R,ĠCR,20 43,52,20 43 52,complete,complete,True,good,96,155;96
+397,1,ri,g,rig,72 69,67,72 69 67,complete,complete,True,good,96,5201;96
+398,1,Ġ19,7,Ġ197,20 31 39,37,20 31 39 37,complete,complete,True,good,95,153;95
+399,1,Ġ,v,Ġv,20,76,20 76,complete,complete,True,good,95,6627;95
+400,1,al,l,all,61 6C,6C,61 6C 6C,complete,complete,True,good,95,5081;95
+401,1,Ġ5,00,Ġ500,20 35,30 30,20 35 30 30,complete,complete,True,good,94,122;94
+402,1,ar,d,ard,61 72,64,61 72 64,complete,complete,True,good,94,4971;94
+403,1,4,1,41,34,31,34 31,complete,complete,True,good,94,38;94
+404,1,Ġa,s,Ġas,20 61,73,20 61 73,complete,complete,True,good,93,13018;93
+405,1,Ġ5,2,Ġ52,20 35,32,20 35 32,complete,complete,True,good,93,125;93
+406,1,r,an,ran,72,61 6E,72 61 6E,complete,complete,True,good,92,3604;92
+407,1,at,e,ate,61 74,65,61 74 65,complete,complete,True,good,92,11268;92
+408,1,Ġ6,7,Ġ67,20 36,37,20 36 37,complete,complete,True,good,91,72;91
+409,1,in,e,ine,69 6E,65,69 6E 65,complete,complete,True,good,91,2641;91
+410,1,4,4,44,34,34,34 34,complete,complete,True,good,91,38;91
+411,1,Ġ6,6,Ġ66,20 36,36,20 36 36,complete,complete,True,good,90,73;90
+412,1,ter,n,tern,74 65 72,6E,74 65 72 6E,complete,complete,True,good,90,6290;90
+413,1,en,d,end,65 6E,64,65 6E 64,complete,complete,True,good,89,8302;89
+414,1,20,10,2010,32 30,31 30,32 30 31 30,complete,complete,True,good,89,0;89
+415,1,199,5,1995,31 39 39,35,31 39 39 35,complete,complete,True,good,89,0;89
+416,1,Ġ),(,Ġ)(,20 29,28,20 29 28,complete,complete,True,good,88,39;88
+417,1,ation,al,ational,61 74 69 6F 6E,61 6C,61 74 69 6F 6E 61 6C,complete,complete,True,good,88,8256;88
+418,1,5,2,52,35,32,35 32,complete,complete,True,good,88,28;88
+419,1,3,4,34,33,34,33 34,complete,complete,True,good,88,16;88
+420,1,Ġc,om,Ġcom,20 63,6F 6D,20 63 6F 6D,complete,complete,True,good,87,8591;87
+421,1,ig,ht,ight,69 67,68 74,69 67 68 74,complete,complete,True,good,87,3989;87
+422,1,e,m,em,65,6D,65 6D,complete,complete,True,good,87,7400;87
+423,1,ĠS,t,ĠSt,20 53,74,20 53 74,complete,complete,True,good,86,6866;86
+424,1,Ġ),",","Ġ),",20 29,2C,20 29 2C,complete,complete,True,good,86,2222;86
+425,1,Ġm,y,Ġmy,20 6D,79,20 6D 79,complete,complete,True,good,85,2312;85
+426,1,Ġht,tp,Ġhttp,20 68 74,74 70,20 68 74 74 70,complete,complete,True,good,85,123;85
+427,1,o,v,ov,6F,76,6F 76,complete,complete,True,good,85,1586;85
+428,1,ĠM,r,ĠMr,20 4D,72,20 4D 72,complete,complete,True,good,84,1654;84
+429,1,Ġ,i,Ġi,20,69,20 69,complete,complete,True,good,84,648;84
+430,1,__,__,____,5F 5F,5F 5F,5F 5F 5F 5F,complete,complete,True,good,84,67;84
+431,1,Ġw,ith,Ġwith,20 77,69 74 68,20 77 69 74 68,complete,complete,True,good,83,11667;83
+432,1,n,a,na,6E,61,6E 61,complete,complete,True,good,83,1071;83
+433,1,g,e,ge,67,65,67 65,complete,complete,True,good,83,3661;83
+434,1,Ġc,an,Ġcan,20 63,61 6E,20 63 61 6E,complete,complete,True,good,82,2982;82
+435,1,Ġc,on,Ġcon,20 63,6F 6E,20 63 6F 6E,complete,complete,True,good,81,17460;81
+436,1,Ġ6,8,Ġ68,20 36,38,20 36 38,complete,complete,True,good,81,84;81
+437,1,o,h,oh,6F,68,6F 68,complete,complete,True,good,81,426;81
+438,1,bord1shad,0,bord1shad0,62 6F 72 64 31 73 68 61 64,30,62 6F 72 64 31 73 68 61 64 30,complete,complete,True,good,81,0;81
+439,1,Ġyou,r,Ġyour,20 79 6F 75,72,20 79 6F 75 72,complete,complete,True,good,80,2508;80
+440,1,t,h,th,74,68,74 68,complete,complete,True,good,80,5829;80
+441,1,o,re,ore,6F,72 65,6F 72 65,complete,complete,True,good,80,5761;80
+442,1,e,w,ew,65,77,65 77,complete,complete,True,good,80,3595;80
+443,1,4,3,43,34,33,34 33,complete,complete,True,good,80,22;80
+444,1,4,2,42,34,32,34 32,complete,complete,True,good,80,17;80
+445,1,Ġ7,0,Ġ70,20 37,30,20 37 30,complete,complete,True,good,79,102;79
+446,1,Ġ6,9,Ġ69,20 36,39,20 36 39,complete,complete,True,good,79,69;79
+447,1,Ġ199,4,Ġ1994,20 31 39 39,34,20 31 39 39 34,complete,complete,True,good,79,159;79
+448,1,s,e,se,73,65,73 65,complete,complete,True,good,79,5010;79
+449,1,f,f,ff,66,66,66 66,complete,complete,True,good,79,8214;79
+450,1,b,er,ber,62,65 72,62 65 72,complete,complete,True,good,79,6515;79
+451,1,*,*,**,2A,2A,2A 2A,complete,complete,True,good,79,132;79
+452,1,Ġw,as,Ġwas,20 77,61 73,20 77 61 73,complete,complete,True,good,78,6712;78
+453,1,N,F,NF,4E,46,4E 46,complete,complete,True,good,78,277;78
+454,1,3,8,38,33,38,33 38,complete,complete,True,good,78,13;78
+455,1,3,6,36,33,36,33 36,complete,complete,True,good,78,22;78
+456,1,Ġh,ave,Ġhave,20 68,61 76 65,20 68 61 76 65,complete,complete,True,good,77,5643;77
+457,1,ĠX,X,ĠXX,20 58,58,20 58 58,complete,complete,True,good,77,96;77
+458,1,ĠA,nd,ĠAnd,20 41,6E 64,20 41 6E 64,complete,complete,True,good,77,1743;77
+459,1,Ġ7,8,Ġ78,20 37,38,20 37 38,complete,complete,True,good,77,84;77
+460,1,u,re,ure,75,72 65,75 72 65,complete,complete,True,good,77,5604;77
+461,1,ĠI,t,ĠIt,20 49,74,20 49 74,complete,complete,True,good,76,3795;76
+462,1,ou,ld,ould,6F 75,6C 64,6F 75 6C 64,complete,complete,True,good,76,7640;76
+463,1,FF,FF,FFFF,46 46,46 46,46 46 46 46,complete,complete,True,good,76,0;76
+464,1,Ġ6,4,Ġ64,20 36,34,20 36 34,complete,complete,True,good,75,63;75
+465,1,s,on,son,73,6F 6E,73 6F 6E,complete,complete,True,good,75,2269;75
+466,1,in,d,ind,69 6E,64,69 6E 64,complete,complete,True,good,75,1981;75
+467,1,i,p,ip,69,70,69 70,complete,complete,True,good,75,5069;75
+468,1,A,dd,Add,41,64 64,41 64 64,complete,complete,True,good,75,0;75
+469,1,3,2,32,33,32,33 32,complete,complete,True,good,75,16;75
+470,1,r,y,ry,72,79,72 79,complete,complete,True,good,74,3193;74
+471,1,ic,k,ick,69 63,6B,69 63 6B,complete,complete,True,good,74,1104;74
+472,1,ar,a,ara,61 72,61,61 72 61,complete,complete,True,good,74,624;74
+473,1,a,in,ain,61,69 6E,61 69 6E,complete,complete,True,good,73,8065;73
+474,1,S,T,ST,53,54,53 54,complete,complete,True,good,73,234;73
+475,1,199,1,1991,31 39 39,31,31 39 39 31,complete,complete,True,good,73,0;73
+476,1,Ġa,t,Ġat,20 61,74,20 61 74,complete,complete,True,good,72,7181;72
+477,1,Ġ,up,Ġup,20,75 70,20 75 70,complete,complete,True,good,72,3201;72
+478,1,u,d,ud,75,64,75 64,complete,complete,True,good,72,7190;72
+479,1,ar,y,ary,61 72,79,61 72 79,complete,complete,True,good,72,6435;72
+480,1,Ġs,h,Ġsh,20 73,68,20 73 68,complete,complete,True,good,71,6470;71
+481,1,Ġn,ot,Ġnot,20 6E,6F 74,20 6E 6F 74,complete,complete,True,good,71,7375;71
+482,1,ĠC,on,ĠCon,20 43,6F 6E,20 43 6F 6E,complete,complete,True,good,71,4815;71
+483,1,tern,ational,ternational,74 65 72 6E,61 74 69 6F 6E 61 6C,74 65 72 6E 61 74 69 6F 6E 61 6C,complete,complete,True,good,71,5012;71
+484,1,c,t,ct,63,74,63 74,complete,complete,True,good,71,7852;71
+485,1,a,re,are,61,72 65,61 72 65,complete,complete,True,good,71,2482;71
+486,1,Ġ8,0,Ġ80,20 38,30,20 38 30,complete,complete,True,good,70,110;70
+487,1,Ġ7,3,Ġ73,20 37,33,20 37 33,complete,complete,True,good,70,59;70
+488,1,fsc,y,fscy,66 73 63,79,66 73 63 79,complete,complete,True,good,70,0;70
+489,1,fsc,x,fscx,66 73 63,78,66 73 63 78,complete,complete,True,good,70,0;70
+490,1,e,y,ey,65,79,65 79,complete,complete,True,good,70,1312;70
+491,1,aH,00,aH00,61 48,30 30,61 48 30 30,complete,complete,True,good,70,0;70
+492,1,aH00,fscx,aH00fscx,61 48 30 30,66 73 63 78,61 48 30 30 66 73 63 78,complete,complete,True,good,70,0;70
+493,1,4,aH00fscx,4aH00fscx,34,61 48 30 30 66 73 63 78,34 61 48 30 30 66 73 63 78,complete,complete,True,good,70,0;70
+494,1,199,4,1994,31 39 39,34,31 39 39 34,complete,complete,True,good,70,0;70
+495,1,Ġk,n,Ġkn,20 6B,6E,20 6B 6E,complete,complete,True,good,69,2618;69
+496,1,Ġa,re,Ġare,20 61,72 65,20 61 72 65,complete,complete,True,good,69,7716;69
+497,1,ĠC,P,ĠCP,20 43,50,20 43 50,complete,complete,True,good,69,119;69
+498,1,Ġ7,7,Ġ77,20 37,37,20 37 37,complete,complete,True,good,69,107;69
+499,1,i,ve,ive,69,76 65,69 76 65,complete,complete,True,good,69,8874;69
+500,1,C,orr,Corr,43,6F 72 72,43 6F 72 72,complete,complete,True,good,69,0;69
+501,1,6,8,68,36,38,36 38,complete,complete,True,good,69,28;69
+502,1,6,5,65,36,35,36 35,complete,complete,True,good,69,32;69
+503,1,19,7,197,31 39,37,31 39 37,complete,complete,True,good,69,3;69
+504,1,ĠT,h,ĠTh,20 54,68,20 54 68,complete,complete,True,good,68,2783;68
+505,1,Ġ199,0,Ġ1990,20 31 39 39,30,20 31 39 39 30,complete,complete,True,good,68,187;68
+506,1,Ġ,Z,ĠZ,20,5A,20 5A,complete,complete,True,good,68,493;68
+507,1,r,om,rom,72,6F 6D,72 6F 6D,complete,complete,True,good,68,6929;68
+508,1,80,80,8080,38 30,38 30,38 30 38 30,complete,complete,True,good,68,0;68
+509,1,ĠU,n,ĠUn,20 55,6E,20 55 6E,complete,complete,True,good,67,6844;67
+510,1,o,g,og,6F,67,6F 67,complete,complete,True,good,67,3147;67
+511,1,E,D,ED,45,44,45 44,complete,complete,True,good,67,178;67
+512,1,199,3,1993,31 39 39,33,31 39 39 33,complete,complete,True,good,67,0;67
+513,1,ĠM,ar,ĠMar,20 4D,61 72,20 4D 61 72,complete,complete,True,good,66,823;66
+514,1,Ġ(,),Ġ(),20 28,29,20 28 29,complete,complete,True,good,66,57;66
+515,1,rig,ht,right,72 69 67,68 74,72 69 67 68 74,complete,complete,True,good,66,4704;66
+516,1,in,k,ink,69 6E,6B,69 6E 6B,complete,complete,True,good,66,1728;66
+517,1,i,v,iv,69,76,69 76,complete,complete,True,good,66,8631;66
+518,1,i,an,ian,69,61 6E,69 61 6E,complete,complete,True,good,66,3474;66
+519,1,ak,e,ake,61 6B,65,61 6B 65,complete,complete,True,good,66,3122;66
+520,1,Ġ10,9,Ġ109,20 31 30,39,20 31 30 39,complete,complete,True,good,65,68;65
+521,1,Ġ,r,Ġr,20,72,20 72,complete,complete,True,good,65,4433;65
+522,1,ik,e,ike,69 6B,65,69 6B 65,complete,complete,True,good,65,1922;65
+523,1,I,S,IS,49,53,49 53,complete,complete,True,good,65,277;65
+524,1,6,9,69,36,39,36 39,complete,complete,True,good,65,29;65
+525,1,o,ok,ook,6F,6F 6B,6F 6F 6B,complete,complete,True,good,64,1528;64
+526,1,i,z,iz,69,7A,69 7A,complete,complete,True,good,64,7220;64
+527,1,Ġl,e,Ġle,20 6C,65,20 6C 65,complete,complete,True,good,63,3729;63
+528,1,ĠPro,g,ĠProg,20 50 72 6F,67,20 50 72 6F 67,complete,complete,True,good,63,913;63
+529,1,Ġ8,7,Ġ87,20 38,37,20 38 37,complete,complete,True,good,63,55;63
+530,1,om,m,omm,6F 6D,6D,6F 6D 6D,complete,complete,True,good,63,7933;63
+531,1,h,o,ho,68,6F,68 6F,complete,complete,True,good,63,2561;63
+532,1,e,x,ex,65,78,65 78,complete,complete,True,good,63,2413;63
+533,1,13,73,1373,31 33,37 33,31 33 37 33,complete,complete,True,good,63,0;63
+534,1,1,10,110,31,31 30,31 31 30,complete,complete,True,good,63,2;63
+535,1,Ġ,us,Ġus,20,75 73,20 75 73,complete,complete,True,good,62,3157;62
+536,1,c,c,cc,63,63,63 63,complete,complete,True,good,62,4626;62
+537,1,Ġ7,00,Ġ700,20 37,30 30,20 37 30 30,complete,complete,True,good,61,60;61
+538,1,p,os,pos,70,6F 73,70 6F 73,complete,complete,True,good,61,2615;61
+539,1,ic,e,ice,69 63,65,69 63 65,complete,complete,True,good,61,4129;61
+540,1,i,re,ire,69,72 65,69 72 65,complete,complete,True,good,61,3448;61
+541,1,i,es,ies,69,65 73,69 65 73,complete,complete,True,good,61,10870;61
+542,1,i,b,ib,69,62,69 62,complete,complete,True,good,61,3514;61
+543,1,Ġc,h,Ġch,20 63,68,20 63 68,complete,complete,True,good,60,4367;60
+544,1,ĠCR,P,ĠCRP,20 43 52,50,20 43 52 50,complete,complete,True,good,60,63;60
+545,1,an,g,ang,61 6E,67,61 6E 67,complete,complete,True,good,60,1386;60
+546,1,ĠS,R,ĠSR,20 53,52,20 53 52,complete,complete,True,good,59,68;59
+547,1,ĠIn,ternational,ĠInternational,20 49 6E,74 65 72 6E 61 74 69 6F 6E 61 6C,20 49 6E 74 65 72 6E 61 74 69 6F 6E 61 6C,complete,complete,True,good,59,1624;59
+548,1,Ġ3,00,Ġ300,20 33,30 30,20 33 30 30,complete,complete,True,good,59,85;59
+549,1,Ġ2,12,Ġ212,20 32,31 32,20 32 31 32,complete,complete,True,good,59,63;59
+550,1,Ġ199,2,Ġ1992,20 31 39 39,32,20 31 39 39 32,complete,complete,True,good,59,104;59
+551,1,Ġ,right,Ġright,20,72 69 67 68 74,20 72 69 67 68 74,complete,complete,True,good,59,4595;59
+552,1,Ġ,99,Ġ99,20,39 39,20 39 39,complete,complete,True,good,59,51;59
+553,1,or,k,ork,6F 72,6B,6F 72 6B,complete,complete,True,good,59,5402;59
+554,1,m,an,man,6D,61 6E,6D 61 6E,complete,complete,True,good,59,1814;59
+555,1,a,z,az,61,7A,61 7A,complete,complete,True,good,59,534;59
+556,1,R,C,RC,52,43,52 43,complete,complete,True,good,59,134;59
+557,1,Ġkn,ow,Ġknow,20 6B 6E,6F 77,20 6B 6E 6F 77,complete,complete,True,good,58,2387;58
+558,1,Ġj,ust,Ġjust,20 6A,75 73 74,20 6A 75 73 74,complete,complete,True,good,58,2024;58
+559,1,Ġht,m,Ġhtm,20 68 74,6D,20 68 74 6D,complete,complete,True,good,58,70;58
+560,1,ĠU,N,ĠUN,20 55,4E,20 55 4E,complete,complete,True,good,58,2422;58
+561,1,Ġ8,3,Ġ83,20 38,33,20 38 33,complete,complete,True,good,58,43;58
+562,1,Ġ),.,Ġ).,20 29,2E,20 29 2E,complete,complete,True,good,58,1738;58
+563,1,on,e,one,6F 6E,65,6F 6E 65,complete,complete,True,good,58,2010;58
+564,1,ic,h,ich,69 63,68,69 63 68,complete,complete,True,good,58,4448;58
+565,1,Ġ8,9,Ġ89,20 38,39,20 38 39,complete,complete,True,good,57,57;57
+566,1,Ġ8,00,Ġ800,20 38,30 30,20 38 30 30,complete,complete,True,good,57,65;57
+567,1,Ġ7,6,Ġ76,20 37,36,20 37 36,complete,complete,True,good,57,54;57
+568,1,is,s,iss,69 73,73,69 73 73,complete,complete,True,good,57,4675;57
+569,1,CC,C,CCC,43 43,43,43 43 43,complete,complete,True,good,57,100;57
+570,1,ĠW,e,ĠWe,20 57,65,20 57 65,complete,complete,True,good,56,2885;56
+571,1,ĠS,h,ĠSh,20 53,68,20 53 68,complete,complete,True,good,56,531;56
+572,1,Ġ9,0,Ġ90,20 39,30,20 39 30,complete,complete,True,good,56,99;56
+573,1,Ġ8,8,Ġ88,20 38,38,20 38 38,complete,complete,True,good,56,56;56
+574,1,Ġ7,9,Ġ79,20 37,39,20 37 39,complete,complete,True,good,56,47;56
+575,1,Ġ7,5,Ġ75,20 37,35,20 37 35,complete,complete,True,good,56,58;56
+576,1,Ġ7,2,Ġ72,20 37,32,20 37 32,complete,complete,True,good,56,44;56
+577,1,u,nd,und,75,6E 64,75 6E 64,complete,complete,True,good,56,5505;56
+578,1,p,ort,port,70,6F 72 74,70 6F 72 74,complete,complete,True,good,56,9054;56
+579,1,on,g,ong,6F 6E,67,6F 6E 67,complete,complete,True,good,56,2998;56
+580,1,Ġa,b,Ġab,20 61,62,20 61 62,complete,complete,True,good,55,3500;55
+581,1,Ġ7,4,Ġ74,20 37,34,20 37 34,complete,complete,True,good,55,43;55
+582,1,Ġ6,5,Ġ65,20 36,35,20 36 35,complete,complete,True,good,55,66;55
+583,1,Ġ20,10,Ġ2010,20 32 30,31 30,20 32 30 31 30,complete,complete,True,good,55,138;55
+584,1,Ġp,ro,Ġpro,20 70,72 6F,20 70 72 6F,complete,complete,True,good,54,16146;54
+585,1,Ġ9,4,Ġ94,20 39,34,20 39 34,complete,complete,True,good,54,44;54
+586,1,p,l,pl,70,6C,70 6C,complete,complete,True,good,54,4913;54
+587,1,he,n,hen,68 65,6E,68 65 6E,complete,complete,True,good,54,3018;54
+588,1,E,P,EP,45,50,45 50,complete,complete,True,good,54,262;54
+589,1,ĠW,hat,ĠWhat,20 57,68 61 74,20 57 68 61 74,complete,complete,True,good,53,1781;53
+590,1,Ġ199,3,Ġ1993,20 31 39 39,33,20 31 39 39 33,complete,complete,True,good,53,115;53
+591,1,ul,t,ult,75 6C,74,75 6C 74,complete,complete,True,good,53,3904;53
+592,1,u,e,ue,75,65,75 65,complete,complete,True,good,53,3005;53
+593,1,ation,s,ations,61 74 69 6F 6E,73,61 74 69 6F 6E 73,complete,complete,True,good,53,12062;53
+594,1,Ġe,x,Ġex,20 65,78,20 65 78,complete,complete,True,good,52,8161;52
+595,1,Ġ9,2,Ġ92,20 39,32,20 39 32,complete,complete,True,good,52,43;52
+596,1,Ġ8,2,Ġ82,20 38,32,20 38 32,complete,complete,True,good,52,45;52
+597,1,Ġ,en,Ġen,20,65 6E,20 65 6E,complete,complete,True,good,52,5414;52
+598,1,u,g,ug,75,67,75 67,complete,complete,True,good,52,2210;52
+599,1,r,ou,rou,72,6F 75,72 6F 75,complete,complete,True,good,52,5054;52
+600,1,ou,t,out,6F 75,74,6F 75 74,complete,complete,True,good,52,3120;52
+601,1,as,t,ast,61 73,74,61 73 74,complete,complete,True,good,52,2897;52
+602,1,A,W,AW,41,57,41 57,complete,complete,True,good,52,110;52
+603,1,Ġhe,re,Ġhere,20 68 65,72 65,20 68 65 72 65,complete,complete,True,good,51,1446;51
+604,1,Ġ7,1,Ġ71,20 37,31,20 37 31,complete,complete,True,good,51,35;51
+605,1,Ġ4,00,Ġ400,20 34,30 30,20 34 30 30,complete,complete,True,good,51,56;51
+606,1,is,h,ish,69 73,68,69 73 68,complete,complete,True,good,51,2593;51
+607,1,E,R,ER,45,52,45 52,complete,complete,True,good,51,259;51
+608,1,Ġs,o,Ġso,20 73,6F,20 73 6F,complete,complete,True,good,50,2264;50
+609,1,Ġg,et,Ġget,20 67,65 74,20 67 65 74,complete,complete,True,good,50,1356;50
+610,1,ĠA,m,ĠAm,20 41,6D,20 41 6D,complete,complete,True,good,50,1063;50
+611,1,Ġ9,5,Ġ95,20 39,35,20 39 35,complete,complete,True,good,50,55;50
+612,1,as,e,ase,61 73,65,61 73 65,complete,complete,True,good,50,2508;50
+613,1,6,6,66,36,36,36 36,complete,complete,True,good,50,18;50
+614,1,20,15,2015,32 30,31 35,32 30 31 35,complete,complete,True,good,50,0;50
+615,1,199,2,1992,31 39 39,32,31 39 39 32,complete,complete,True,good,50,0;50
+616,1,Ġw,ant,Ġwant,20 77,61 6E 74,20 77 61 6E 74,complete,complete,True,good,49,1263;49
+617,1,Ġo,ut,Ġout,20 6F,75 74,20 6F 75 74,complete,complete,True,good,49,3476;49
+618,1,Ġl,l,Ġll,20 6C,6C,20 6C 6C,complete,complete,True,good,49,1305;49
+619,1,Ġ6,00,Ġ600,20 36,30 30,20 36 30 30,complete,complete,True,good,49,58;49
+620,1,il,d,ild,69 6C,64,69 6C 64,complete,complete,True,good,49,3054;49
+621,1,A,T,AT,41,54,41 54,complete,complete,True,good,49,245;49
+622,1,7,5,75,37,35,37 35,complete,complete,True,good,49,10;49
+623,1,Ġa,g,Ġag,20 61,67,20 61 67,complete,complete,True,good,48,5320;48
+624,1,ĠE,l,ĠEl,20 45,6C,20 45 6C,complete,complete,True,good,48,477;48
+625,1,Ġ),},Ġ)},20 29,7D,20 29 7D,complete,complete,True,good,48,0;48
+626,1,Ġ,qu,Ġqu,20,71 75,20 71 75,complete,complete,True,good,48,1779;48
+627,1,n,e,ne,6E,65,6E 65,complete,complete,True,good,48,611;48
+628,1,in,a,ina,69 6E,61,69 6E 61,complete,complete,True,good,48,845;48
+629,1,er,s,ers,65 72,73,65 72 73,complete,complete,True,good,48,4194;48
+630,1,as,s,ass,61 73,73,61 73 73,complete,complete,True,good,48,1354;48
+631,1,al,ly,ally,61 6C,6C 79,61 6C 6C 79,complete,complete,True,good,48,2592;48
+632,1,ac,e,ace,61 63,65,61 63 65,complete,complete,True,good,48,3922;48
+633,1,ED,AW,EDAW,45 44,41 57,45 44 41 57,complete,complete,True,good,48,77;48
+634,1,Ġw,hat,Ġwhat,20 77,68 61 74,20 77 68 61 74,complete,complete,True,good,47,1892;47
+635,1,Ġal,l,Ġall,20 61 6C,6C,20 61 6C 6C,complete,complete,True,good,47,5332;47
+636,1,ĠS,ub,ĠSub,20 53,75 62,20 53 75 62,complete,complete,True,good,47,464;47
+637,1,ĠE,n,ĠEn,20 45,6E,20 45 6E,complete,complete,True,good,47,901;47
+638,1,ĠCO,NF,ĠCONF,20 43 4F,4E 46,20 43 4F 4E 46,complete,complete,True,good,47,55;47
+639,1,Ġ8,5,Ġ85,20 38,35,20 38 35,complete,complete,True,good,47,44;47
+640,1,on,d,ond,6F 6E,64,6F 6E 64,complete,complete,True,good,47,1957;47
+641,1,er,t,ert,65 72,74,65 72 74,complete,complete,True,good,47,2795;47
+642,1,6,4,64,36,34,36 34,complete,complete,True,good,47,16;47
+643,1,Ġthe,re,Ġthere,20 74 68 65,72 65,20 74 68 65 72 65,complete,complete,True,good,46,2748;46
+644,1,Ġl,ike,Ġlike,20 6C,69 6B 65,20 6C 69 6B 65,complete,complete,True,good,46,1720;46
+645,1,Ġ10,5,Ġ105,20 31 30,35,20 31 30 35,complete,complete,True,good,46,45;46
+646,1,Ġ),),Ġ)),20 29,29,20 29 29,complete,complete,True,good,46,163;46
+647,1,Ġ,`,Ġ`,20,60,20 60,complete,complete,True,good,46,165;46
+648,1,ver,y,very,76 65 72,79,76 65 72 79,complete,complete,True,good,46,2155;46
+649,1,r,ic,ric,72,69 63,72 69 63,complete,complete,True,good,46,2471;46
+650,1,b,l,bl,62,6C,62 6C,complete,complete,True,good,46,772;46
+651,1,ag,e,age,61 67,65,61 67 65,complete,complete,True,good,46,2995;46
+652,1,Ġp,ara,Ġpara,20 70,61 72 61,20 70 61 72 61,complete,complete,True,good,45,488;45
+653,1,Ġon,e,Ġone,20 6F 6E,65,20 6F 6E 65,complete,complete,True,good,45,2116;45
+654,1,Ġf,rom,Ġfrom,20 66,72 6F 6D,20 66 72 6F 6D,complete,complete,True,good,45,5091;45
+655,1,Ġd,on,Ġdon,20 64,6F 6E,20 64 6F 6E,complete,complete,True,good,45,1789;45
+656,1,Ġb,ut,Ġbut,20 62,75 74,20 62 75 74,complete,complete,True,good,45,1850;45
+657,1,ĠL,e,ĠLe,20 4C,65,20 4C 65,complete,complete,True,good,45,934;45
+658,1,ĠA,n,ĠAn,20 41,6E,20 41 6E,complete,complete,True,good,45,1288;45
+659,1,Ġ199,1,Ġ1991,20 31 39 39,31,20 31 39 39 31,complete,complete,True,good,45,112;45
+660,1,re,at,reat,72 65,61 74,72 65 61 74,complete,complete,True,good,45,3132;45
+661,1,p,e,pe,70,65,70 65,complete,complete,True,good,45,2229;45
+662,1,e,i,ei,65,69,65 69,complete,complete,True,good,45,166;45
+663,1,7,8,78,37,38,37 38,complete,complete,True,good,45,10;45
+664,1,3,00,300,33,30 30,33 30 30,complete,complete,True,good,45,2;45
+665,1,Ġa,r,Ġar,20 61,72,20 61 72,complete,complete,True,good,44,3595;44
+666,1,ĠW,P,ĠWP,20 57,50,20 57 50,complete,complete,True,good,44,43;44
+667,1,ĠA,b,ĠAb,20 41,62,20 41 62,complete,complete,True,good,44,377;44
+668,1,Ġ28,8,Ġ288,20 32 38,38,20 32 38 38,complete,complete,True,good,44,4;44
+669,1,um,an,uman,75 6D,61 6E,75 6D 61 6E,complete,complete,True,good,44,3799;44
+670,1,t,ion,tion,74,69 6F 6E,74 69 6F 6E,complete,complete,True,good,44,3709;44
+671,1,D,P,DP,44,50,44 50,complete,complete,True,good,44,405;44
+672,1,ĠR,e,ĠRe,20 52,65,20 52 65,complete,complete,True,good,43,1422;43
+673,1,ĠI,II,ĠIII,20 49,49 49,20 49 49 49,complete,complete,True,good,43,212;43
+674,1,Ġ9,8,Ġ98,20 39,38,20 39 38,complete,complete,True,good,43,81;43
+675,1,Ġ9,7,Ġ97,20 39,37,20 39 37,complete,complete,True,good,43,42;43
+676,1,Ġ,Q,ĠQ,20,51,20 51,complete,complete,True,good,43,517;43
+677,1,or,m,orm,6F 72,6D,6F 72 6D,complete,complete,True,good,43,4188;43
+678,1,l,ic,lic,6C,69 63,6C 69 63,complete,complete,True,good,43,3726;43
+679,1,k,ay,kay,6B,61 79,6B 61 79,complete,complete,True,good,43,726;43
+680,1,an,s,ans,61 6E,73,61 6E 73,complete,complete,True,good,43,1311;43
+681,1,an,k,ank,61 6E,6B,61 6E 6B,complete,complete,True,good,43,1490;43
+682,1,1,pos,1pos,31,70 6F 73,31 70 6F 73,complete,complete,True,good,43,0;43
+683,1,Ġw,ill,Ġwill,20 77,69 6C 6C,20 77 69 6C 6C,complete,complete,True,good,42,3884;42
+684,1,Ġh,im,Ġhim,20 68,69 6D,20 68 69 6D,complete,complete,True,good,42,1499;42
+685,1,ĠW,G,ĠWG,20 57,47,20 57 47,complete,complete,True,good,42,47;42
+686,1,ĠP,H,ĠPH,20 50,48,20 50 48,complete,complete,True,good,42,55;42
+687,1,ou,s,ous,6F 75,73,6F 75 73,complete,complete,True,good,42,3537;42
+688,1,l,a,la,6C,61,6C 61,complete,complete,True,good,42,922;42
+689,1,II,I,III,49 49,49,49 49 49,complete,complete,True,good,42,80;42
+690,1,9,8,98,39,38,39 38,complete,complete,True,good,42,3;42
+691,1,5,00,500,35,30 30,35 30 30,complete,complete,True,good,42,1;42
+692,1,15,0,150,31 35,30,31 35 30,complete,complete,True,good,42,2;42
+693,1,Ġin,t,Ġint,20 69 6E,74,20 69 6E 74,complete,complete,True,good,41,2832;41
+694,1,ĠL,aw,ĠLaw,20 4C,61 77,20 4C 61 77,complete,complete,True,good,41,561;41
+695,1,ĠA,r,ĠAr,20 41,72,20 41 72,complete,complete,True,good,41,1708;41
+696,1,Ġ9,3,Ġ93,20 39,33,20 39 33,complete,complete,True,good,41,40;41
+697,1,Ġ198,9,Ġ1989,20 31 39 38,39,20 31 39 38 39,complete,complete,True,good,41,70;41
+698,1,Ġ10,2,Ġ102,20 31 30,32,20 31 30 32,complete,complete,True,good,41,33;41
+699,1,ou,n,oun,6F 75,6E,6F 75 6E,complete,complete,True,good,41,9435;41
+700,1,ol,l,oll,6F 6C,6C,6F 6C 6C,complete,complete,True,good,41,2626;41
+701,1,o,ve,ove,6F,76 65,6F 76 65,complete,complete,True,good,41,1581;41
+702,1,m,in,min,6D,69 6E,6D 69 6E,complete,complete,True,good,41,2806;41
+703,1,i,o,io,69,6F,69 6F,complete,complete,True,good,41,532;41
+704,1,et,er,eter,65 74,65 72,65 74 65 72,complete,complete,True,good,41,705;41
+705,1,bord1shad0,3,bord1shad03,62 6F 72 64 31 73 68 61 64 30,33,62 6F 72 64 31 73 68 61 64 30 33,complete,complete,True,good,41,0;41
+706,1,bord1shad03,aH,bord1shad03aH,62 6F 72 64 31 73 68 61 64 30 33,61 48,62 6F 72 64 31 73 68 61 64 30 33 61 48,complete,complete,True,good,41,0;41
+707,1,ac,h,ach,61 63,68,61 63 68,complete,complete,True,good,41,1729;41
+708,1,a,f,af,61,66,61 66,complete,complete,True,good,41,821;41
+709,1,E,S,ES,45,53,45 53,complete,complete,True,good,41,263;41
+710,1,Ġl,a,Ġla,20 6C,61,20 6C 61,complete,complete,True,good,40,464;40
+711,1,Ġb,y,Ġby,20 62,79,20 62 79,complete,complete,True,good,40,9602;40
+712,1,ĠPH,P,ĠPHP,20 50 48,50,20 50 48 50,complete,complete,True,good,40,44;40
+713,1,ĠI,I,ĠII,20 49,49,20 49 49,complete,complete,True,good,40,389;40
+714,1,Ġ9,6,Ġ96,20 39,36,20 39 36,complete,complete,True,good,40,38;40
+715,1,Ġ19,73,Ġ1973,20 31 39,37 33,20 31 39 37 33,complete,complete,True,good,40,48;40
+716,1,Ġ1,19,Ġ119,20 31,31 39,20 31 31 39,complete,complete,True,good,40,36;40
+717,1,ow,n,own,6F 77,6E,6F 77 6E,complete,complete,True,good,40,1044;40
+718,1,os,t,ost,6F 73,74,6F 73 74,complete,complete,True,good,40,3096;40
+719,1,o,od,ood,6F,6F 64,6F 6F 64,complete,complete,True,good,40,1305;40
+720,1,it,t,itt,69 74,74,69 74 74,complete,complete,True,good,40,1868;40
+721,1,fs,12,fs12,66 73,31 32,66 73 31 32,complete,complete,True,good,40,0;40
+722,1,15,40,1540,31 35,34 30,31 35 34 30,complete,complete,True,good,40,0;40
+723,1,ĠP,R,ĠPR,20 50,52,20 50 52,complete,complete,True,good,39,127;39
+724,1,ĠD,e,ĠDe,20 44,65,20 44 65,complete,complete,True,good,39,276;39
+725,1,ĠC,omm,ĠComm,20 43,6F 6D 6D,20 43 6F 6D 6D,complete,complete,True,good,39,6037;39
+726,1,Ġ8,1,Ġ81,20 38,31,20 38 31,complete,complete,True,good,39,34;39
+727,1,s,p,sp,73,70,73 70,complete,complete,True,good,39,3537;39
+728,1,oc,k,ock,6F 63,6B,6F 63 6B,complete,complete,True,good,39,736;39
+729,1,h,ing,hing,68,69 6E 67,68 69 6E 67,complete,complete,True,good,39,1068;39
+730,1,bord1shad,1pos,bord1shad1pos,62 6F 72 64 31 73 68 61 64,31 70 6F 73,62 6F 72 64 31 73 68 61 64 31 70 6F 73,complete,complete,True,good,39,0;39
+731,1,a,il,ail,61,69 6C,61 69 6C,complete,complete,True,good,39,1751;39
+732,1,Ġs,ee,Ġsee,20 73,65 65,20 73 65 65,complete,complete,True,good,38,1923;38
+733,1,Ġg,ot,Ġgot,20 67,6F 74,20 67 6F 74,complete,complete,True,good,38,1021;38
+734,1,ĠT,hat,ĠThat,20 54,68 61 74,20 54 68 61 74,complete,complete,True,good,38,1326;38
+735,1,ĠR,ight,ĠRight,20 52,69 67 68 74,20 52 69 67 68 74,complete,complete,True,good,38,1329;38
+736,1,Ġ9,1,Ġ91,20 39,31,20 39 31,complete,complete,True,good,38,31;38
+737,1,Ã,³,Ã³,C3,B3,C3 B3,incomplete,incomplete,True,good,38,70;38
+738,1,on,na,onna,6F 6E,6E 61,6F 6E 6E 61,complete,complete,True,good,38,616;38
+739,1,o,y,oy,6F,79,6F 79,complete,complete,True,good,38,1701;38
+740,1,i,y,iy,69,79,69 79,complete,complete,True,good,38,75;38
+741,1,er,n,ern,65 72,6E,65 72 6E,complete,complete,True,good,38,2010;38
+742,1,e,ah,eah,65,61 68,65 61 68,complete,complete,True,good,38,774;38
+743,1,am,e,ame,61 6D,65,61 6D 65,complete,complete,True,good,38,1614;38
+744,1,a,j,aj,61,6A,61 6A,complete,complete,True,good,38,784;38
+745,1,ĠC,M,ĠCM,20 43,4D,20 43 4D,complete,complete,True,good,37,43;37
+746,1,ĠA,d,ĠAd,20 41,64,20 41 64,complete,complete,True,good,37,1194;37
+747,1,Ġ9,63,Ġ963,20 39,36 33,20 39 36 33,complete,complete,True,good,37,46;37
+748,1,Ġ8,4,Ġ84,20 38,34,20 38 34,complete,complete,True,good,37,31;37
+749,1,Ġ1,12,Ġ112,20 31,31 32,20 31 31 32,complete,complete,True,good,37,41;37
+750,1,Ġ,im,Ġim,20,69 6D,20 69 6D,complete,complete,True,good,37,6812;37
+751,1,Ġ,if,Ġif,20,69 66,20 69 66,complete,complete,True,good,37,1442;37
+752,1,Ġ,=,Ġ=,20,3D,20 3D,complete,complete,True,good,37,53;37
+753,1,s,o,so,73,6F,73 6F,complete,complete,True,good,37,3358;37
+754,1,re,t,ret,72 65,74,72 65 74,complete,complete,True,good,37,3320;37
+755,1,p,en,pen,70,65 6E,70 65 6E,complete,complete,True,good,37,1436;37
+756,1,i,en,ien,69,65 6E,69 65 6E,complete,complete,True,good,37,1478;37
+757,1,h,y,hy,68,79,68 79,complete,complete,True,good,37,1192;37
+758,1,g,h,gh,67,68,67 68,complete,complete,True,good,37,2915;37
+759,1,ent,ion,ention,65 6E 74,69 6F 6E,65 6E 74 69 6F 6E,complete,complete,True,good,37,3646;37
+760,1,O,P,OP,4F,50,4F 50,complete,complete,True,good,37,146;37
+761,1,A,R,AR,41,52,41 52,complete,complete,True,good,37,273;37
+762,1,8,8,88,38,38,38 38,complete,complete,True,good,37,10;37
+763,1,7,6,76,37,36,37 36,complete,complete,True,good,37,5;37
+764,1,Ġn,e,Ġne,20 6E,65,20 6E 65,complete,complete,True,good,36,3463;36
+765,1,Ġfn,ar,Ġfnar,20 66 6E,61 72,20 66 6E 61 72,complete,complete,True,good,36,0;36
+766,1,Ġfnar,ial,Ġfnarial,20 66 6E 61 72,69 61 6C,20 66 6E 61 72 69 61 6C,complete,complete,True,good,36,0;36
+767,1,Ġfnarial,bl,Ġfnarialbl,20 66 6E 61 72 69 61 6C,62 6C,20 66 6E 61 72 69 61 6C 62 6C,complete,complete,True,good,36,0;36
+768,1,Ġfnarialbl,ack,Ġfnarialblack,20 66 6E 61 72 69 61 6C 62 6C,61 63 6B,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B,complete,complete,True,good,36,0;36
+769,1,Ġfnarialblack,fs12,Ġfnarialblackfs12,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B,66 73 31 32,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32,complete,complete,True,good,36,0;36
+770,1,Ġfnarialblackfs12,bord1shad0,Ġfnarialblackfs12bord1shad0,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32,62 6F 72 64 31 73 68 61 64 30,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30,complete,complete,True,good,36,0;36
+771,1,Ġfnarialblackfs12bord1shad0,4aH00fscx,Ġfnarialblackfs12bord1shad04aH00fscx,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30,34 61 48 30 30 66 73 63 78,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30 34 61 48 30 30 66 73 63 78,complete,complete,True,good,36,0;36
+772,1,Ġfnarialblackfs12bord1shad04aH00fscx,90,Ġfnarialblackfs12bord1shad04aH00fscx90,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30 34 61 48 30 30 66 73 63 78,39 30,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30 34 61 48 30 30 66 73 63 78 39 30,complete,complete,True,good,36,0;36
+773,1,Ġfnarialblackfs12bord1shad04aH00fscx90,fscy,Ġfnarialblackfs12bord1shad04aH00fscx90fscy,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30 34 61 48 30 30 66 73 63 78 39 30,66 73 63 79,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30 34 61 48 30 30 66 73 63 78 39 30 66 73 63 79,complete,complete,True,good,36,0;36
+774,1,Ġfnarialblackfs12bord1shad04aH00fscx90fscy,110,Ġfnarialblackfs12bord1shad04aH00fscx90fscy110,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30 34 61 48 30 30 66 73 63 78 39 30 66 73 63 79,31 31 30,20 66 6E 61 72 69 61 6C 62 6C 61 63 6B 66 73 31 32 62 6F 72 64 31 73 68 61 64 30 34 61 48 30 30 66 73 63 78 39 30 66 73 63 79 31 31 30,complete,complete,True,good,36,0;36
+775,1,Ġan,y,Ġany,20 61 6E,79,20 61 6E 79,complete,complete,True,good,36,2162;36
+776,1,Ġab,out,Ġabout,20 61 62,6F 75 74,20 61 62 6F 75 74,complete,complete,True,good,36,1759;36
+777,1,Ġ],[,Ġ][,20 5D,5B,20 5D 5B,complete,complete,True,good,36,11;36
+778,1,ĠS,B,ĠSB,20 53,42,20 53 42,complete,complete,True,good,36,120;36
+779,1,ĠR,ep,ĠRep,20 52,65 70,20 52 65 70,complete,complete,True,good,36,2427;36
+780,1,Ġ9,00,Ġ900,20 39,30 30,20 39 30 30,complete,complete,True,good,36,42;36
+781,1,Ġ20,11,Ġ2011,20 32 30,31 31,20 32 30 31 31,complete,complete,True,good,36,43;36
+782,1,Ã,¡,Ã¡,C3,A1,C3 A1,incomplete,incomplete,True,good,36,92;36
+783,1,ver,s,vers,76 65 72,73,76 65 72 73,complete,complete,True,good,36,1406;36
+784,1,p,ec,pec,70,65 63,70 65 63,complete,complete,True,good,36,3225;36
+785,1,it,e,ite,69 74,65,69 74 65,complete,complete,True,good,36,1102;36
+786,1,d,f,df,64,66,64 66,complete,complete,True,good,36,50;36
+787,1,ar,l,arl,61 72,6C,61 72 6C,complete,complete,True,good,36,505;36
+788,1,S,im,Sim,53,69 6D,53 69 6D,complete,complete,True,good,36,0;36
+789,1,9,5,95,39,35,39 35,complete,complete,True,good,36,11;36
+790,1,17,0,170,31 37,30,31 37 30,complete,complete,True,good,36,0;36
+791,1,Ġp,l,Ġpl,20 70,6C,20 70 6C,complete,complete,True,good,35,3202;35
+792,1,ĠD,ec,ĠDec,20 44,65 63,20 44 65 63,complete,complete,True,good,35,1808;35
+793,1,ĠC,EDAW,ĠCEDAW,20 43,45 44 41 57,20 43 45 44 41 57,complete,complete,True,good,35,77;35
+794,1,Ġ.,",","Ġ.,",20 2E,2C,20 2E 2C,complete,complete,True,good,35,279;35
+795,1,Ġ,ve,Ġve,20,76 65,20 76 65,complete,complete,True,good,35,1056;35
+796,1,ur,n,urn,75 72,6E,75 72 6E,complete,complete,True,good,35,883;35
+797,1,uc,k,uck,75 63,6B,75 63 6B,complete,complete,True,good,35,877;35
+798,1,t,her,ther,74,68 65 72,74 68 65 72,complete,complete,True,good,35,5318;35
+799,1,it,ed,ited,69 74,65 64,69 74 65 64,complete,complete,True,good,35,6472;35
+800,1,id,e,ide,69 64,65,69 64 65,complete,complete,True,good,35,3253;35
+801,1,am,m,amm,61 6D,6D,61 6D 6D,complete,complete,True,good,35,3008;35
+802,1,a,i,ai,61,69,61 69,complete,complete,True,good,35,384;35
+803,1,D,B,DB,44,42,44 42,complete,complete,True,good,35,52;35
+804,1,B,E,BE,42,45,42 45,complete,complete,True,good,35,3;35
+805,1,7,4,74,37,34,37 34,complete,complete,True,good,35,12;35
+806,1,Ġthe,y,Ġthey,20 74 68 65,79,20 74 68 65 79,complete,complete,True,good,34,2369;34
+807,1,Ġp,df,Ġpdf,20 70,64 66,20 70 64 66,complete,complete,True,good,34,43;34
+808,1,Ġg,onna,Ġgonna,20 67,6F 6E 6E 61,20 67 6F 6E 6E 61,complete,complete,True,good,34,596;34
+809,1,Ġd,id,Ġdid,20 64,69 64,20 64 69 64,complete,complete,True,good,34,1311;34
+810,1,ĠO,h,ĠOh,20 4F,68,20 4F 68,complete,complete,True,good,34,852;34
+811,1,Ġ8,6,Ġ86,20 38,36,20 38 36,complete,complete,True,good,34,28;34
+812,1,u,k,uk,75,6B,75 6B,complete,complete,True,good,34,126;34
+813,1,res,s,ress,72 65 73,73,72 65 73 73,complete,complete,True,good,34,3916;34
+814,1,or,y,ory,6F 72,79,6F 72 79,complete,complete,True,good,34,2030;34
+815,1,fscy,6,fscy6,66 73 63 79,36,66 73 63 79 36,complete,complete,True,good,34,0;34
+816,1,fscy6,62,fscy662,66 73 63 79 36,36 32,66 73 63 79 36 36 32,complete,complete,True,good,34,0;34
+817,1,fscy662,cH,fscy662cH,66 73 63 79 36 36 32,63 48,66 73 63 79 36 36 32 63 48,complete,complete,True,good,34,0;34
+818,1,fscy662cH,FFFF,fscy662cHFFFF,66 73 63 79 36 36 32 63 48,46 46 46 46,66 73 63 79 36 36 32 63 48 46 46 46 46,complete,complete,True,good,34,0;34
+819,1,fscy662cHFFFF,FF,fscy662cHFFFFFF,66 73 63 79 36 36 32 63 48 46 46 46 46,46 46,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46,complete,complete,True,good,34,0;34
+820,1,fscy662cHFFFFFF,3,fscy662cHFFFFFF3,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46,33,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33,complete,complete,True,good,34,0;34
+821,1,fscy662cHFFFFFF3,cH,fscy662cHFFFFFF3cH,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33,63 48,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33 63 48,complete,complete,True,good,34,0;34
+822,1,fscy662cHFFFFFF3cH,8080,fscy662cHFFFFFF3cH8080,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33 63 48,38 30 38 30,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33 63 48 38 30 38 30,complete,complete,True,good,34,0;34
+823,1,fscy662cHFFFFFF3cH8080,80,fscy662cHFFFFFF3cH808080,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33 63 48 38 30 38 30,38 30,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33 63 48 38 30 38 30 38 30,complete,complete,True,good,34,0;34
+824,1,fs,22,fs22,66 73,32 32,66 73 32 32,complete,complete,True,good,34,0;34
+825,1,fs22,bord1shad03aH,fs22bord1shad03aH,66 73 32 32,62 6F 72 64 31 73 68 61 64 30 33 61 48,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48,complete,complete,True,good,34,0;34
+826,1,fs22bord1shad03aH,BE,fs22bord1shad03aHBE,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48,42 45,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48 42 45,complete,complete,True,good,34,0;34
+827,1,fs22bord1shad03aHBE,4aH00fscx,fs22bord1shad03aHBE4aH00fscx,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48 42 45,34 61 48 30 30 66 73 63 78,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48 42 45 34 61 48 30 30 66 73 63 78,complete,complete,True,good,34,0;34
+828,1,fs22bord1shad03aHBE4aH00fscx,67,fs22bord1shad03aHBE4aH00fscx67,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48 42 45 34 61 48 30 30 66 73 63 78,36 37,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48 42 45 34 61 48 30 30 66 73 63 78 36 37,complete,complete,True,good,34,0;34
+829,1,fs22bord1shad03aHBE4aH00fscx67,fscy662cHFFFFFF3cH808080,fs22bord1shad03aHBE4aH00fscx67fscy662cHFFFFFF3cH808080,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48 42 45 34 61 48 30 30 66 73 63 78 36 37,66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33 63 48 38 30 38 30 38 30,66 73 32 32 62 6F 72 64 31 73 68 61 64 30 33 61 48 42 45 34 61 48 30 30 66 73 63 78 36 37 66 73 63 79 36 36 32 63 48 46 46 46 46 46 46 33 63 48 38 30 38 30 38 30,complete,complete,True,good,34,0;34
+830,1,e,ar,ear,65,61 72,65 61 72,complete,complete,True,good,34,2612;34
+831,1,____,____,________,5F 5F 5F 5F,5F 5F 5F 5F,5F 5F 5F 5F 5F 5F 5F 5F,complete,complete,True,good,34,30;34
+832,1,8,9,89,38,39,38 39,complete,complete,True,good,34,9;34
+833,1,Ġth,ink,Ġthink,20 74 68,69 6E 6B,20 74 68 69 6E 6B,complete,complete,True,good,33,1085;33
+834,1,Ġs,ome,Ġsome,20 73,6F 6D 65,20 73 6F 6D 65,complete,complete,True,good,33,1598;33
+835,1,Ġp,p,Ġpp,20 70,70,20 70 70,complete,complete,True,good,33,90;33
+836,1,Ġhe,r,Ġher,20 68 65,72,20 68 65 72,complete,complete,True,good,33,1318;33
+837,1,Ġfn,Sim,ĠfnSim,20 66 6E,53 69 6D,20 66 6E 53 69 6D,complete,complete,True,good,33,0;33
+838,1,ĠfnSim,H,ĠfnSimH,20 66 6E 53 69 6D,48,20 66 6E 53 69 6D 48,complete,complete,True,good,33,0;33
+839,1,ĠfnSimH,ei,ĠfnSimHei,20 66 6E 53 69 6D 48,65 69,20 66 6E 53 69 6D 48 65 69,complete,complete,True,good,33,0;33
+840,1,Ġa,m,Ġam,20 61,6D,20 61 6D,complete,complete,True,good,33,2357;33
+841,1,ĠI,C,ĠIC,20 49,43,20 49 43,complete,complete,True,good,33,238;33
+842,1,ol,d,old,6F 6C,64,6F 6C 64,complete,complete,True,good,33,1275;33
+843,1,i,er,ier,69,65 72,69 65 72,complete,complete,True,good,33,500;33
+844,1,A,l,Al,41,6C,41 6C,complete,complete,True,good,33,1;33
+845,1,Ġc,all,Ġcall,20 63,61 6C 6C,20 63 61 6C 6C,complete,complete,True,good,32,1228;32
+846,1,ĠS,o,ĠSo,20 53,6F,20 53 6F,complete,complete,True,good,32,809;32
+847,1,ĠPR,ST,ĠPRST,20 50 52,53 54,20 50 52 53 54,complete,complete,True,good,32,37;32
+848,1,ĠF,CCC,ĠFCCC,20 46,43 43 43,20 46 43 43 43,complete,complete,True,good,32,64;32
+849,1,Ġ10,1,Ġ101,20 31 30,31,20 31 30 31,complete,complete,True,good,32,31;32
+850,1,Ġ1,11,Ġ111,20 31,31 31,20 31 31 31,complete,complete,True,good,32,37;32
+851,1,t,on,ton,74,6F 6E,74 6F 6E,complete,complete,True,good,32,231;32
+852,1,s,s,ss,73,73,73 73,complete,complete,True,good,32,3128;32
+853,1,j,ect,ject,6A,65 63 74,6A 65 63 74,complete,complete,True,good,32,2235;32
+854,1,ion,s,ions,69 6F 6E,73,69 6F 6E 73,complete,complete,True,good,32,6783;32
+855,1,b,e,be,62,65,62 65,complete,complete,True,good,32,728;32
+856,1,an,i,ani,61 6E,69,61 6E 69,complete,complete,True,good,32,195;32
+857,1,al,e,ale,61 6C,65,61 6C 65,complete,complete,True,good,32,589;32
+858,1,a,it,ait,61,69 74,61 69 74,complete,complete,True,good,32,774;32
+859,1,ĠM,s,ĠMs,20 4D,73,20 4D 73,complete,complete,True,good,31,360;31
+860,1,ĠL,a,ĠLa,20 4C,61,20 4C 61,complete,complete,True,good,31,139;31
+861,1,ĠCR,C,ĠCRC,20 43 52,43,20 43 52 43,complete,complete,True,good,31,45;31
+862,1,ĠCM,P,ĠCMP,20 43 4D,50,20 43 4D 50,complete,complete,True,good,31,29;31
+863,1,Ġ,@,Ġ@,20,40,20 40,complete,complete,True,good,31,35;31
+864,1,r,in,rin,72,69 6E,72 69 6E,complete,complete,True,good,31,1185;31
+865,1,on,t,ont,6F 6E,74,6F 6E 74,complete,complete,True,good,31,462;31
+866,1,ig,n,ign,69 67,6E,69 67 6E,complete,complete,True,good,31,2819;31
+867,1,f,orm,form,66,6F 72 6D,66 6F 72 6D,complete,complete,True,good,31,3553;31
+868,1,en,n,enn,65 6E,6E,65 6E 6E,complete,complete,True,good,31,447;31
+869,1,ad,e,ade,61 64,65,61 64 65,complete,complete,True,good,31,2978;31
+870,1,ac,t,act,61 63,74,61 63 74,complete,complete,True,good,31,3669;31
+871,1,ab,le,able,61 62,6C 65,61 62 6C 65,complete,complete,True,good,31,4086;31
+872,1,E,C,EC,45,43,45 43,complete,complete,True,good,31,149;31
+873,1,D,1,D1,44,31,44 31,complete,complete,True,good,31,0;31
+874,1,Ġw,ork,Ġwork,20 77,6F 72 6B,20 77 6F 72 6B,complete,complete,True,good,30,3369;30
+875,1,Ġhtm,l,Ġhtml,20 68 74 6D,6C,20 68 74 6D 6C,complete,complete,True,good,30,36;30
+876,1,ĠfnSimHei,bord1shad1pos,ĠfnSimHeibord1shad1pos,20 66 6E 53 69 6D 48 65 69,62 6F 72 64 31 73 68 61 64 31 70 6F 73,20 66 6E 53 69 6D 48 65 69 62 6F 72 64 31 73 68 61 64 31 70 6F 73,complete,complete,True,good,30,0;30
+877,1,ĠY,eah,ĠYeah,20 59,65 61 68,20 59 65 61 68,complete,complete,True,good,30,626;30
+878,1,ĠS,he,ĠShe,20 53,68 65,20 53 68 65,complete,complete,True,good,30,723;30
+879,1,ĠM,in,ĠMin,20 4D,69 6E,20 4D 69 6E,complete,complete,True,good,30,966;30
+880,1,Ġ2,50,Ġ250,20 32,35 30,20 32 35 30,complete,complete,True,good,30,46;30
+881,1,Ġ*,*,Ġ**,20 2A,2A,20 2A 2A,complete,complete,True,good,30,28;30
+882,1,Ġ),/,Ġ)/,20 29,2F,20 29 2F,complete,complete,True,good,30,36;30
+883,1,Ġ,ed,Ġed,20,65 64,20 65 64,complete,complete,True,good,30,1009;30
+884,1,Î,¤,Î¤,CE,A4,CE A4,incomplete,incomplete,True,good,30,3;30
+885,1,ou,nd,ound,6F 75,6E 64,6F 75 6E 64,complete,complete,True,good,30,1179;30
+886,1,oh,n,ohn,6F 68,6E,6F 68 6E,complete,complete,True,good,30,139;30
+887,1,ic,al,ical,69 63,61 6C,69 63 61 6C,complete,complete,True,good,30,3593;30
+888,1,h,an,han,68,61 6E,68 61 6E,complete,complete,True,good,30,1339;30
+889,1,8,3,83,38,33,38 33,complete,complete,True,good,30,13;30
+890,1,19,67,1967,31 39,36 37,31 39 36 37,complete,complete,True,good,30,0;30
+891,1,Ġn,o,Ġno,20 6E,6F,20 6E 6F,complete,complete,True,good,29,1862;29
+892,1,ĠUn,ited,ĠUnited,20 55 6E,69 74 65 64,20 55 6E 69 74 65 64,complete,complete,True,good,29,5648;29
+893,1,ĠS,ch,ĠSch,20 53,63 68,20 53 63 68,complete,complete,True,good,29,105;29
+894,1,ĠRight,s,ĠRights,20 52 69 67 68 74,73,20 52 69 67 68 74 73,complete,complete,True,good,29,1116;29
+895,1,ĠN,ot,ĠNot,20 4E,6F 74,20 4E 6F 74,complete,complete,True,good,29,816;29
+896,1,ĠI,NF,ĠINF,20 49,4E 46,20 49 4E 46,complete,complete,True,good,29,38;29
+897,1,ĠH,RC,ĠHRC,20 48,52 43,20 48 52 43,complete,complete,True,good,29,36;29
+898,1,Ġ26,1,Ġ261,20 32 36,31,20 32 36 31,complete,complete,True,good,29,33;29
+899,1,Ġ10,4,Ġ104,20 31 30,34,20 31 30 34,complete,complete,True,good,29,14;29
+900,1,Ġ,$,Ġ$,20,24,20 24,complete,complete,True,good,29,946;29
+901,1,Ã,Ń,ÃŃ,C3,AD,C3 AD,incomplete,incomplete,True,good,29,84;29
+902,1,w,ay,way,77,61 79,77 61 79,complete,complete,True,good,29,904;29
+903,1,v,ention,vention,76,65 6E 74 69 6F 6E,76 65 6E 74 69 6F 6E,complete,complete,True,good,29,2560;29
+904,1,re,e,ree,72 65,65,72 65 65,complete,complete,True,good,29,2503;29
+905,1,p,er,per,70,65 72,70 65 72,complete,complete,True,good,29,2417;29
+906,1,or,n,orn,6F 72,6E,6F 72 6E,complete,complete,True,good,29,484;29
+907,1,l,l,ll,6C,6C,6C 6C,complete,complete,True,good,29,470;29
+908,1,it,te,itte,69 74,74 65,69 74 74 65,complete,complete,True,good,29,3790;29
+909,1,ic,a,ica,69 63,61,69 63 61,complete,complete,True,good,29,602;29
+910,1,c,o,co,63,6F,63 6F,complete,complete,True,good,29,448;29
+911,1,an,n,ann,61 6E,6E,61 6E 6E,complete,complete,True,good,29,892;29
+912,1,N,A,NA,4E,41,4E 41,complete,complete,True,good,29,102;29
+913,1,12,0,120,31 32,30,31 32 30,complete,complete,True,good,29,0;29
+914,1,..,.,...,2E 2E,2E,2E 2E 2E,complete,complete,True,good,29,35;29
+915,1,Ġw,ould,Ġwould,20 77,6F 75 6C 64,20 77 6F 75 6C 64,complete,complete,True,good,28,3060;28
+916,1,Ġthe,m,Ġthem,20 74 68 65,6D,20 74 68 65 6D,complete,complete,True,good,28,2159;28
+917,1,Ġs,he,Ġshe,20 73,68 65,20 73 68 65,complete,complete,True,good,28,1059;28
+918,1,Ġne,ed,Ġneed,20 6E 65,65 64,20 6E 65 65 64,complete,complete,True,good,28,2443;28
+919,1,ĠTh,is,ĠThis,20 54 68,69 73,20 54 68 69 73,complete,complete,True,good,28,1479;28
+920,1,Ġ2,13,Ġ213,20 32,31 33,20 32 31 33,complete,complete,True,good,28,29;28
+921,1,Ġ12,8,Ġ128,20 31 32,38,20 31 32 38,complete,complete,True,good,28,34;28
+922,1,Ġ10,3,Ġ103,20 31 30,33,20 31 30 33,complete,complete,True,good,28,29;28
+923,1,Ġ1,20,Ġ120,20 31,32 30,20 31 32 30,complete,complete,True,good,28,44;28
+924,1,Ġ,und,Ġund,20,75 6E 64,20 75 6E 64,complete,complete,True,good,28,3461;28
+925,1,us,e,use,75 73,65,75 73 65,complete,complete,True,good,28,1426;28
+926,1,t,s,ts,74,73,74 73,complete,complete,True,good,28,1653;28
+927,1,oc,s,ocs,6F 63,73,6F 63 73,complete,complete,True,good,28,48;28
+928,1,in,al,inal,69 6E,61 6C,69 6E 61 6C,complete,complete,True,good,28,574;28
+929,1,im,e,ime,69 6D,65,69 6D 65,complete,complete,True,good,28,1999;28
+930,1,i,vers,ivers,69,76 65 72 73,69 76 65 72 73,complete,complete,True,good,28,776;28
+931,1,ht,tp,http,68 74,74 70,68 74 74 70,complete,complete,True,good,28,1;28
+932,1,f,e,fe,66,65,66 65,complete,complete,True,good,28,2904;28
+933,1,er,al,eral,65 72,61 6C,65 72 61 6C,complete,complete,True,good,28,5538;28
+934,1,S,P,SP,53,50,53 50,complete,complete,True,good,28,85;28
+935,1,9,1,91,39,31,39 31,complete,complete,True,good,28,14;28
+936,1,8,2,82,38,32,38 32,complete,complete,True,good,28,6;28
+937,1,7,2,72,37,32,37 32,complete,complete,True,good,28,7;28
+938,1,19,49,1949,31 39,34 39,31 39 34 39,complete,complete,True,good,28,0;28
+939,1,Ġt,r,Ġtr,20 74,72,20 74 72,complete,complete,True,good,27,1737;27
+940,1,Ġl,ook,Ġlook,20 6C,6F 6F 6B,20 6C 6F 6F 6B,complete,complete,True,good,27,802;27
+941,1,Ġh,ow,Ġhow,20 68,6F 77,20 68 6F 77,complete,complete,True,good,27,1182;27
+942,1,Ġe,very,Ġevery,20 65,76 65 72 79,20 65 76 65 72 79,complete,complete,True,good,27,794;27
+943,1,Ġd,es,Ġdes,20 64,65 73,20 64 65 73,complete,complete,True,good,27,1107;27
+944,1,ĠUN,EP,ĠUNEP,20 55 4E,45 50,20 55 4E 45 50,complete,complete,True,good,27,156;27
+945,1,ĠN,ew,ĠNew,20 4E,65 77,20 4E 65 77,complete,complete,True,good,27,621;27
+946,1,ĠM,oh,ĠMoh,20 4D,6F 68,20 4D 6F 68,complete,complete,True,good,27,52;27
+947,1,ĠH,ow,ĠHow,20 48,6F 77,20 48 6F 77,complete,complete,True,good,27,1078;27
+948,1,ĠF,ran,ĠFran,20 46,72 61 6E,20 46 72 61 6E,complete,complete,True,good,27,350;27
+949,1,ĠCO,P,ĠCOP,20 43 4F,50,20 43 4F 50,complete,complete,True,good,27,100;27
+950,1,Ġ1,16,Ġ116,20 31,31 36,20 31 31 36,complete,complete,True,good,27,29;27
+951,1,Ġ%,),Ġ%),20 25,29,20 25 29,complete,complete,True,good,27,23;27
+952,1,Ġ,~,Ġ~,20,7E,20 7E,complete,complete,True,good,27,14;27
+953,1,ro,w,row,72 6F,77,72 6F 77,complete,complete,True,good,27,1035;27
+954,1,re,d,red,72 65,64,72 65 64,complete,complete,True,good,27,2854;27
+955,1,os,e,ose,6F 73,65,6F 73 65,complete,complete,True,good,27,2689;27
+956,1,m,e,me,6D,65,6D 65,complete,complete,True,good,27,926;27
+957,1,il,e,ile,69 6C,65,69 6C 65,complete,complete,True,good,27,1504;27
+958,1,f,t,ft,66,74,66 74,complete,complete,True,good,27,2039;27
+959,1,e,en,een,65,65 6E,65 65 6E,complete,complete,True,good,27,1776;27
+960,1,as,h,ash,61 73,68,61 73 68,complete,complete,True,good,27,296;27
+961,1,ar,k,ark,61 72,6B,61 72 6B,complete,complete,True,good,27,1039;27
+962,1,a,x,ax,61,78,61 78,complete,complete,True,good,27,418;27
+963,1,N,G,NG,4E,47,4E 47,complete,complete,True,good,27,163;27
+964,1,C,h,Ch,43,68,43 68,complete,complete,True,good,27,8;27
+965,1,198,9,1989,31 39 38,39,31 39 38 39,complete,complete,True,good,27,0;27
+966,1,198,2,1982,31 39 38,32,31 39 38 32,complete,complete,True,good,27,0;27
+967,1,19,80,1980,31 39,38 30,31 39 38 30,complete,complete,True,good,27,1;27
+968,1,Ġm,ore,Ġmore,20 6D,6F 72 65,20 6D 6F 72 65,complete,complete,True,good,26,1943;26
+969,1,Ġg,u,Ġgu,20 67,75,20 67 75,complete,complete,True,good,26,1482;26
+970,1,Ġf,un,Ġfun,20 66,75 6E,20 66 75 6E,complete,complete,True,good,26,681;26
+971,1,ĠW,ell,ĠWell,20 57,65 6C 6C,20 57 65 6C 6C,complete,complete,True,good,26,656;26
+972,1,ĠP,art,ĠPart,20 50,61 72 74,20 50 61 72 74,complete,complete,True,good,26,1178;26
+973,1,ĠP,OP,ĠPOP,20 50,4F 50,20 50 4F 50,complete,complete,True,good,26,36;26
+974,1,ĠO,r,ĠOr,20 4F,72,20 4F 72,complete,complete,True,good,26,1118;26
+975,1,ĠI,s,ĠIs,20 49,73,20 49 73,complete,complete,True,good,26,1495;26
+976,1,ĠCon,vention,ĠConvention,20 43 6F 6E,76 65 6E 74 69 6F 6E,20 43 6F 6E 76 65 6E 74 69 6F 6E,complete,complete,True,good,26,1700;26
+977,1,ĠB,ut,ĠBut,20 42,75 74,20 42 75 74,complete,complete,True,good,26,1084;26
+978,1,Ġ198,8,Ġ1988,20 31 39 38,38,20 31 39 38 38,complete,complete,True,good,26,52;26
+979,1,Ġ1,15,Ġ115,20 31,31 35,20 31 31 35,complete,complete,True,good,26,33;26
+980,1,Ã,ª,Ãª,C3,AA,C3 AA,incomplete,incomplete,True,good,26,8;26
+981,1,ub,lic,ublic,75 62,6C 69 63,75 62 6C 69 63,complete,complete,True,good,26,2635;26
+982,1,l,i,li,6C,69,6C 69,complete,complete,True,good,26,268;26
+983,1,ing,s,ings,69 6E 67,73,69 6E 67 73,complete,complete,True,good,26,1764;26
+984,1,ig,h,igh,69 67,68,69 67 68,complete,complete,True,good,26,1481;26
+985,1,er,v,erv,65 72,76,65 72 76,complete,complete,True,good,26,2845;26
+986,1,c,on,con,63,6F 6E,63 6F 6E,complete,complete,True,good,26,2733;26
+987,1,al,k,alk,61 6C,6B,61 6C 6B,complete,complete,True,good,26,750;26
+988,1,9,3,93,39,33,39 33,complete,complete,True,good,26,9;26
+989,1,8,4,84,38,34,38 34,complete,complete,True,good,26,5;26
+990,1,8,00,800,38,30 30,38 30 30,complete,complete,True,good,26,2;26
+991,1,1,30,130,31,33 30,31 33 30,complete,complete,True,good,26,2;26
+992,1,1,12,112,31,31 32,31 31 32,complete,complete,True,good,26,0;26
+993,1,Ġw,ho,Ġwho,20 77,68 6F,20 77 68 6F,complete,complete,True,good,25,1740;25
+994,1,Ġs,up,Ġsup,20 73,75 70,20 73 75 70,complete,complete,True,good,25,3044;25
+995,1,Ġs,c,Ġsc,20 73,63,20 73 63,complete,complete,True,good,25,1373;25
+996,1,Ġs,ay,Ġsay,20 73,61 79,20 73 61 79,complete,complete,True,good,25,833;25
+997,1,Ġd,own,Ġdown,20 64,6F 77 6E,20 64 6F 77 6E,complete,complete,True,good,25,736;25
+998,1,ĠXX,V,ĠXXV,20 58 58,56,20 58 58 56,complete,complete,True,good,25,30;25
+999,1,ĠX,V,ĠXV,20 58,56,20 58 56,complete,complete,True,good,25,51;25

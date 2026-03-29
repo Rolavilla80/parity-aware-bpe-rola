@@ -1,0 +1,1001 @@
+step,selected_language_index,left_symbol,right_symbol,merged_symbol,left_hex,right_hex,merged_hex,left_state,right_state,merged_state,merged_valid_utf8,category,selected_frequency,frequency_vector
+0,0,Ġ,t,Ġt,20,74,20 74,complete,complete,complete,True,good,242758,242758;2176
+1,0,h,e,he,68,65,68 65,complete,complete,complete,True,good,173623,173623;1581
+2,0,Ġ,a,Ġa,20,61,20 61,complete,complete,complete,True,good,166670,166670;2229
+3,0,o,n,on,6F,6E,6F 6E,complete,complete,complete,True,good,157398,157398;1858
+4,0,i,n,in,69,6E,69 6E,complete,complete,complete,True,good,151782,151782;1907
+5,0,Ġt,he,Ġthe,20 74,68 65,20 74 68 65,complete,complete,complete,True,good,129918,129918;805
+6,0,r,e,re,72,65,72 65,complete,complete,complete,True,good,123685,123685;1477
+7,0,a,t,at,61,74,61 74,complete,complete,complete,True,good,112883,112883;1259
+8,0,Ġ,o,Ġo,20,6F,20 6F,complete,complete,complete,True,good,103322,103322;964
+9,0,e,n,en,65,6E,65 6E,complete,complete,complete,True,good,95109,95109;1145
+10,0,e,r,er,65,72,65 72,complete,complete,complete,True,good,90976,90976;1441
+11,0,Ġ,",","Ġ,",20,2C,20 2C,complete,complete,complete,True,good,89957,89957;4513
+12,0,Ġ,.,Ġ.,20,2E,20 2E,complete,complete,complete,True,good,88249,88249;22055
+13,0,i,on,ion,69,6F 6E,69 6F 6E,complete,complete,complete,True,good,85796,85796;611
+14,0,Ġ,s,Ġs,20,73,20 73,complete,complete,complete,True,good,83570,83570;1223
+15,1,ä,¸,ä¸,E4,B8,E4 B8,prefix,invalid,prefix,False,recoverable,124644,0;124644
+16,0,i,t,it,69,74,69 74,complete,complete,complete,True,good,81288,81288;893
+17,0,Ġo,f,Ġof,20 6F,66,20 6F 66,complete,complete,complete,True,good,76299,76299;492
+18,1,ï,¼,ï¼,EF,BC,EF BC,prefix,invalid,prefix,False,recoverable,101693,0;101693
+19,0,n,d,nd,6E,64,6E 64,complete,complete,complete,True,good,72151,72151;770
+20,1,Ġ,ï¼,Ġï¼,20,EF BC,20 EF BC,complete,prefix,prefix,False,recoverable,97546,0;97546
+21,0,o,r,or,6F,72,6F 72,complete,complete,complete,True,good,70734,70734;1154
+22,1,ç,ļ,çļ,E7,9A,E7 9A,prefix,invalid,prefix,False,recoverable,95585,0;95585
+23,0,e,s,es,65,73,65 73,complete,complete,complete,True,good,68741,68741;828
+24,0,Ġ,c,Ġc,20,63,20 63,complete,complete,complete,True,good,67719,67719;1221
+25,1,çļ,Ħ,çļĦ,E7 9A,84,E7 9A 84,prefix,invalid,complete,True,good,95330,0;95330
+26,0,a,l,al,61,6C,61 6C,complete,complete,complete,True,good,65613,65613;1026
+27,1,ä,º,äº,E4,BA,E4 BA,prefix,invalid,prefix,False,recoverable,81887,0;81887
+28,0,Ġ,p,Ġp,20,70,20 70,complete,complete,complete,True,good,63438,63438;701
+29,1,Ġ,å,Ġå,20,E5,20 E5,complete,prefix,prefix,False,recoverable,77772,0;77772
+30,0,e,d,ed,65,64,65 64,complete,complete,complete,True,good,62615,62615;566
+31,1,ã,Ģ,ãĢ,E3,80,E3 80,prefix,invalid,prefix,False,recoverable,76846,0;76846
+32,0,Ġ,w,Ġw,20,77,20 77,complete,complete,complete,True,good,62302,62302;914
+33,0,Ġ,in,Ġin,20,69 6E,20 69 6E,complete,complete,complete,True,good,59940,59940;413
+34,1,Ġ,ãĢ,ĠãĢ,20,E3 80,20 E3 80,complete,prefix,prefix,False,recoverable,72517,0;72517
+35,0,i,s,is,69,73,69 73,complete,complete,complete,True,good,58069,58069;911
+36,1,Ġï¼,Į,Ġï¼Į,20 EF BC,8C,20 EF BC 8C,prefix,invalid,complete,True,good,68020,0;68020
+37,0,o,u,ou,6F,75,6F 75,complete,complete,complete,True,good,57050,57050;1115
+38,1,ä,»,ä»,E4,BB,E4 BB,prefix,invalid,prefix,False,recoverable,65531,0;65531
+39,0,a,n,an,61,6E,61 6E,complete,complete,complete,True,good,56218,56218;1288
+40,1,æ,ľ,æľ,E6,9C,E6 9C,prefix,invalid,prefix,False,recoverable,53760,0;53760
+41,0,Ġa,nd,Ġand,20 61,6E 64,20 61 6E 64,complete,complete,complete,True,good,54438,54438;366
+42,1,å,ħ,åħ,E5,85,E5 85,prefix,invalid,prefix,False,recoverable,50805,0;50805
+43,0,Ġt,o,Ġto,20 74,6F,20 74 6F,complete,complete,complete,True,good,52937,52937;459
+44,1,å,ı,åı,E5,8F,E5 8F,prefix,invalid,prefix,False,recoverable,47921,0;47921
+45,0,Ġ,f,Ġf,20,66,20 66,complete,complete,complete,True,good,51972,51972;830
+46,1,ä,½,ä½,E4,BD,E4 BD,prefix,invalid,prefix,False,recoverable,45047,0;45047
+47,0,in,g,ing,69 6E,67,69 6E 67,complete,complete,complete,True,good,51945,51945;596
+48,1,Ġ,æ,Ġæ,20,E6,20 E6,complete,prefix,prefix,False,recoverable,44827,0;44827
+49,0,Ġ,b,Ġb,20,62,20 62,complete,complete,complete,True,good,48643,48643;1262
+50,1,å,®,å®,E5,AE,E5 AE,prefix,invalid,prefix,False,recoverable,43859,0;43859
+51,0,a,r,ar,61,72,61 72,complete,complete,complete,True,good,48270,48270;1093
+52,1,è,¿,è¿,E8,BF,E8 BF,prefix,invalid,prefix,False,recoverable,43640,0;43640
+53,0,en,t,ent,65 6E,74,65 6E 74,complete,complete,complete,True,good,47841,47841;397
+54,1,å,Ī,åĪ,E5,88,E5 88,prefix,invalid,prefix,False,recoverable,43425,0;43425
+55,0,at,ion,ation,61 74,69 6F 6E,61 74 69 6F 6E,complete,complete,complete,True,good,45812,45812;315
+56,1,ĠãĢ,Ĥ,ĠãĢĤ,20 E3 80,82,20 E3 80 82,prefix,invalid,complete,True,good,41973,0;41973
+57,0,i,c,ic,69,63,69 63,complete,complete,complete,True,good,45465,45465;615
+58,1,ä,¼,ä¼,E4,BC,E4 BC,prefix,invalid,prefix,False,recoverable,39862,0;39862
+59,1,è,®,è®,E8,AE,E8 AE,prefix,invalid,prefix,False,recoverable,39575,0;39575
+60,0,Ġ,m,Ġm,20,6D,20 6D,complete,complete,complete,True,good,45124,45124;726
+61,1,å,Ľ,åĽ,E5,9B,E5 9B,prefix,invalid,prefix,False,recoverable,38806,0;38806
+62,0,Ġ,re,Ġre,20,72 65,20 72 65,complete,complete,complete,True,good,44120,44120;293
+63,1,å,Ĳ,åĲ,E5,90,E5 90,prefix,invalid,prefix,False,recoverable,37285,0;37285
+64,0,Ġ,d,Ġd,20,64,20 64,complete,complete,complete,True,good,43301,43301;1009
+65,1,å,Ĭ,åĬ,E5,8A,E5 8A,prefix,invalid,prefix,False,recoverable,36716,0;36716
+66,0,o,m,om,6F,6D,6F 6D,complete,complete,complete,True,good,40062,40062;543
+67,1,ç,»,ç»,E7,BB,E7 BB,prefix,invalid,prefix,False,recoverable,35266,0;35266
+68,0,e,c,ec,65,63,65 63,complete,complete,complete,True,good,34934,34934;386
+69,1,å,Ĵ,åĴ,E5,92,E5 92,prefix,invalid,prefix,False,recoverable,34662,0;34662
+70,0,l,e,le,6C,65,6C 65,complete,complete,complete,True,good,32615,32615;487
+71,1,åĴ,Į,åĴĮ,E5 92,8C,E5 92 8C,prefix,invalid,complete,True,good,33865,0;33865
+72,0,Ġt,h,Ġth,20 74,68,20 74 68,complete,complete,complete,True,good,32545,32545;429
+73,0,Ġ,I,ĠI,20,49,20 49,complete,complete,complete,True,good,31945,31945;1196
+74,1,å,ľ,åľ,E5,9C,E5 9C,prefix,invalid,prefix,False,recoverable,30931,0;30931
+75,0,v,e,ve,76,65,76 65,complete,complete,complete,True,good,30118,30118;325
+76,1,ä¼,ļ,ä¼ļ,E4 BC,9A,E4 BC 9A,prefix,invalid,complete,True,good,29804,0;29804
+77,0,r,o,ro,72,6F,72 6F,complete,complete,complete,True,good,30014,30014;399
+78,1,å,¤,å¤,E5,A4,E5 A4,prefix,invalid,prefix,False,recoverable,29492,0;29492
+79,0,Ġ,C,ĠC,20,43,20 43,complete,complete,complete,True,good,28913,28913;2226
+80,1,åĽ,½,åĽ½,E5 9B,BD,E5 9B BD,prefix,invalid,complete,True,good,28606,0;28606
+81,0,Ġ,h,Ġh,20,68,20 68,complete,complete,complete,True,good,28630,28630;625
+82,1,æ,ĸ,æĸ,E6,96,E6 96,prefix,invalid,prefix,False,recoverable,27510,0;27510
+83,0,Ġ,S,ĠS,20,53,20 53,complete,complete,complete,True,good,28186,28186;1669
+84,1,æ,ĺ,æĺ,E6,98,E6 98,prefix,invalid,prefix,False,recoverable,27125,0;27125
+85,0,a,s,as,61,73,61 73,complete,complete,complete,True,good,27749,27749;513
+86,1,è,¯,è¯,E8,AF,E8 AF,prefix,invalid,prefix,False,recoverable,24464,0;24464
+87,0,Ġ,A,ĠA,20,41,20 41,complete,complete,complete,True,good,27498,27498;3023
+88,1,ä,¹,ä¹,E4,B9,E4 B9,prefix,invalid,prefix,False,recoverable,24197,0;24197
+89,0,i,l,il,69,6C,69 6C,complete,complete,complete,True,good,26558,26558;462
+90,1,æ,Ī,æĪ,E6,88,E6 88,prefix,invalid,prefix,False,recoverable,23377,0;23377
+91,0,m,ent,ment,6D,65 6E 74,6D 65 6E 74,complete,complete,complete,True,good,25999,25999;177
+92,1,ä¸,Ģ,ä¸Ģ,E4 B8,80,E4 B8 80,prefix,invalid,complete,True,good,23306,0;23306
+93,0,Ġ,T,ĠT,20,54,20 54,complete,complete,complete,True,good,25948,25948;628
+94,1,è,¡,è¡,E8,A1,E8 A1,prefix,invalid,prefix,False,recoverable,23095,0;23095
+95,0,Ġ,n,Ġn,20,6E,20 6E,complete,complete,complete,True,good,25654,25654;325
+96,1,å,ĳ,åĳ,E5,91,E5 91,prefix,invalid,prefix,False,recoverable,22609,0;22609
+97,0,Ġ,-,Ġ-,20,2D,20 2D,complete,complete,complete,True,good,25581,25581;8567
+98,1,Ġ,ç,Ġç,20,E7,20 E7,complete,prefix,prefix,False,recoverable,22429,0;22429
+99,0,Ġ,',Ġ',20,27,20 27,complete,complete,complete,True,good,23094,23094;928
+100,1,å,¹,å¹,E5,B9,E5 B9,prefix,invalid,prefix,False,recoverable,22119,0;22119
+101,0,s,t,st,73,74,73 74,complete,complete,complete,True,good,23079,23079;357
+102,1,æľ,ī,æľī,E6 9C,89,E6 9C 89,prefix,invalid,complete,True,good,21306,0;21306
+103,0,Ġ,e,Ġe,20,65,20 65,complete,complete,complete,True,good,22390,22390;443
+104,1,æ,Ŀ,æĿ,E6,9D,E6 9D,prefix,invalid,prefix,False,recoverable,21043,0;21043
+105,0,c,e,ce,63,65,63 65,complete,complete,complete,True,good,21161,21161;205
+106,1,å,°,å°,E5,B0,E5 B0,prefix,invalid,prefix,False,recoverable,20496,0;20496
+107,0,Ġf,or,Ġfor,20 66,6F 72,20 66 6F 72,complete,complete,complete,True,good,21059,21059;169
+108,1,å,Ĩ,åĨ,E5,86,E5 86,prefix,invalid,prefix,False,recoverable,20214,0;20214
+109,0,r,a,ra,72,61,72 61,complete,complete,complete,True,good,20292,20292;319
+110,1,æĺ,¯,æĺ¯,E6 98,AF,E6 98 AF,prefix,invalid,complete,True,good,20008,0;20008
+111,0,Ġ,on,Ġon,20,6F 6E,20 6F 6E,complete,complete,complete,True,good,20205,20205;290
+112,1,åľ,¨,åľ¨,E5 9C,A8,E5 9C A8,prefix,invalid,complete,True,good,19931,0;19931
+113,0,u,t,ut,75,74,75 74,complete,complete,complete,True,good,19983,19983;317
+114,1,ĠãĢ,ģ,ĠãĢģ,20 E3 80,81,20 E3 80 81,prefix,invalid,complete,True,good,19855,0;19855
+115,0,r,i,ri,72,69,72 69,complete,complete,complete,True,good,19619,19619;359
+116,1,äº,º,äºº,E4 BA,BA,E4 BA BA,prefix,invalid,complete,True,good,19665,0;19665
+117,0,Ġ,l,Ġl,20,6C,20 6C,complete,complete,complete,True,good,19557,19557;460
+118,1,ç,Ķ,çĶ,E7,94,E7 94,prefix,invalid,prefix,False,recoverable,19262,0;19262
+119,0,Ġ,g,Ġg,20,67,20 67,complete,complete,complete,True,good,19550,19550;504
+120,1,æ,ī,æī,E6,89,E6 89,prefix,invalid,prefix,False,recoverable,18954,0;18954
+121,0,Ġb,e,Ġbe,20 62,65,20 62 65,complete,complete,complete,True,good,19399,19399;204
+122,1,äº,Ĩ,äºĨ,E4 BA,86,E4 BA 86,prefix,invalid,complete,True,good,18213,0;18213
+123,0,o,l,ol,6F,6C,6F 6C,complete,complete,complete,True,good,18669,18669;355
+124,1,é,ĩ,éĩ,E9,87,E9 87,prefix,invalid,prefix,False,recoverable,17626,0;17626
+125,0,Ġth,at,Ġthat,20 74 68,61 74,20 74 68 61 74,complete,complete,complete,True,good,17697,17697;190
+126,1,ä¸,į,ä¸į,E4 B8,8D,E4 B8 8D,prefix,invalid,complete,True,good,17443,0;17443
+127,0,Ġc,on,Ġcon,20 63,6F 6E,20 63 6F 6E,complete,complete,complete,True,good,17460,17460;81
+128,1,æ,Ĺ,æĹ,E6,97,E6 97,prefix,invalid,prefix,False,recoverable,17297,0;17297
+129,0,i,d,id,69,64,69 64,complete,complete,complete,True,good,17303,17303;286
+130,1,è®,®,è®®,E8 AE,AE,E8 AE AE,prefix,invalid,complete,True,good,16634,0;16634
+131,0,l,y,ly,6C,79,6C 79,complete,complete,complete,True,good,17285,17285;192
+132,1,Ġæ,Ī,ĠæĪ,20 E6,88,20 E6 88,prefix,invalid,prefix,False,recoverable,16330,0;16330
+133,0,i,m,im,69,6D,69 6D,complete,complete,complete,True,good,16776,16776;291
+134,1,è¿,Ļ,è¿Ļ,E8 BF,99,E8 BF 99,prefix,invalid,complete,True,good,16071,0;16071
+135,1,å,º,åº,E5,BA,E5 BA,prefix,invalid,prefix,False,recoverable,16017,0;16017
+136,0,Ġ,y,Ġy,20,79,20 79,complete,complete,complete,True,good,16523,16523;481
+137,0,u,r,ur,75,72,75 72,complete,complete,complete,True,good,16427,16427;251
+138,1,å,į,åį,E5,8D,E5 8D,prefix,invalid,prefix,False,recoverable,15535,0;15535
+139,0,o,t,ot,6F,74,6F 74,complete,complete,complete,True,good,16303,16303;297
+140,1,Ġ,è,Ġè,20,E8,20 E8,complete,prefix,prefix,False,recoverable,15375,0;15375
+141,0,Ġp,ro,Ġpro,20 70,72 6F,20 70 72 6F,complete,complete,complete,True,good,16146,16146;54
+142,1,è¡,Į,è¡Į,E8 A1,8C,E8 A1 8C,prefix,invalid,complete,True,good,15271,0;15271
+143,0,e,t,et,65,74,65 74,complete,complete,complete,True,good,16124,16124;356
+144,1,æ,Ķ,æĶ,E6,94,E6 94,prefix,invalid,prefix,False,recoverable,14989,0;14989
+145,0,Ġ,2,Ġ2,20,32,20 32,complete,complete,complete,True,good,15917,15917;9664
+146,1,ĠæĪ,ĳ,ĠæĪĳ,20 E6 88,91,20 E6 88 91,prefix,invalid,complete,True,good,14970,0;14970
+147,0,c,t,ct,63,74,63 74,complete,complete,complete,True,good,15471,15471;138
+148,1,ä½,ł,ä½ł,E4 BD,A0,E4 BD A0,prefix,invalid,complete,True,good,14782,0;14782
+149,1,æ,³,æ³,E6,B3,E6 B3,prefix,invalid,prefix,False,recoverable,14210,0;14210
+150,0,Ġ,it,Ġit,20,69 74,20 69 74,complete,complete,complete,True,good,15188,15188;166
+151,0,ĠT,he,ĠThe,20 54,68 65,20 54 68 65,complete,complete,complete,True,good,14744,14744;158
+152,1,æ,Ń,æŃ,E6,AD,E6 AD,prefix,invalid,prefix,False,recoverable,14057,0;14057
+153,0,s,e,se,73,65,73 65,complete,complete,complete,True,good,14604,14604;182
+154,1,ä»,¥,ä»¥,E4 BB,A5,E4 BB A5,prefix,invalid,complete,True,good,14044,0;14044
+155,0,Ġ,1,Ġ1,20,31,20 31,complete,complete,complete,True,good,14489,14489;9022
+156,1,é,Ĺ,éĹ,E9,97,E9 97,prefix,invalid,prefix,False,recoverable,13964,0;13964
+157,0,Ġ,P,ĠP,20,50,20 50,complete,complete,complete,True,good,14274,14274;789
+158,1,ä¸,º,ä¸º,E4 B8,BA,E4 B8 BA,prefix,invalid,complete,True,good,13939,0;13939
+159,0,o,p,op,6F,70,6F 70,complete,complete,complete,True,good,14183,14183;144
+160,1,å,ĩ,åĩ,E5,87,E5 87,prefix,invalid,prefix,False,recoverable,13855,0;13855
+161,0,Ġ,M,ĠM,20,4D,20 4D,complete,complete,complete,True,good,14136,14136;899
+162,0,g,h,gh,67,68,67 68,complete,complete,complete,True,good,14136,14136;245
+163,1,é,¢,é¢,E9,A2,E9 A2,prefix,invalid,prefix,False,recoverable,13759,0;13759
+164,0,t,er,ter,74,65 72,74 65 72,complete,complete,complete,True,good,14135,14135;238
+165,1,åĳ,ĺ,åĳĺ,E5 91,98,E5 91 98,prefix,invalid,complete,True,good,13733,0;13733
+166,0,v,er,ver,76,65 72,76 65 72,complete,complete,complete,True,good,13878,13878;189
+167,1,é,Ļ,éĻ,E9,99,E9 99,prefix,invalid,prefix,False,recoverable,13730,0;13730
+168,0,Ġ,(,Ġ(,20,28,20 28,complete,complete,complete,True,good,13774,13774;6473
+169,0,Ġy,ou,Ġyou,20 79,6F 75,20 79 6F 75,complete,complete,complete,True,good,13710,13710;421
+170,1,å,¾,å¾,E5,BE,E5 BE,prefix,invalid,prefix,False,recoverable,13711,0;13711
+171,0,or,t,ort,6F 72,74,6F 72 74,complete,complete,complete,True,good,13536,13536;144
+172,1,å,¯,å¯,E5,AF,E5 AF,prefix,invalid,prefix,False,recoverable,13581,0;13581
+173,0,Ġ,),Ġ),20,29,20 29,complete,complete,complete,True,good,13307,13307;7036
+174,0,Ġ,is,Ġis,20,69 73,20 69 73,complete,complete,complete,True,good,13197,13197;162
+175,1,å,·,å·,E5,B7,E5 B7,prefix,invalid,prefix,False,recoverable,13394,0;13394
+176,0,Ġ,u,Ġu,20,75,20 75,complete,complete,complete,True,good,13055,13055;358
+177,1,å¹,´,å¹´,E5 B9,B4,E5 B9 B4,prefix,invalid,complete,True,good,13211,0;13211
+178,0,Ġa,s,Ġas,20 61,73,20 61 73,complete,complete,complete,True,good,13025,13025;90
+179,1,å,±,å±,E5,B1,E5 B1,prefix,invalid,prefix,False,recoverable,13165,0;13165
+180,0,Ġ,N,ĠN,20,4E,20 4E,complete,complete,complete,True,good,12825,12825;458
+181,1,ä,¿,ä¿,E4,BF,E4 BF,prefix,invalid,prefix,False,recoverable,13082,0;13082
+182,0,u,l,ul,75,6C,75 6C,complete,complete,complete,True,good,12754,12754;186
+183,1,æ,Ĭ,æĬ,E6,8A,E6 8A,prefix,invalid,prefix,False,recoverable,13022,0;13022
+184,0,Ġ,G,ĠG,20,47,20 47,complete,complete,complete,True,good,12751,12751;409
+185,1,ä»,¬,ä»¬,E4 BB,AC,E4 BB AC,prefix,invalid,complete,True,good,12882,0;12882
+186,0,i,r,ir,69,72,69 72,complete,complete,complete,True,good,12743,12743;189
+187,1,é,Ģ,éĢ,E9,80,E9 80,prefix,invalid,prefix,False,recoverable,12580,0;12580
+188,0,it,h,ith,69 74,68,69 74 68,complete,complete,complete,True,good,12464,12464;105
+189,1,ç,Ľ,çĽ,E7,9B,E7 9B,prefix,invalid,prefix,False,recoverable,12549,0;12549
+190,0,ation,s,ations,61 74 69 6F 6E,73,61 74 69 6F 6E 73,complete,complete,complete,True,good,12277,12277;57
+191,1,è,§,è§,E8,A7,E8 A7,prefix,invalid,prefix,False,recoverable,12313,0;12313
+192,0,Ġ,W,ĠW,20,57,20 57,complete,complete,complete,True,good,12239,12239;473
+193,1,ä½,ľ,ä½ľ,E4 BD,9C,E4 BD 9C,prefix,invalid,complete,True,good,12247,0;12247
+194,0,ec,t,ect,65 63,74,65 63 74,complete,complete,complete,True,good,12187,12187;133
+195,1,ä»,ĸ,ä»ĸ,E4 BB,96,E4 BB 96,prefix,invalid,complete,True,good,12211,0;12211
+196,0,o,w,ow,6F,77,6F 77,complete,complete,complete,True,good,12079,12079;266
+197,1,å,¼,å¼,E5,BC,E5 BC,prefix,invalid,prefix,False,recoverable,12127,0;12127
+198,0,at,e,ate,61 74,65,61 74 65,complete,complete,complete,True,good,12043,12043;105
+199,1,é,Ŀ,éĿ,E9,9D,E9 9D,prefix,invalid,prefix,False,recoverable,12072,0;12072
+200,0,a,d,ad,61,64,61 64,complete,complete,complete,True,good,12010,12010;447
+201,0,om,m,omm,6F 6D,6D,6F 6D 6D,complete,complete,complete,True,good,11751,11751;84
+202,1,0,0,00,30,30,30 30,complete,complete,complete,True,good,11857,11651;11857
+203,1,ç,º,çº,E7,BA,E7 BA,prefix,invalid,prefix,False,recoverable,11740,0;11740
+204,1,è,´,è´,E8,B4,E8 B4,prefix,invalid,prefix,False,recoverable,11590,0;11590
+205,0,Ġw,ith,Ġwith,20 77,69 74 68,20 77 69 74 68,complete,complete,complete,True,good,11669,11669;83
+206,0,l,d,ld,6C,64,6C 64,complete,complete,complete,True,good,11585,11585;140
+207,1,è,¦,è¦,E8,A6,E8 A6,prefix,invalid,prefix,False,recoverable,11449,0;11449
+208,0,Ġ,/,Ġ/,20,2F,20 2F,complete,complete,complete,True,good,11583,11583;11358
+209,0,re,s,res,72 65,73,72 65 73,complete,complete,complete,True,good,11557,11557;111
+210,1,æ,Ģ,æĢ,E6,80,E6 80,prefix,invalid,prefix,False,recoverable,11196,0;11196
+211,1,è¦,ģ,è¦ģ,E8 A6,81,E8 A6 81,prefix,invalid,complete,True,good,11131,0;11131
+212,0,Ġs,t,Ġst,20 73,74,20 73 74,complete,complete,complete,True,good,11443,11443;149
+213,1,æ³,ķ,æ³ķ,E6 B3,95,E6 B3 95,prefix,invalid,complete,True,good,11023,0;11023
+214,0,Ġd,e,Ġde,20 64,65,20 64 65,complete,complete,complete,True,good,11401,11401;169
+215,0,l,l,ll,6C,6C,6C 6C,complete,complete,complete,True,good,11232,11232;239
+216,1,æ,ĭ,æĭ,E6,8B,E6 8B,prefix,invalid,prefix,False,recoverable,11005,0;11005
+217,0,it,y,ity,69 74,79,69 74 79,complete,complete,complete,True,good,11221,11221;99
+218,1,ä¸,ª,ä¸ª,E4 B8,AA,E4 B8 AA,prefix,invalid,complete,True,good,10871,0;10871
+219,0,Ġ,U,ĠU,20,55,20 55,complete,complete,complete,True,good,11180,11180;205
+220,1,è,µ,èµ,E8,B5,E8 B5,prefix,invalid,prefix,False,recoverable,10640,0;10640
+221,0,Ġ,R,ĠR,20,52,20 52,complete,complete,complete,True,good,11102,11102;578
+222,1,åĲ,Ī,åĲĪ,E5 90,88,E5 90 88,prefix,invalid,complete,True,good,10511,0;10511
+223,0,Ġs,u,Ġsu,20 73,75,20 73 75,complete,complete,complete,True,good,11063,11063;99
+224,1,ç,§,ç§,E7,A7,E7 A7,prefix,invalid,prefix,False,recoverable,10465,0;10465
+225,0,Ġ,D,ĠD,20,44,20 44,complete,complete,complete,True,good,10943,10943;722
+226,1,æ,ł,æł,E6,A0,E6 A0,prefix,invalid,prefix,False,recoverable,10354,0;10354
+227,0,i,es,ies,69,65 73,69 65 73,complete,complete,complete,True,good,10912,10912;64
+228,1,æĸ,¹,æĸ¹,E6 96,B9,E6 96 B9,prefix,invalid,complete,True,good,10341,0;10341
+229,0,es,s,ess,65 73,73,65 73 73,complete,complete,complete,True,good,10257,10257;107
+230,1,åı,ĳ,åıĳ,E5 8F,91,E5 8F 91,prefix,invalid,complete,True,good,10308,0;10308
+231,0,Ġ,?,Ġ?,20,3F,20 3F,complete,complete,complete,True,good,10189,10189;2923
+232,0,p,ort,port,70,6F 72 74,70 6F 72 74,complete,complete,complete,True,good,10179,10179;92
+233,1,å®,ļ,å®ļ,E5 AE,9A,E5 AE 9A,prefix,invalid,complete,True,good,10280,0;10280
+234,0,Ġ,H,ĠH,20,48,20 48,complete,complete,complete,True,good,9993,9993;577
+235,1,å,¸,å¸,E5,B8,E5 B8,prefix,invalid,prefix,False,recoverable,10266,0;10266
+236,1,ä¸,Ń,ä¸Ń,E4 B8,AD,E4 B8 AD,prefix,invalid,complete,True,good,10262,0;10262
+237,0,he,r,her,68 65,72,68 65 72,complete,complete,complete,True,good,9902,9902;164
+238,0,Ġw,e,Ġwe,20 77,65,20 77 65,complete,complete,complete,True,good,9892,9892;137
+239,1,å,¥,å¥,E5,A5,E5 A5,prefix,invalid,prefix,False,recoverable,10234,0;10234
+240,0,e,m,em,65,6D,65 6D,complete,complete,complete,True,good,9736,9736;122
+241,1,æ,ı,æı,E6,8F,E6 8F,prefix,invalid,prefix,False,recoverable,10210,0;10210
+242,0,a,y,ay,61,79,61 79,complete,complete,complete,True,good,9695,9695;316
+243,1,æ,ŀ,æŀ,E6,9E,E6 9E,prefix,invalid,prefix,False,recoverable,10164,0;10164
+244,0,i,ve,ive,69,76 65,69 76 65,complete,complete,complete,True,good,9621,9621;70
+245,1,æ,ķ,æķ,E6,95,E6 95,prefix,invalid,prefix,False,recoverable,10105,0;10105
+246,0,Ġb,y,Ġby,20 62,79,20 62 79,complete,complete,complete,True,good,9602,9602;40
+247,1,äº,İ,äºİ,E4 BA,8E,E4 BA 8E,prefix,invalid,complete,True,good,10085,0;10085
+248,0,gh,t,ght,67 68,74,67 68 74,complete,complete,complete,True,good,9513,9513;172
+249,1,å®,¶,å®¶,E5 AE,B6,E5 AE B6,prefix,invalid,complete,True,good,9875,0;9875
+250,0,a,b,ab,61,62,61 62,complete,complete,complete,True,good,9511,9511;201
+251,1,å,Į,åĮ,E5,8C,E5 8C,prefix,invalid,prefix,False,recoverable,9721,0;9721
+252,0,Ġw,h,Ġwh,20 77,68,20 77 68,complete,complete,complete,True,good,9471,9471;103
+253,1,äº,ĭ,äºĭ,E4 BA,8B,E4 BA 8B,prefix,invalid,complete,True,good,9616,0;9616
+254,0,n,t,nt,6E,74,6E 74,complete,complete,complete,True,good,9464,9464;109
+255,1,æĪ,ĳ,æĪĳ,E6 88,91,E6 88 91,prefix,invalid,complete,True,good,9499,0;9499
+256,0,i,al,ial,69,61 6C,69 61 6C,complete,complete,complete,True,good,9368,9368;110
+257,1,é,ĥ,éĥ,E9,83,E9 83,prefix,invalid,prefix,False,recoverable,9395,0;9395
+258,0,c,h,ch,63,68,63 68,complete,complete,complete,True,good,9337,9337;241
+259,1,é,¡,é¡,E9,A1,E9 A1,prefix,invalid,prefix,False,recoverable,9310,0;9310
+260,0,f,f,ff,66,66,66 66,complete,complete,complete,True,good,9304,9304;100
+261,1,åħ,³,åħ³,E5 85,B3,E5 85 B3,prefix,invalid,complete,True,good,9239,0;9239
+262,0,ar,t,art,61 72,74,61 72 74,complete,complete,complete,True,good,9225,9225;122
+263,1,ä,¾,ä¾,E4,BE,E4 BE,prefix,invalid,prefix,False,recoverable,9231,0;9231
+264,0,es,t,est,65 73,74,65 73 74,complete,complete,complete,True,good,9120,9120;115
+265,1,è,ĥ,èĥ,E8,83,E8 83,prefix,invalid,prefix,False,recoverable,9199,0;9199
+266,0,u,m,um,75,6D,75 6D,complete,complete,complete,True,good,9096,9096;159
+267,1,â,Ģ,âĢ,E2,80,E2 80,prefix,invalid,prefix,False,recoverable,9066,7313;9066
+268,1,ç,Ĳ,çĲ,E7,90,E7 90,prefix,invalid,prefix,False,recoverable,9022,0;9022
+269,0,Ġo,r,Ġor,20 6F,72,20 6F 72,complete,complete,complete,True,good,8989,8989;207
+270,1,æ,Į,æĮ,E6,8C,E6 8C,prefix,invalid,prefix,False,recoverable,9008,0;9008
+271,0,Ġre,s,Ġres,20 72 65,73,20 72 65 73,complete,complete,complete,True,good,8873,8873;30
+272,1,åĪ,°,åĪ°,E5 88,B0,E5 88 B0,prefix,invalid,complete,True,good,8933,0;8933
+273,0,Ġa,n,Ġan,20 61,6E,20 61 6E,complete,complete,complete,True,good,8753,8753;95
+274,1,å¯,¹,å¯¹,E5 AF,B9,E5 AF B9,prefix,invalid,complete,True,good,8909,0;8909
+275,0,Ġ2,00,Ġ200,20 32,30 30,20 32 30 30,complete,complete,complete,True,good,8741,8741;4754
+276,0,Ġ,E,ĠE,20,45,20 45,complete,complete,complete,True,good,8701,8701;900
+277,1,ç,¬,ç¬,E7,AC,E7 AC,prefix,invalid,prefix,False,recoverable,8893,0;8893
+278,0,o,c,oc,6F,63,6F 63,complete,complete,complete,True,good,8589,8589;169
+279,1,è,Ģ,èĢ,E8,80,E8 80,prefix,invalid,prefix,False,recoverable,8801,0;8801
+280,0,Ġ,O,ĠO,20,4F,20 4F,complete,complete,complete,True,good,8537,8537;346
+281,0,Ġ,B,ĠB,20,42,20 42,complete,complete,complete,True,good,8483,8483;766
+282,1,æ,´,æ´,E6,B4,E6 B4,prefix,invalid,prefix,False,recoverable,8774,0;8774
+283,0,er,s,ers,65 72,73,65 72 73,complete,complete,complete,True,good,8343,8343;80
+284,1,ç,ī,çī,E7,89,E7 89,prefix,invalid,prefix,False,recoverable,8723,0;8723
+285,0,en,d,end,65 6E,64,65 6E 64,complete,complete,complete,True,good,8302,8302;89
+286,1,åħ,¶,åħ¶,E5 85,B6,E5 85 B6,prefix,invalid,complete,True,good,8406,0;8406
+287,0,is,t,ist,69 73,74,69 73 74,complete,complete,complete,True,good,8274,8274;133
+288,1,æı,Ĳ,æıĲ,E6 8F,90,E6 8F 90,prefix,invalid,complete,True,good,8356,0;8356
+289,0,ation,al,ational,61 74 69 6F 6E,61 6C,61 74 69 6F 6E 61 6C,complete,complete,complete,True,good,8256,8256;88
+290,1,å,Ń,åŃ,E5,AD,E5 AD,prefix,invalid,prefix,False,recoverable,8331,0;8331
+291,0,Ġe,x,Ġex,20 65,78,20 65 78,complete,complete,complete,True,good,8161,8161;52
+292,1,å,Ł,åŁ,E5,9F,E5 9F,prefix,invalid,prefix,False,recoverable,8300,0;8300
+293,0,a,in,ain,61,69 6E,61 69 6E,complete,complete,complete,True,good,8154,8154;77
+294,1,è,ģ,èģ,E8,81,E8 81,prefix,invalid,prefix,False,recoverable,8261,0;8261
+295,0,q,u,qu,71,75,71 75,complete,complete,complete,True,good,8068,8068;123
+296,1,è¿,Ľ,è¿Ľ,E8 BF,9B,E8 BF 9B,prefix,invalid,complete,True,good,8144,0;8144
+297,0,Ġ,F,ĠF,20,46,20 46,complete,complete,complete,True,good,8065,8065;420
+298,1,ç¬,¬,ç¬¬,E7 AC,AC,E7 AC AC,prefix,invalid,complete,True,good,8143,0;8143
+299,0,Ġm,e,Ġme,20 6D,65,20 6D 65,complete,complete,complete,True,good,7934,7934;128
+300,0,i,v,iv,69,76,69 76,complete,complete,complete,True,good,7922,7922;71
+301,1,ç,«,ç«,E7,AB,E7 AB,prefix,invalid,prefix,False,recoverable,8023,0;8023
+302,0,i,f,if,69,66,69 66,complete,complete,complete,True,good,7840,7840;129
+303,1,èĥ,½,èĥ½,E8 83,BD,E8 83 BD,prefix,invalid,complete,True,good,7889,0;7889
+304,0,Ġa,re,Ġare,20 61,72 65,20 61 72 65,complete,complete,complete,True,good,7783,7783;69
+305,1,åĩ,º,åĩº,E5 87,BA,E5 87 BA,prefix,invalid,complete,True,good,7851,0;7851
+306,0,Ġ,he,Ġhe,20,68 65,20 68 65,complete,complete,complete,True,good,7753,7753;163
+307,1,æī,Ģ,æīĢ,E6 89,80,E6 89 80,prefix,invalid,complete,True,good,7815,0;7815
+308,0,il,l,ill,69 6C,6C,69 6C 6C,complete,complete,complete,True,good,7704,7704;143
+309,1,ä¸,»,ä¸»,E4 B8,BB,E4 B8 BB,prefix,invalid,complete,True,good,7787,0;7787
+310,0,e,e,ee,65,65,65 65,complete,complete,complete,True,good,7651,7651;142
+311,1,åľ,°,åľ°,E5 9C,B0,E5 9C B0,prefix,invalid,complete,True,good,7615,0;7615
+312,0,ion,s,ions,69 6F 6E,73,69 6F 6E 73,complete,complete,complete,True,good,7642,7642;40
+313,1,æ,¬,æ¬,E6,AC,E6 AC,prefix,invalid,prefix,False,recoverable,7596,0;7596
+314,0,ou,ld,ould,6F 75,6C 64,6F 75 6C 64,complete,complete,complete,True,good,7640,7640;76
+315,1,åĬ,¨,åĬ¨,E5 8A,A8,E5 8A A8,prefix,invalid,complete,True,good,7579,0;7579
+316,0,ve,l,vel,76 65,6C,76 65 6C,complete,complete,complete,True,good,7553,7553;36
+317,1,å¤,§,å¤§,E5 A4,A7,E5 A4 A7,prefix,invalid,complete,True,good,7563,0;7563
+318,0,a,m,am,61,6D,61 6D,complete,complete,complete,True,good,7475,7475;378
+319,1,Ġ,ä½ł,Ġä½ł,20,E4 BD A0,20 E4 BD A0,complete,complete,complete,True,good,7549,0;7549
+320,0,Ġn,ot,Ġnot,20 6E,6F 74,20 6E 6F 74,complete,complete,complete,True,good,7375,7375;71
+321,1,æ,ĥ,æĥ,E6,83,E6 83,prefix,invalid,prefix,False,recoverable,7537,0;7537
+322,0,Ġh,a,Ġha,20 68,61,20 68 61,complete,complete,complete,True,good,7365,7365;127
+323,1,æ,°,æ°,E6,B0,E6 B0,prefix,invalid,prefix,False,recoverable,7532,0;7532
+324,0,a,k,ak,61,6B,61 6B,complete,complete,complete,True,good,7312,7312;189
+325,1,å,¿,å¿,E5,BF,E5 BF,prefix,invalid,prefix,False,recoverable,7378,0;7378
+326,0,an,t,ant,61 6E,74,61 6E 74,complete,complete,complete,True,good,7302,7302;137
+327,1,çĲ,Ĩ,çĲĨ,E7 90,86,E7 90 86,prefix,invalid,complete,True,good,7376,0;7376
+328,0,u,d,ud,75,64,75 64,complete,complete,complete,True,good,7256,7256;77
+329,1,å,§,å§,E5,A7,E5 A7,prefix,invalid,prefix,False,recoverable,7347,0;7347
+330,0,i,z,iz,69,7A,69 7A,complete,complete,complete,True,good,7221,7221;64
+331,1,è,ĩ,èĩ,E8,87,E8 87,prefix,invalid,prefix,False,recoverable,7236,0;7236
+332,0,o,d,od,6F,64,6F 64,complete,complete,complete,True,good,7213,7213;186
+333,1,å,½,å½,E5,BD,E5 BD,prefix,invalid,prefix,False,recoverable,7222,0;7222
+334,0,Ġa,t,Ġat,20 61,74,20 61 74,complete,complete,complete,True,good,7199,7199;74
+335,1,æ,İ,æİ,E6,8E,E6 8E,prefix,invalid,prefix,False,recoverable,7220,0;7220
+336,0,ĠS,t,ĠSt,20 53,74,20 53 74,complete,complete,complete,True,good,6981,6981;105
+337,1,æ,Ħ,æĦ,E6,84,E6 84,prefix,invalid,prefix,False,recoverable,7214,0;7214
+338,0,ĠI,n,ĠIn,20 49,6E,20 49 6E,complete,complete,complete,True,good,6975,6975;146
+339,0,r,om,rom,72,6F 6D,72 6F 6D,complete,complete,complete,True,good,6938,6938;68
+340,1,åı,Ĭ,åıĬ,E5 8F,8A,E5 8F 8A,prefix,invalid,complete,True,good,7191,0;7191
+341,0,n,it,nit,6E,69 74,6E 69 74,complete,complete,complete,True,good,6864,6864;41
+342,1,é,ģ,éģ,E9,81,E9 81,prefix,invalid,prefix,False,recoverable,7149,0;7149
+343,0,i,g,ig,69,67,69 67,complete,complete,complete,True,good,6845,6845;132
+344,1,ç,İ,çİ,E7,8E,E7 8E,prefix,invalid,prefix,False,recoverable,7137,0;7137
+345,0,Ġ,im,Ġim,20,69 6D,20 69 6D,complete,complete,complete,True,good,6812,6812;37
+346,1,æĶ,¿,æĶ¿,E6 94,BF,E6 94 BF,prefix,invalid,complete,True,good,7089,0;7089
+347,0,g,e,ge,67,65,67 65,complete,complete,complete,True,good,6802,6802;138
+348,1,åĨ,³,åĨ³,E5 86,B3,E5 86 B3,prefix,invalid,complete,True,good,6986,0;6986
+349,0,Ġ,âĢ,ĠâĢ,20,E2 80,20 E2 80,complete,prefix,prefix,False,recoverable,6755,6755;6756
+350,0,Ġw,as,Ġwas,20 77,61 73,20 77 61 73,complete,complete,complete,True,good,6712,6712;78
+351,0,a,c,ac,61,63,61 63,complete,complete,complete,True,good,6642,6642;186
+352,1,ä¸,Ĭ,ä¸Ĭ,E4 B8,8A,E4 B8 8A,prefix,invalid,complete,True,good,6915,0;6915
+353,0,Ġ,v,Ġv,20,76,20 76,complete,complete,complete,True,good,6599,6599;95
+354,1,Ġ,é,Ġé,20,E9,20 E9,complete,prefix,prefix,False,recoverable,6888,0;6888
+355,0,Ġ,L,ĠL,20,4C,20 4C,complete,complete,complete,True,good,6594,6594;877
+356,1,æĿ,ĥ,æĿĥ,E6 9D,83,E6 9D 83,prefix,invalid,complete,True,good,6879,0;6879
+357,0,p,p,pp,70,70,70 70,complete,complete,complete,True,good,6552,6552;93
+358,1,ç»,Ħ,ç»Ħ,E7 BB,84,E7 BB 84,prefix,invalid,complete,True,good,6856,0;6856
+359,0,Ġs,h,Ġsh,20 73,68,20 73 68,complete,complete,complete,True,good,6481,6481;73
+360,1,æ,¡,æ¡,E6,A1,E6 A1,prefix,invalid,prefix,False,recoverable,6851,0;6851
+361,0,ar,y,ary,61 72,79,61 72 79,complete,complete,complete,True,good,6435,6435;72
+362,0,o,s,os,6F,73,6F 73,complete,complete,complete,True,good,6320,6320;258
+363,1,åı,¯,åı¯,E5 8F,AF,E5 8F AF,prefix,invalid,complete,True,good,6791,0;6791
+364,1,çĶ,Ł,çĶŁ,E7 94,9F,E7 94 9F,prefix,invalid,complete,True,good,6785,0;6785
+365,0,ter,n,tern,74 65 72,6E,74 65 72 6E,complete,complete,complete,True,good,6300,6300;91
+366,1,çĶ,¨,çĶ¨,E7 94,A8,E7 94 A8,prefix,invalid,complete,True,good,6754,0;6754
+367,0,Ġa,d,Ġad,20 61,64,20 61 64,complete,complete,complete,True,good,6222,6222;26
+368,0,u,s,us,75,73,75 73,complete,complete,complete,True,good,6200,6200;150
+369,1,æĿ,¥,æĿ¥,E6 9D,A5,E6 9D A5,prefix,invalid,complete,True,good,6740,0;6740
+370,0,an,ce,ance,61 6E,63 65,61 6E 63 65,complete,complete,complete,True,good,6189,6189;22
+371,1,éĹ,®,éĹ®,E9 97,AE,E9 97 AE,prefix,invalid,complete,True,good,6715,0;6715
+372,0,a,nd,and,61,6E 64,61 6E 64,complete,complete,complete,True,good,6144,6144;146
+373,1,ä¸,İ,ä¸İ,E4 B8,8E,E4 B8 8E,prefix,invalid,complete,True,good,6692,0;6692
+374,0,Ġit,s,Ġits,20 69 74,73,20 69 74 73,complete,complete,complete,True,good,6074,6074;3
+375,1,æ,²,æ²,E6,B2,E6 B2,prefix,invalid,prefix,False,recoverable,6677,0;6677
+376,0,u,n,un,75,6E,75 6E,complete,complete,complete,True,good,6056,6056;171
+377,1,æĪ,Ĳ,æĪĲ,E6 88,90,E6 88 90,prefix,invalid,complete,True,good,6650,0;6650
+378,0,Ġ,le,Ġle,20,6C 65,20 6C 65,complete,complete,complete,True,good,6055,6055;90
+379,1,åĳĺ,ä¼ļ,åĳĺä¼ļ,E5 91 98,E4 BC 9A,E5 91 98 E4 BC 9A,complete,complete,complete,True,good,6643,0;6643
+380,0,u,st,ust,75,73 74,75 73 74,complete,complete,complete,True,good,6051,6051;144
+381,0,t,h,th,74,68,74 68,complete,complete,complete,True,good,6045,6045;78
+382,1,é¢,ĺ,é¢ĺ,E9 A2,98,E9 A2 98,prefix,invalid,complete,True,good,6602,0;6602
+383,0,ĠC,omm,ĠComm,20 43,6F 6D 6D,20 43 6F 6D 6D,complete,complete,complete,True,good,6037,6037;39
+384,1,çº,¦,çº¦,E7 BA,A6,E7 BA A6,prefix,invalid,complete,True,good,6598,0;6598
+385,0,Ġp,art,Ġpart,20 70,61 72 74,20 70 61 72 74,complete,complete,complete,True,good,6005,6005;14
+386,1,å±,ķ,å±ķ,E5 B1,95,E5 B1 95,prefix,invalid,complete,True,good,6598,0;6598
+387,0,Ġ,Y,ĠY,20,59,20 59,complete,complete,complete,True,good,5988,5988;262
+388,1,è,°,è°,E8,B0,E8 B0,prefix,invalid,prefix,False,recoverable,6518,0;6518
+389,0,i,e,ie,69,65,69 65,complete,complete,complete,True,good,5967,5967;196
+390,1,åĽ½,å®¶,åĽ½å®¶,E5 9B BD,E5 AE B6,E5 9B BD E5 AE B6,complete,complete,complete,True,good,6511,0;6511
+391,0,ou,nt,ount,6F 75,6E 74,6F 75 6E 74,complete,complete,complete,True,good,5864,5864;22
+392,0,Ġcon,t,Ġcont,20 63 6F 6E,74,20 63 6F 6E 74,complete,complete,complete,True,good,5857,5857;16
+393,1,Ġå,ľ,Ġåľ,20 E5,9C,20 E5 9C,prefix,invalid,prefix,False,recoverable,6509,0;6509
+394,0,o,re,ore,6F,72 65,6F 72 65,complete,complete,complete,True,good,5850,5850;85
+395,1,åĪ,©,åĪ©,E5 88,A9,E5 88 A9,prefix,invalid,complete,True,good,6465,0;6465
+396,0,Ġn,e,Ġne,20 6E,65,20 6E 65,complete,complete,complete,True,good,5830,5830;83
+397,1,è¿,ĩ,è¿ĩ,E8 BF,87,E8 BF 87,prefix,invalid,complete,True,good,6447,0;6447
+398,0,ĠU,nit,ĠUnit,20 55,6E 69 74,20 55 6E 69 74,complete,complete,complete,True,good,5826,5826;29
+399,1,ä¼ļ,è®®,ä¼ļè®®,E4 BC 9A,E8 AE AE,E4 BC 9A E8 AE AE,complete,complete,complete,True,good,6437,0;6437
+400,0,vel,op,velop,76 65 6C,6F 70,76 65 6C 6F 70,complete,complete,complete,True,good,5819,5819;21
+401,1,ç»,ı,ç»ı,E7 BB,8F,E7 BB 8F,prefix,invalid,complete,True,good,6376,0;6376
+402,0,Ġ,;,Ġ;,20,3B,20 3B,complete,complete,complete,True,good,5742,5742;135
+403,1,æĹ,¥,æĹ¥,E6 97,A5,E6 97 A5,prefix,invalid,complete,True,good,6351,0;6351
+404,0,it,t,itt,69 74,74,69 74 74,complete,complete,complete,True,good,5658,5658;69
+405,1,èģ,Ķ,èģĶ,E8 81,94,E8 81 94,prefix,invalid,complete,True,good,6345,0;6345
+406,0,b,er,ber,62,65 72,62 65 72,complete,complete,complete,True,good,5654,5654;94
+407,1,å·,¥,å·¥,E5 B7,A5,E5 B7 A5,prefix,invalid,complete,True,good,6295,0;6295
+408,0,Ġa,l,Ġal,20 61,6C,20 61 6C,complete,complete,complete,True,good,5649,5649;63
+409,1,æľ,Ī,æľĪ,E6 9C,88,E6 9C 88,prefix,invalid,complete,True,good,6231,0;6231
+410,0,ĠUnit,ed,ĠUnited,20 55 6E 69 74,65 64,20 55 6E 69 74 65 64,complete,complete,complete,True,good,5648,5648;29
+411,0,Ġha,ve,Ġhave,20 68 61,76 65,20 68 61 76 65,complete,complete,complete,True,good,5643,5643;77
+412,1,åħ,¨,åħ¨,E5 85,A8,E5 85 A8,prefix,invalid,complete,True,good,6189,0;6189
+413,0,Ġin,c,Ġinc,20 69 6E,63,20 69 6E 63,complete,complete,complete,True,good,5624,5624;9
+414,1,åĬ,Ľ,åĬĽ,E5 8A,9B,E5 8A 9B,prefix,invalid,complete,True,good,6181,0;6181
+415,0,ou,r,our,6F 75,72,6F 75 72,complete,complete,complete,True,good,5604,5604;107
+416,1,æ,µ,æµ,E6,B5,E6 B5,prefix,invalid,prefix,False,recoverable,6171,0;6171
+417,0,re,n,ren,72 65,6E,72 65 6E,complete,complete,complete,True,good,5527,5527;72
+418,1,æĹ,¶,æĹ¶,E6 97,B6,E6 97 B6,prefix,invalid,complete,True,good,6039,0;6039
+419,0,Ġc,om,Ġcom,20 63,6F 6D,20 63 6F 6D,complete,complete,complete,True,good,5457,5457;90
+420,1,å,İ,åİ,E5,8E,E5 8E,prefix,invalid,prefix,False,recoverable,6038,0;6038
+421,0,t,her,ther,74,68 65 72,74 68 65 72,complete,complete,complete,True,good,5449,5449;37
+422,1,éĥ,¨,éĥ¨,E9 83,A8,E9 83 A8,prefix,invalid,complete,True,good,6028,0;6028
+423,0,Ġ,en,Ġen,20,65 6E,20 65 6E,complete,complete,complete,True,good,5414,5414;52
+424,1,è¡,¨,è¡¨,E8 A1,A8,E8 A1 A8,prefix,invalid,complete,True,good,6007,0;6007
+425,0,Ġth,is,Ġthis,20 74 68,69 73,20 74 68 69 73,complete,complete,complete,True,good,5405,5405;104
+426,0,or,k,ork,6F 72,6B,6F 72 6B,complete,complete,complete,True,good,5402,5402;59
+427,1,äº,Ľ,äºĽ,E4 BA,9B,E4 BA 9B,prefix,invalid,complete,True,good,5996,0;5996
+428,0,Ġa,ll,Ġall,20 61,6C 6C,20 61 6C 6C,complete,complete,complete,True,good,5332,5332;47
+429,1,éĻ,ħ,éĻħ,E9 99,85,E9 99 85,prefix,invalid,complete,True,good,5972,0;5972
+430,0,Ġa,g,Ġag,20 61,67,20 61 67,complete,complete,complete,True,good,5320,5320;48
+431,1,åĬ,ł,åĬł,E5 8A,A0,E5 8A A0,prefix,invalid,complete,True,good,5957,0;5957
+432,0,er,al,eral,65 72,61 6C,65 72 61 6C,complete,complete,complete,True,good,5311,5311;28
+433,0,u,re,ure,75,72 65,75 72 65,complete,complete,complete,True,good,5299,5299;72
+434,1,å,¦,å¦,E5,A6,E5 A6,prefix,invalid,prefix,False,recoverable,5925,0;5925
+435,1,Ġ,è¿Ļ,Ġè¿Ļ,20,E8 BF 99,20 E8 BF 99,complete,complete,complete,True,good,5918,0;5918
+436,0,r,ou,rou,72,6F 75,72 6F 75,complete,complete,complete,True,good,5283,5283;55
+437,0,at,ed,ated,61 74,65 64,61 74 65 64,complete,complete,complete,True,good,5108,5108;28
+438,1,ç,½,ç½,E7,BD,E7 BD,prefix,invalid,prefix,False,recoverable,5878,0;5878
+439,0,Ġ,!,Ġ!,20,21,20 21,complete,complete,complete,True,good,5098,5098;1235
+440,1,Ġåľ,¨,Ġåľ¨,20 E5 9C,A8,20 E5 9C A8,prefix,invalid,complete,True,good,5846,0;5846
+441,0,e,l,el,65,6C,65 6C,complete,complete,complete,True,good,5098,5098;243
+442,1,ç,Ń,çŃ,E7,AD,E7 AD,prefix,invalid,prefix,False,recoverable,5840,0;5840
+443,0,Ġf,rom,Ġfrom,20 66,72 6F 6D,20 66 72 6F 6D,complete,complete,complete,True,good,5091,5091;45
+444,0,al,l,all,61 6C,6C,61 6C 6C,complete,complete,complete,True,good,5028,5028;95
+445,1,éĿ,¢,éĿ¢,E9 9D,A2,E9 9D A2,prefix,invalid,complete,True,good,5819,0;5819
+446,0,o,ver,over,6F,76 65 72,6F 76 65 72,complete,complete,complete,True,good,5024,5024;30
+447,1,éĩ,į,éĩį,E9 87,8D,E9 87 8D,prefix,invalid,complete,True,good,5785,0;5785
+448,0,c,c,cc,63,63,63 63,complete,complete,complete,True,good,5022,5022;71
+449,1,Ġå,ħ,Ġåħ,20 E5,85,20 E5 85,prefix,invalid,prefix,False,recoverable,5754,0;5754
+450,0,tern,ational,ternational,74 65 72 6E,61 74 69 6F 6E 61 6C,74 65 72 6E 61 74 69 6F 6E 61 6C,complete,complete,complete,True,good,5012,5012;71
+451,1,Ġï¼,Ľ,Ġï¼Ľ,20 EF BC,9B,20 EF BC 9B,prefix,invalid,complete,True,good,5744,0;5744
+452,0,ar,d,ard,61 72,64,61 72 64,complete,complete,complete,True,good,4971,4971;94
+453,0,a,p,ap,61,70,61 70,complete,complete,complete,True,good,4957,4957;99
+454,1,ä¿,Ŀ,ä¿Ŀ,E4 BF,9D,E4 BF 9D,prefix,invalid,complete,True,good,5721,0;5721
+455,0,Ġ,k,Ġk,20,6B,20 6B,complete,complete,complete,True,good,4947,4947;151
+456,1,Ġï¼,ī,Ġï¼ī,20 EF BC,89,20 EF BC 89,prefix,invalid,complete,True,good,5690,0;5690
+457,0,at,es,ates,61 74,65 73,61 74 65 73,complete,complete,complete,True,good,4926,4926;23
+458,1,éĹ®,é¢ĺ,éĹ®é¢ĺ,E9 97 AE,E9 A2 98,E9 97 AE E9 A2 98,complete,complete,complete,True,good,5683,0;5683
+459,0,g,ra,gra,67,72 61,67 72 61,complete,complete,complete,True,good,4916,4916;24
+460,1,æ¡,Ī,æ¡Ī,E6 A1,88,E6 A1 88,prefix,invalid,complete,True,good,5667,0;5667
+461,0,e,p,ep,65,70,65 70,complete,complete,complete,True,good,4884,4884;78
+462,0,i,a,ia,69,61,69 61,complete,complete,complete,True,good,4866,4866;127
+463,1,åĳ,Ĭ,åĳĬ,E5 91,8A,E5 91 8A,prefix,invalid,complete,True,good,5661,0;5661
+464,0,Ġ,ri,Ġri,20,72 69,20 72 69,complete,complete,complete,True,good,4851,4851;65
+465,1,ĠãĢ,ĭ,ĠãĢĭ,20 E3 80,8B,20 E3 80 8B,prefix,invalid,complete,True,good,5637,0;5637
+466,0,ĠC,on,ĠCon,20 43,6F 6E,20 43 6F 6E,complete,complete,complete,True,good,4815,4815;71
+467,1,æĬ,¥,æĬ¥,E6 8A,A5,E6 8A A5,prefix,invalid,complete,True,good,5614,0;5614
+468,0,i,p,ip,69,70,69 70,complete,complete,complete,True,good,4770,4770;64
+469,1,æľ,º,æľº,E6 9C,BA,E6 9C BA,prefix,invalid,complete,True,good,5606,0;5606
+470,0,Ġim,p,Ġimp,20 69 6D,70,20 69 6D 70,complete,complete,complete,True,good,4722,4722;13
+471,1,é¡,¹,é¡¹,E9 A1,B9,E9 A1 B9,prefix,invalid,complete,True,good,5558,0;5558
+472,0,l,ic,lic,6C,69 63,6C 69 63,complete,complete,complete,True,good,4716,4716;61
+473,1,ä¸,ĭ,ä¸ĭ,E4 B8,8B,E4 B8 8B,prefix,invalid,complete,True,good,5556,0;5556
+474,0,ĠN,ations,ĠNations,20 4E,61 74 69 6F 6E 73,20 4E 61 74 69 6F 6E 73,complete,complete,complete,True,good,4691,4691;20
+475,0,Ġri,ght,Ġright,20 72 69,67 68 74,20 72 69 67 68 74,complete,complete,complete,True,good,4595,4595;59
+476,1,å§,Ķ,å§Ķ,E5 A7,94,E5 A7 94,prefix,invalid,complete,True,good,5555,0;5555
+477,0,Ġc,h,Ġch,20 63,68,20 63 68,complete,complete,complete,True,good,4571,4571;63
+478,1,è,¾,è¾,E8,BE,E8 BE,prefix,invalid,prefix,False,recoverable,5530,0;5530
+479,0,ment,s,ments,6D 65 6E 74,73,6D 65 6E 74 73,complete,complete,complete,True,good,4539,4539;34
+480,1,æĢ,§,æĢ§,E6 80,A7,E6 80 A7,prefix,invalid,complete,True,good,5484,0;5484
+481,0,is,s,iss,69 73,73,69 73 73,complete,complete,complete,True,good,4497,4497;57
+482,0,Ġre,g,Ġreg,20 72 65,67,20 72 65 67,complete,complete,complete,True,good,4492,4492;10
+483,1,åĬ,¡,åĬ¡,E5 8A,A1,E5 8A A1,prefix,invalid,complete,True,good,5449,0;5449
+484,0,en,eral,eneral,65 6E,65 72 61 6C,65 6E 65 72 61 6C,complete,complete,complete,True,good,4477,4477;21
+485,1,å¾,Ĺ,å¾Ĺ,E5 BE,97,E5 BE 97,prefix,invalid,complete,True,good,5378,0;5378
+486,0,Ġ,J,ĠJ,20,4A,20 4A,complete,complete,complete,True,good,4464,4464;351
+487,1,åĪ,Ĩ,åĪĨ,E5 88,86,E5 88 86,prefix,invalid,complete,True,good,5363,0;5363
+488,0,ic,h,ich,69 63,68,69 63 68,complete,complete,complete,True,good,4460,4460;57
+489,1,Ġå,ı,Ġåı,20 E5,8F,20 E5 8F,prefix,invalid,prefix,False,recoverable,5312,0;5312
+490,0,Ġde,velop,Ġdevelop,20 64 65,76 65 6C 6F 70,20 64 65 76 65 6C 6F 70,complete,complete,complete,True,good,4423,4423;6
+491,1,å,ĵ,åĵ,E5,93,E5 93,prefix,invalid,prefix,False,recoverable,5277,0;5277
+492,0,or,m,orm,6F 72,6D,6F 72 6D,complete,complete,complete,True,good,4421,4421;44
+493,1,Ġï¼,Ī,Ġï¼Ī,20 EF BC,88,20 EF BC 88,prefix,invalid,complete,True,good,5274,0;5274
+494,0,re,d,red,72 65,64,72 65 64,complete,complete,complete,True,good,4390,4390;43
+495,1,Ġï¼,Ł,Ġï¼Ł,20 EF BC,9F,20 EF BC 9F,prefix,invalid,complete,True,good,5211,0;5211
+496,1,å,Ģ,åĢ,E5,80,E5 80,prefix,invalid,prefix,False,recoverable,5188,0;5188
+497,0,r,u,ru,72,75,72 75,complete,complete,complete,True,good,4269,4269;57
+498,1,ç,®,ç®,E7,AE,E7 AE,prefix,invalid,prefix,False,recoverable,5176,0;5176
+499,0,om,e,ome,6F 6D,65,6F 6D 65,complete,complete,complete,True,good,4248,4248;88
+500,1,ç,¤,ç¤,E7,A4,E7 A4,prefix,invalid,prefix,False,recoverable,5174,0;5174
+501,0,Ġ,3,Ġ3,20,33,20 33,complete,complete,complete,True,good,4242,4242;3279
+502,0,ic,e,ice,69 63,65,69 63 65,complete,complete,complete,True,good,4119,4119;60
+503,0,Ġre,c,Ġrec,20 72 65,63,20 72 65 63,complete,complete,complete,True,good,4117,4117;11
+504,1,åĪ,¶,åĪ¶,E5 88,B6,E5 88 B6,prefix,invalid,complete,True,good,5159,0;5159
+505,0,Ġ,:,Ġ:,20,3A,20 3A,complete,complete,complete,True,good,4110,4110;605
+506,1,æ,¯,æ¯,E6,AF,E6 AF,prefix,invalid,prefix,False,recoverable,5119,0;5119
+507,0,ĠT,h,ĠTh,20 54,68,20 54 68,complete,complete,complete,True,good,4109,4109;106
+508,1,åĲĪ,åĽ½,åĲĪåĽ½,E5 90 88,E5 9B BD,E5 90 88 E5 9B BD,complete,complete,complete,True,good,5100,0;5100
+509,0,Ġwh,ich,Ġwhich,20 77 68,69 63 68,20 77 68 69 63 68,complete,complete,complete,True,good,4099,4099;5
+510,1,å§Ķ,åĳĺä¼ļ,å§Ķåĳĺä¼ļ,E5 A7 94,E5 91 98 E4 BC 9A,E5 A7 94 E5 91 98 E4 BC 9A,complete,complete,complete,True,good,5093,0;5093
+511,0,Ġthe,ir,Ġtheir,20 74 68 65,69 72,20 74 68 65 69 72,complete,complete,complete,True,good,4097,4097;20
+512,0,ic,al,ical,69 63,61 6C,69 63 61 6C,complete,complete,complete,True,good,4081,4081;36
+513,1,æ°,ĳ,æ°ĳ,E6 B0,91,E6 B0 91,prefix,invalid,complete,True,good,5062,0;5062
+514,0,Ġa,ct,Ġact,20 61,63 74,20 61 63 74,complete,complete,complete,True,good,4072,4072;16
+515,1,åĲ,Ħ,åĲĦ,E5 90,84,E5 90 84,prefix,invalid,complete,True,good,5048,0;5048
+516,0,Ġ,j,Ġj,20,6A,20 6A,complete,complete,complete,True,good,4041,4041;155
+517,0,Ġ,5,Ġ5,20,35,20 35,complete,complete,complete,True,good,4038,4038;3099
+518,0,ut,ion,ution,75 74,69 6F 6E,75 74 69 6F 6E,complete,complete,complete,True,good,4024,4024;23
+519,1,åħ,¬,åħ¬,E5 85,AC,E5 85 AC,prefix,invalid,complete,True,good,5036,0;5036
+520,0,Ġin,t,Ġint,20 69 6E,74,20 69 6E 74,complete,complete,complete,True,good,4004,4004;49
+521,1,ç,¨,ç¨,E7,A8,E7 A8,prefix,invalid,prefix,False,recoverable,5035,0;5035
+522,0,Ġa,pp,Ġapp,20 61,70 70,20 61 70 70,complete,complete,complete,True,good,4001,4001;16
+523,1,é,ĺ,éĺ,E9,98,E9 98,prefix,invalid,prefix,False,recoverable,5032,0;5032
+524,0,i,ght,ight,69,67 68 74,69 67 68 74,complete,complete,complete,True,good,3989,3989;87
+525,0,Ġc,ount,Ġcount,20 63,6F 75 6E 74,20 63 6F 75 6E 74,complete,complete,complete,True,good,3980,3980;6
+526,1,çī,¹,çī¹,E7 89,B9,E7 89 B9,prefix,invalid,complete,True,good,5026,0;5026
+527,0,Ġpro,v,Ġprov,20 70 72 6F,76,20 70 72 6F 76,complete,complete,complete,True,good,3961,3961;3
+528,1,å®,ŀ,å®ŀ,E5 AE,9E,E5 AE 9E,prefix,invalid,complete,True,good,4968,0;4968
+529,0,ĠS,ec,ĠSec,20 53,65 63,20 53 65 63,complete,complete,complete,True,good,3942,3942;25
+530,0,or,d,ord,6F 72,64,6F 72 64,complete,complete,complete,True,good,3931,3931;190
+531,1,æ,į,æį,E6,8D,E6 8D,prefix,invalid,prefix,False,recoverable,4951,0;4951
+532,0,ab,le,able,61 62,6C 65,61 62 6C 65,complete,complete,complete,True,good,3929,3929;32
+533,1,ĠãĢ,Ĭ,ĠãĢĬ,20 E3 80,8A,20 E3 80 8A,prefix,invalid,complete,True,good,4947,0;4947
+534,0,ĠI,t,ĠIt,20 49,74,20 49 74,complete,complete,complete,True,good,3918,3918;76
+535,0,res,s,ress,72 65 73,73,72 65 73 73,complete,complete,complete,True,good,3915,3915;35
+536,1,å,»,å»,E5,BB,E5 BB,prefix,invalid,prefix,False,recoverable,4869,0;4869
+537,0,Ġd,is,Ġdis,20 64,69 73,20 64 69 73,complete,complete,complete,True,good,3911,3911;23
+538,1,å¤,ļ,å¤ļ,E5 A4,9A,E5 A4 9A,prefix,invalid,complete,True,good,4840,0;4840
+539,0,e,a,ea,65,61,65 61,complete,complete,complete,True,good,3906,3906;73
+540,1,åº,Ķ,åºĶ,E5 BA,94,E5 BA 94,prefix,invalid,complete,True,good,4833,0;4833
+541,0,Ġw,ill,Ġwill,20 77,69 6C 6C,20 77 69 6C 6C,complete,complete,complete,True,good,3884,3884;42
+542,0,Ġh,as,Ġhas,20 68,61 73,20 68 61 73,complete,complete,complete,True,good,3874,3874;17
+543,1,æĦ,ı,æĦı,E6 84,8F,E6 84 8F,prefix,invalid,complete,True,good,4762,0;4762
+544,0,v,ent,vent,76,65 6E 74,76 65 6E 74,complete,complete,complete,True,good,3866,3866;35
+545,1,å·¥,ä½ľ,å·¥ä½ľ,E5 B7 A5,E4 BD 9C,E5 B7 A5 E4 BD 9C,complete,complete,complete,True,good,4753,0;4753
+546,0,Ġs,p,Ġsp,20 73,70,20 73 70,complete,complete,complete,True,good,3865,3865;39
+547,1,ä»,»,ä»»,E4 BB,BB,E4 BB BB,prefix,invalid,complete,True,good,4744,0;4744
+548,0,an,s,ans,61 6E,73,61 6E 73,complete,complete,complete,True,good,3839,3839;73
+549,1,å,ģ,åģ,E5,81,E5 81,prefix,invalid,prefix,False,recoverable,4741,0;4741
+550,0,ĠA,s,ĠAs,20 41,73,20 41 73,complete,complete,complete,True,good,3835,3835;39
+551,1,çĽ,®,çĽ®,E7 9B,AE,E7 9B AE,prefix,invalid,complete,True,good,4722,0;4722
+552,0,ul,t,ult,75 6C,74,75 6C 74,complete,complete,complete,True,good,3828,3828;51
+553,1,ç,ķ,çķ,E7,95,E7 95,prefix,invalid,prefix,False,recoverable,4687,0;4687
+554,0,Ġc,omm,Ġcomm,20 63,6F 6D 6D,20 63 6F 6D 6D,complete,complete,complete,True,good,3816,3816;20
+555,1,éĿ,ŀ,éĿŀ,E9 9D,9E,E9 9D 9E,prefix,invalid,complete,True,good,4680,0;4680
+556,0,f,orm,form,66,6F 72 6D,66 6F 72 6D,complete,complete,complete,True,good,3784,3784;32
+557,1,è¯,¥,è¯¥,E8 AF,A5,E8 AF A5,prefix,invalid,complete,True,good,4660,0;4660
+558,0,ĠG,eneral,ĠGeneral,20 47,65 6E 65 72 61 6C,20 47 65 6E 65 72 61 6C,complete,complete,complete,True,good,3781,3781;17
+559,0,um,an,uman,75 6D,61 6E,75 6D 61 6E,complete,complete,complete,True,good,3778,3778;43
+560,1,å,ī,åī,E5,89,E5 89,prefix,invalid,prefix,False,recoverable,4649,0;4649
+561,0,it,ies,ities,69 74,69 65 73,69 74 69 65 73,complete,complete,complete,True,good,3777,3777;13
+562,1,åĬ,©,åĬ©,E5 8A,A9,E5 8A A9,prefix,invalid,complete,True,good,4643,0;4643
+563,0,nd,er,nder,6E 64,65 72,6E 64 65 72,complete,complete,complete,True,good,3759,3759;18
+564,1,æĸ,¯,æĸ¯,E6 96,AF,E6 96 AF,prefix,invalid,complete,True,good,4623,0;4623
+565,0,u,b,ub,75,62,75 62,complete,complete,complete,True,good,3748,3748;112
+566,0,m,e,me,6D,65,6D 65,complete,complete,complete,True,good,3736,3736;36
+567,1,èµ,Ħ,èµĦ,E8 B5,84,E8 B5 84,prefix,invalid,complete,True,good,4608,0;4608
+568,0,Ġd,o,Ġdo,20 64,6F,20 64 6F,complete,complete,complete,True,good,3713,3713;109
+569,1,åĪ,«,åĪ«,E5 88,AB,E5 88 AB,prefix,invalid,complete,True,good,4604,0;4604
+570,0,over,n,overn,6F 76 65 72,6E,6F 76 65 72 6E,complete,complete,complete,True,good,3710,3710;19
+571,1,å°,Ĩ,å°Ĩ,E5 B0,86,E5 B0 86,prefix,invalid,complete,True,good,4584,0;4584
+572,0,Ġg,o,Ġgo,20 67,6F,20 67 6F,complete,complete,complete,True,good,3679,3679;101
+573,0,r,y,ry,72,79,72 79,complete,complete,complete,True,good,3679,3679;89
+574,1,é,ķ,éķ,E9,95,E9 95,prefix,invalid,prefix,False,recoverable,4568,0;4568
+575,0,Ġre,port,Ġreport,20 72 65,70 6F 72 74,20 72 65 70 6F 72 74,complete,complete,complete,True,good,3677,3677;24
+576,1,ä¹,Ī,ä¹Ī,E4 B9,88,E4 B9 88,prefix,invalid,complete,True,good,4561,0;4561
+577,0,Ġ1,9,Ġ19,20 31,39,20 31 39,complete,complete,complete,True,good,3671,3671;1994
+578,1,éĹ,´,éĹ´,E9 97,B4,E9 97 B4,prefix,invalid,complete,True,good,4543,0;4543
+579,0,itt,ee,ittee,69 74 74,65 65,69 74 74 65 65,complete,complete,complete,True,good,3646,3646;22
+580,0,Ġex,p,Ġexp,20 65 78,70,20 65 78 70,complete,complete,complete,True,good,3614,3614;17
+581,1,Ġç,¬,Ġç¬,20 E7,AC,20 E7 AC,prefix,invalid,prefix,False,recoverable,4535,0;4535
+582,0,re,t,ret,72 65,74,72 65 74,complete,complete,complete,True,good,3603,3603;42
+583,1,æĬ¥,åĳĬ,æĬ¥åĳĬ,E6 8A A5,E5 91 8A,E6 8A A5 E5 91 8A,complete,complete,complete,True,good,4523,0;4523
+584,0,ou,n,oun,6F 75,6E,6F 75 6E,complete,complete,complete,True,good,3599,3599;22
+585,1,æĿ,¡,æĿ¡,E6 9D,A1,E6 9D A1,prefix,invalid,complete,True,good,4490,0;4490
+586,0,Ġa,r,Ġar,20 61,72,20 61 72,complete,complete,complete,True,good,3586,3586;37
+587,1,åĽ½,éĻħ,åĽ½éĻħ,E5 9B BD,E9 99 85,E5 9B BD E9 99 85,complete,complete,complete,True,good,4483,0;4483
+588,0,Ġcon,s,Ġcons,20 63 6F 6E,73,20 63 6F 6E 73,complete,complete,complete,True,good,3578,3578;13
+589,1,æľ,Ł,æľŁ,E6 9C,9F,E6 9C 9F,prefix,invalid,complete,True,good,4451,0;4451
+590,0,l,ud,lud,6C,75 64,6C 75 64,complete,complete,complete,True,good,3574,3574;6
+591,0,i,b,ib,69,62,69 62,complete,complete,complete,True,good,3564,3564;97
+592,1,Ġç¬,¬,Ġç¬¬,20 E7 AC,AC,20 E7 AC AC,prefix,invalid,complete,True,good,4438,0;4438
+593,0,ĠY,ou,ĠYou,20 59,6F 75,20 59 6F 75,complete,complete,complete,True,good,3551,3551;128
+594,1,Ġ,ä»¥,Ġä»¥,20,E4 BB A5,20 E4 BB A5,complete,complete,complete,True,good,4429,0;4429
+595,0,u,c,uc,75,63,75 63,complete,complete,complete,True,good,3546,3546;62
+596,0,ĠW,e,ĠWe,20 57,65,20 57 65,complete,complete,complete,True,good,3541,3541;82
+597,1,åıĳ,å±ķ,åıĳå±ķ,E5 8F 91,E5 B1 95,E5 8F 91 E5 B1 95,complete,complete,complete,True,good,4418,0;4418
+598,0,ou,s,ous,6F 75,73,6F 75 73,complete,complete,complete,True,good,3524,3524;42
+599,1,Ġå,¹,Ġå¹,20 E5,B9,20 E5 B9,prefix,invalid,prefix,False,recoverable,4394,0;4394
+600,0,Ġcom,p,Ġcomp,20 63 6F 6D,70,20 63 6F 6D 70,complete,complete,complete,True,good,3521,3521;23
+601,1,å°,±,å°±,E5 B0,B1,E5 B0 B1,prefix,invalid,complete,True,good,4388,0;4388
+602,0,ĠSt,ates,ĠStates,20 53 74,61 74 65 73,20 53 74 61 74 65 73,complete,complete,complete,True,good,3502,3502;10
+603,1,äº,ļ,äºļ,E4 BA,9A,E4 BA 9A,prefix,invalid,complete,True,good,4378,0;4378
+604,0,Ġa,b,Ġab,20 61,62,20 61 62,complete,complete,complete,True,good,3500,3500;56
+605,0,on,s,ons,6F 6E,73,6F 6E 73,complete,complete,complete,True,good,3497,3497;27
+606,1,éĢ,ļ,éĢļ,E9 80,9A,E9 80 9A,prefix,invalid,complete,True,good,4373,0;4373
+607,0,Ġc,o,Ġco,20 63,6F,20 63 6F,complete,complete,complete,True,good,3487,3487;23
+608,1,ä¹,¦,ä¹¦,E4 B9,A6,E4 B9 A6,prefix,invalid,complete,True,good,4373,0;4373
+609,0,Ġo,ut,Ġout,20 6F,75 74,20 6F 75 74,complete,complete,complete,True,good,3476,3476;49
+610,1,è¯,´,è¯´,E8 AF,B4,E8 AF B4,prefix,invalid,complete,True,good,4367,0;4367
+611,0,Ġp,er,Ġper,20 70,65 72,20 70 65 72,complete,complete,complete,True,good,3444,3444;13
+612,1,æľ,¬,æľ¬,E6 9C,AC,E6 9C AC,prefix,invalid,complete,True,good,4344,0;4344
+613,0,ĠComm,ittee,ĠCommittee,20 43 6F 6D 6D,69 74 74 65 65,20 43 6F 6D 6D 69 74 74 65 65,complete,complete,complete,True,good,3442,3442;21
+614,1,åĨ,ħ,åĨħ,E5 86,85,E5 86 85,prefix,invalid,complete,True,good,4343,0;4343
+615,0,Ġbe,en,Ġbeen,20 62 65,65 6E,20 62 65 65 6E,complete,complete,complete,True,good,3396,3396;23
+616,0,Ġin,ternational,Ġinternational,20 69 6E,74 65 72 6E 61 74 69 6F 6E 61 6C,20 69 6E 74 65 72 6E 61 74 69 6F 6E 61 6C,complete,complete,complete,True,good,3383,3383;12
+617,1,åĲ,Į,åĲĮ,E5 90,8C,E5 90 8C,prefix,invalid,complete,True,good,4320,0;4320
+618,0,Ġas,s,Ġass,20 61 73,73,20 61 73 73,complete,complete,complete,True,good,3383,3383;16
+619,1,Ġ,ä½,Ġä½,20,E4 BD,20 E4 BD,complete,prefix,prefix,False,recoverable,4282,0;4282
+620,0,Ġw,ork,Ġwork,20 77,6F 72 6B,20 77 6F 72 6B,complete,complete,complete,True,good,3369,3369;30
+621,1,éķ,¿,éķ¿,E9 95,BF,E9 95 BF,prefix,invalid,complete,True,good,4281,0;4281
+622,0,s,o,so,73,6F,73 6F,complete,complete,complete,True,good,3369,3369;36
+623,1,ç,ľ,çľ,E7,9C,E7 9C,prefix,invalid,prefix,False,recoverable,4265,0;4265
+624,0,Ġa,cc,Ġacc,20 61,63 63,20 61 63 63,complete,complete,complete,True,good,3349,3349;22
+625,1,åĲ,İ,åĲİ,E5 90,8E,E5 90 8E,prefix,invalid,complete,True,good,4260,0;4260
+626,0,Ġ.,.,Ġ..,20 2E,2E,20 2E 2E,complete,complete,complete,True,good,3348,3348;2674
+627,0,o,se,ose,6F,73 65,6F 73 65,complete,complete,complete,True,good,3321,3321;36
+628,1,å»,º,å»º,E5 BB,BA,E5 BB BA,prefix,invalid,complete,True,good,4241,0;4241
+629,0,le,ment,lement,6C 65,6D 65 6E 74,6C 65 6D 65 6E 74,complete,complete,complete,True,good,3311,3311;9
+630,1,Ġå,Ľ,ĠåĽ,20 E5,9B,20 E5 9B,prefix,invalid,prefix,False,recoverable,4238,0;4238
+631,0,Ġu,nder,Ġunder,20 75,6E 64 65 72,20 75 6E 64 65 72,complete,complete,complete,True,good,3306,3306;14
+632,1,è¿,ĺ,è¿ĺ,E8 BF,98,E8 BF 98,prefix,invalid,complete,True,good,4238,0;4238
+633,0,Ġe,ff,Ġeff,20 65,66 66,20 65 66 66,complete,complete,complete,True,good,3260,3260;8
+634,1,æ,±,æ±,E6,B1,E6 B1,prefix,invalid,prefix,False,recoverable,4236,0;4236
+635,0,ion,al,ional,69 6F 6E,61 6C,69 6F 6E 61 6C,complete,complete,complete,True,good,3244,3244;24
+636,1,å¼,Ģ,å¼Ģ,E5 BC,80,E5 BC 80,prefix,invalid,complete,True,good,4235,0;4235
+637,0,Ġ..,.,Ġ...,20 2E 2E,2E,20 2E 2E 2E,complete,complete,complete,True,good,3231,3231;2664
+638,0,m,in,min,6D,69 6E,6D 69 6E,complete,complete,complete,True,good,3226,3226;42
+639,1,ä¾,Ľ,ä¾Ľ,E4 BE,9B,E4 BE 9B,prefix,invalid,complete,True,good,4215,0;4215
+640,0,g,an,gan,67,61 6E,67 61 6E,complete,complete,complete,True,good,3224,3224;36
+641,0,Ġ,4,Ġ4,20,34,20 34,complete,complete,complete,True,good,3215,3215;2844
+642,0,Ġp,l,Ġpl,20 70,6C,20 70 6C,complete,complete,complete,True,good,3204,3204;35
+643,1,Ġ,ä»ĸ,Ġä»ĸ,20,E4 BB 96,20 E4 BB 96,complete,complete,complete,True,good,4192,0;4192
+644,0,id,e,ide,69 64,65,69 64 65,complete,complete,complete,True,good,3185,3185;31
+645,1,æĮ,ģ,æĮģ,E6 8C,81,E6 8C 81,prefix,invalid,complete,True,good,4189,0;4189
+646,0,Ġ,r,Ġr,20,72,20 72,complete,complete,complete,True,good,3184,3184;50
+647,1,ä¹,ĭ,ä¹ĭ,E4 B9,8B,E4 B9 8B,prefix,invalid,complete,True,good,4184,0;4184
+648,0,Ġo,ther,Ġother,20 6F,74 68 65 72,20 6F 74 68 65 72,complete,complete,complete,True,good,3180,3180;17
+649,1,Ġå,°,Ġå°,20 E5,B0,20 E5 B0,prefix,invalid,prefix,False,recoverable,4175,0;4175
+650,0,iss,ion,ission,69 73 73,69 6F 6E,69 73 73 69 6F 6E,complete,complete,complete,True,good,3179,3179;20
+651,1,å®,ī,å®ī,E5 AE,89,E5 AE 89,prefix,invalid,complete,True,good,4169,0;4169
+652,0,Ġu,p,Ġup,20 75,70,20 75 70,complete,complete,complete,True,good,3176,3176;72
+653,0,Ġh,ad,Ġhad,20 68,61 64,20 68 61 64,complete,complete,complete,True,good,3176,3176;19
+654,1,å¥,³,å¥³,E5 A5,B3,E5 A5 B3,prefix,invalid,complete,True,good,4162,0;4162
+655,0,en,ce,ence,65 6E,63 65,65 6E 63 65,complete,complete,complete,True,good,3159,3159;35
+656,1,2,00,200,32,30 30,32 30 30,complete,complete,complete,True,good,4142,20;4142
+657,0,c,es,ces,63,65 73,63 65 73,complete,complete,complete,True,good,3158,3158;22
+658,0,c,il,cil,63,69 6C,63 69 6C,complete,complete,complete,True,good,3146,3146;11
+659,1,ç§,į,ç§į,E7 A7,8D,E7 A7 8D,prefix,invalid,complete,True,good,4110,0;4110
+660,0,ak,e,ake,61 6B,65,61 6B 65,complete,complete,complete,True,good,3118,3118;65
+661,1,å,¢,å¢,E5,A2,E5 A2,prefix,invalid,prefix,False,recoverable,4097,0;4097
+662,0,ri,es,ries,72 69,65 73,72 69 65 73,complete,complete,complete,True,good,3106,3106;10
+663,1,Ġå,®,Ġå®,20 E5,AE,20 E5 AE,prefix,invalid,prefix,False,recoverable,4091,0;4091
+664,0,Ġinc,lud,Ġinclud,20 69 6E 63,6C 75 64,20 69 6E 63 6C 75 64,complete,complete,complete,True,good,3093,3093;2
+665,1,ä¸Ģ,ä¸ª,ä¸Ģä¸ª,E4 B8 80,E4 B8 AA,E4 B8 80 E4 B8 AA,complete,complete,complete,True,good,4088,0;4088
+666,0,Ġal,so,Ġalso,20 61 6C,73 6F,20 61 6C 73 6F,complete,complete,complete,True,good,3086,3086;17
+667,0,ĠC,h,ĠCh,20 43,68,20 43 68,complete,complete,complete,True,good,3080,3080;107
+668,1,åĮ,º,åĮº,E5 8C,BA,E5 8C BA,prefix,invalid,complete,True,good,4058,0;4058
+669,0,ĠW,h,ĠWh,20 57,68,20 57 68,complete,complete,complete,True,good,3069,3069;87
+670,0,Ġw,ould,Ġwould,20 77,6F 75 6C 64,20 77 6F 75 6C 64,complete,complete,complete,True,good,3060,3060;28
+671,1,çİ,°,çİ°,E7 8E,B0,E7 8E B0,prefix,invalid,complete,True,good,4056,0;4056
+672,0,Ġres,ol,Ġresol,20 72 65 73,6F 6C,20 72 65 73 6F 6C,complete,complete,complete,True,good,3056,3056;5
+673,1,ç»,ĩ,ç»ĩ,E7 BB,87,E7 BB 87,prefix,invalid,complete,True,good,4039,0;4039
+674,0,il,d,ild,69 6C,64,69 6C 64,complete,complete,complete,True,good,3054,3054;49
+675,0,p,port,pport,70,70 6F 72 74,70 70 6F 72 74,complete,complete,complete,True,good,3033,3033;16
+676,1,æĥ,ħ,æĥħ,E6 83,85,E6 83 85,prefix,invalid,complete,True,good,4038,0;4038
+677,0,ĠC,oun,ĠCoun,20 43,6F 75 6E,20 43 6F 75 6E,complete,complete,complete,True,good,3008,3008;10
+678,1,ĠæĪĳ,ä»¬,ĠæĪĳä»¬,20 E6 88 91,E4 BB AC,20 E6 88 91 E4 BB AC,complete,complete,complete,True,good,4028,0;4028
+679,0,he,n,hen,68 65,6E,68 65 6E,complete,complete,complete,True,good,3001,3001;54
+680,1,ç«,ĭ,ç«ĭ,E7 AB,8B,E7 AB 8B,prefix,invalid,complete,True,good,4024,0;4024
+681,0,Ġp,re,Ġpre,20 70,72 65,20 70 72 65,complete,complete,complete,True,good,2998,2998;17
+682,1,ç»Ħ,ç»ĩ,ç»Ħç»ĩ,E7 BB 84,E7 BB 87,E7 BB 84 E7 BB 87,complete,complete,complete,True,good,4017,0;4017
+683,0,gra,m,gram,67 72 61,6D,67 72 61 6D,complete,complete,complete,True,good,2996,2996;11
+684,0,on,g,ong,6F 6E,67,6F 6E 67,complete,complete,complete,True,good,2995,2995;56
+685,1,ç¨,ĭ,ç¨ĭ,E7 A8,8B,E7 A8 8B,prefix,invalid,complete,True,good,4011,0;4011
+686,0,Ġsh,ould,Ġshould,20 73 68,6F 75 6C 64,20 73 68 6F 75 6C 64,complete,complete,complete,True,good,2990,2990;20
+687,1,Ġå¹,¶,Ġå¹¶,20 E5 B9,B6,20 E5 B9 B6,prefix,invalid,complete,True,good,4008,0;4008
+688,0,ou,t,out,6F 75,74,6F 75 74,complete,complete,complete,True,good,2962,2962;53
+689,1,Ġï¼,ļ,Ġï¼ļ,20 EF BC,9A,20 EF BC 9A,prefix,invalid,complete,True,good,3999,0;3999
+690,0,Ġwe,re,Ġwere,20 77 65,72 65,20 77 65 72 65,complete,complete,complete,True,good,2957,2957;22
+691,1,éģ,ĵ,éģĵ,E9 81,93,E9 81 93,prefix,invalid,complete,True,good,3984,0;3984
+692,0,ĠH,e,ĠHe,20 48,65,20 48 65,complete,complete,complete,True,good,2957,2957;111
+693,0,er,ation,eration,65 72,61 74 69 6F 6E,65 72 61 74 69 6F 6E,complete,complete,complete,True,good,2936,2936;7
+694,1,ä»,£,ä»£,E4 BB,A3,E4 BB A3,prefix,invalid,complete,True,good,3983,0;3983
+695,0,Ġc,an,Ġcan,20 63,61 6E,20 63 61 6E,complete,complete,complete,True,good,2933,2933;81
+696,1,ä½,ĵ,ä½ĵ,E4 BD,93,E4 BD 93,prefix,invalid,complete,True,good,3952,0;3952
+697,0,as,t,ast,61 73,74,61 73 74,complete,complete,complete,True,good,2929,2929;55
+698,0,gan,iz,ganiz,67 61 6E,69 7A,67 61 6E 69 7A,complete,complete,complete,True,good,2915,2915;15
+699,1,æ,Ł,æŁ,E6,9F,E6 9F,prefix,invalid,prefix,False,recoverable,3930,0;3930
+700,0,Ġsu,b,Ġsub,20 73 75,62,20 73 75 62,complete,complete,complete,True,good,2913,2913;19
+701,1,ä»,¶,ä»¶,E4 BB,B6,E4 BB B6,prefix,invalid,complete,True,good,3924,0;3924
+702,0,ĠCoun,cil,ĠCouncil,20 43 6F 75 6E,63 69 6C,20 43 6F 75 6E 63 69 6C,complete,complete,complete,True,good,2912,2912;9
+703,0,res,ent,resent,72 65 73,65 6E 74,72 65 73 65 6E 74,complete,complete,complete,True,good,2898,2898;11
+704,1,å¹,³,å¹³,E5 B9,B3,E5 B9 B3,prefix,invalid,complete,True,good,3901,0;3901
+705,0,e,ar,ear,65,61 72,65 61 72,complete,complete,complete,True,good,2886,2886;38
+706,1,æĸ,ĩ,æĸĩ,E6 96,87,E6 96 87,prefix,invalid,complete,True,good,3899,0;3899
+707,0,u,e,ue,75,65,75 65,complete,complete,complete,True,good,2880,2880;53
+708,1,æľ,Ģ,æľĢ,E6 9C,80,E6 9C 80,prefix,invalid,complete,True,good,3896,0;3896
+709,0,re,at,reat,72 65,61 74,72 65 61 74,complete,complete,complete,True,good,2874,2874;39
+710,0,o,g,og,6F,67,6F 67,complete,complete,complete,True,good,2872,2872;51
+711,1,ç,¼,ç¼,E7,BC,E7 BC,prefix,invalid,prefix,False,recoverable,3875,0;3875
+712,0,at,ive,ative,61 74,69 76 65,61 74 69 76 65,complete,complete,complete,True,good,2843,2843;17
+713,1,ä¹,Ł,ä¹Ł,E4 B9,9F,E4 B9 9F,prefix,invalid,complete,True,good,3871,0;3871
+714,0,er,v,erv,65 72,76,65 72 76,complete,complete,complete,True,good,2838,2838;26
+715,1,æ,ģ,æģ,E6,81,E6 81,prefix,invalid,prefix,False,recoverable,3845,0;3845
+716,0,l,o,lo,6C,6F,6C 6F,complete,complete,complete,True,good,2814,2814;58
+717,0,a,w,aw,61,77,61 77,complete,complete,complete,True,good,2783,2783;101
+718,1,è§,Ħ,è§Ħ,E8 A7,84,E8 A7 84,prefix,invalid,complete,True,good,3766,0;3766
+719,0,Ġm,an,Ġman,20 6D,61 6E,20 6D 61 6E,complete,complete,complete,True,good,2768,2768;24
+720,1,ç,¡,ç¡,E7,A1,E7 A1,prefix,invalid,prefix,False,recoverable,3762,0;3762
+721,0,ur,ity,urity,75 72,69 74 79,75 72 69 74 79,complete,complete,complete,True,good,2764,2764;11
+722,1,å,Ŀ,åĿ,E5,9D,E5 9D,prefix,invalid,prefix,False,recoverable,3732,0;3732
+723,0,Ġres,p,Ġresp,20 72 65 73,70,20 72 65 73 70,complete,complete,complete,True,good,2752,2752;9
+724,1,åı,ĸ,åıĸ,E5 8F,96,E5 8F 96,prefix,invalid,complete,True,good,3708,0;3708
+725,0,em,ber,ember,65 6D,62 65 72,65 6D 62 65 72,complete,complete,complete,True,good,2746,2746;20
+726,0,ĠP,ro,ĠPro,20 50,72 6F,20 50 72 6F,complete,complete,complete,True,good,2737,2737;121
+727,1,æĪ,ĸ,æĪĸ,E6 88,96,E6 88 96,prefix,invalid,complete,True,good,3682,0;3682
+728,0,Ġ,6,Ġ6,20,36,20 36,complete,complete,complete,True,good,2736,2736;2335
+729,0,ig,n,ign,69 67,6E,69 67 6E,complete,complete,complete,True,good,2729,2729;30
+730,1,ç,Ł,çŁ,E7,9F,E7 9F,prefix,invalid,prefix,False,recoverable,3671,0;3671
+731,0,a,ge,age,61,67 65,61 67 65,complete,complete,complete,True,good,2725,2725;43
+732,1,åŁ,º,åŁº,E5 9F,BA,E5 9F BA,prefix,invalid,complete,True,good,3653,0;3653
+733,0,k,e,ke,6B,65,6B 65,complete,complete,complete,True,good,2719,2719;97
+734,0,ĠâĢ,ľ,ĠâĢľ,20 E2 80,9C,20 E2 80 9C,prefix,invalid,complete,True,good,2717,2717;2687
+735,0,i,an,ian,69,61 6E,69 61 6E,complete,complete,complete,True,good,2717,2717;59
+736,1,è®,¡,è®¡,E8 AE,A1,E8 AE A1,prefix,invalid,complete,True,good,3651,0;3651
+737,0,Ġthe,re,Ġthere,20 74 68 65,72 65,20 74 68 65 72 65,complete,complete,complete,True,good,2702,2702;46
+738,1,éĩ,Į,éĩĮ,E9 87,8C,E9 87 8C,prefix,invalid,complete,True,good,3634,0;3634
+739,0,Ġs,ec,Ġsec,20 73,65 63,20 73 65 63,complete,complete,complete,True,good,2686,2686;12
+740,0,m,b,mb,6D,62,6D 62,complete,complete,complete,True,good,2683,2683;21
+741,1,æĺ,İ,æĺİ,E6 98,8E,E6 98 8E,prefix,invalid,complete,True,good,3634,0;3634
+742,0,i,re,ire,69,72 65,69 72 65,complete,complete,complete,True,good,2681,2681;57
+743,1,å¤,Ħ,å¤Ħ,E5 A4,84,E5 A4 84,prefix,invalid,complete,True,good,3634,0;3634
+744,0,Ġpart,ic,Ġpartic,20 70 61 72 74,69 63,20 70 61 72 74 69 63,complete,complete,complete,True,good,2679,2679;4
+745,1,èĩ,ª,èĩª,E8 87,AA,E8 87 AA,prefix,invalid,complete,True,good,3632,0;3632
+746,0,Ġ,K,ĠK,20,4B,20 4B,complete,complete,complete,True,good,2648,2648;257
+747,0,f,e,fe,66,65,66 65,complete,complete,complete,True,good,2648,2648;30
+748,1,é,Ĥ,éĤ,E9,82,E9 82,prefix,invalid,prefix,False,recoverable,3631,0;3631
+749,0,Ġp,ol,Ġpol,20 70,6F 6C,20 70 6F 6C,complete,complete,complete,True,good,2644,2644;21
+750,1,ä¿,¡,ä¿¡,E4 BF,A1,E4 BF A1,prefix,invalid,complete,True,good,3584,0;3584
+751,0,n,ow,now,6E,6F 77,6E 6F 77,complete,complete,complete,True,good,2644,2644;67
+752,1,ç,³,ç³,E7,B3,E7 B3,prefix,invalid,prefix,False,recoverable,3576,0;3576
+753,0,ub,lic,ublic,75 62,6C 69 63,75 62 6C 69 63,complete,complete,complete,True,good,2636,2636;26
+754,0,Ġf,in,Ġfin,20 66,69 6E,20 66 69 6E,complete,complete,complete,True,good,2632,2632;34
+755,1,èĢ,ħ,èĢħ,E8 80,85,E8 80 85,prefix,invalid,complete,True,good,3563,0;3563
+756,0,a,ct,act,61,63 74,61 63 74,complete,complete,complete,True,good,2623,2623;27
+757,1,Ġ,ä¸į,Ġä¸į,20,E4 B8 8D,20 E4 B8 8D,complete,complete,complete,True,good,3557,0;3557
+758,0,overn,ment,overnment,6F 76 65 72 6E,6D 65 6E 74,6F 76 65 72 6E 6D 65 6E 74,complete,complete,complete,True,good,2621,2621;11
+759,1,åº,ľ,åºľ,E5 BA,9C,E5 BA 9C,prefix,invalid,complete,True,good,3543,0;3543
+760,0,o,st,ost,6F,73 74,6F 73 74,complete,complete,complete,True,good,2620,2620;37
+761,0,Ġd,ec,Ġdec,20 64,65 63,20 64 65 63,complete,complete,complete,True,good,2618,2618;5
+762,1,è®,¤,è®¤,E8 AE,A4,E8 AE A4,prefix,invalid,complete,True,good,3507,0;3507
+763,0,ĠU,N,ĠUN,20 55,4E,20 55 4E,complete,complete,complete,True,good,2601,2601;59
+764,1,åį,ı,åįı,E5 8D,8F,E5 8D 8F,prefix,invalid,complete,True,good,3486,0;3486
+765,0,Ġre,l,Ġrel,20 72 65,6C,20 72 65 6C,complete,complete,complete,True,good,2600,2600;14
+766,1,å¤,ĸ,å¤ĸ,E5 A4,96,E5 A4 96,prefix,invalid,complete,True,good,3460,0;3460
+767,0,Ġcount,ries,Ġcountries,20 63 6F 75 6E 74,72 69 65 73,20 63 6F 75 6E 74 72 69 65 73,complete,complete,complete,True,good,2593,2593;1
+768,0,is,h,ish,69 73,68,69 73 68,complete,complete,complete,True,good,2588,2588;52
+769,1,æĭ,ī,æĭī,E6 8B,89,E6 8B 89,prefix,invalid,complete,True,good,3411,0;3411
+770,0,Ġcon,c,Ġconc,20 63 6F 6E,63,20 63 6F 6E 63,complete,complete,complete,True,good,2571,2571;11
+771,1,èģĶ,åĲĪåĽ½,èģĶåĲĪåĽ½,E8 81 94,E5 90 88 E5 9B BD,E8 81 94 E5 90 88 E5 9B BD,complete,complete,complete,True,good,3406,0;3406
+772,0,Ġt,ra,Ġtra,20 74,72 61,20 74 72 61,complete,complete,complete,True,good,2568,2568;19
+773,0,re,e,ree,72 65,65,72 65 65,complete,complete,complete,True,good,2564,2564;29
+774,1,ç,¾,ç¾,E7,BE,E7 BE,prefix,invalid,prefix,False,recoverable,3391,0;3391
+775,0,Ġre,qu,Ġrequ,20 72 65,71 75,20 72 65 71 75,complete,complete,complete,True,good,2559,2559;4
+776,1,åĨ,µ,åĨµ,E5 86,B5,E5 86 B5,prefix,invalid,complete,True,good,3388,0;3388
+777,0,Ġh,uman,Ġhuman,20 68,75 6D 61 6E,20 68 75 6D 61 6E,complete,complete,complete,True,good,2553,2553;15
+778,1,å½,ĵ,å½ĵ,E5 BD,93,E5 BD 93,prefix,invalid,complete,True,good,3385,0;3385
+779,0,r,ic,ric,72,69 63,72 69 63,complete,complete,complete,True,good,2527,2527;61
+780,1,æŀ,Ħ,æŀĦ,E6 9E,84,E6 9E 84,prefix,invalid,complete,True,good,3374,0;3374
+781,0,e,x,ex,65,78,65 78,complete,complete,complete,True,good,2523,2523;52
+782,0,ol,l,oll,6F 6C,6C,6F 6C 6C,complete,complete,complete,True,good,2522,2522;37
+783,1,æ¬,¡,æ¬¡,E6 AC,A1,E6 AC A1,prefix,invalid,complete,True,good,3361,0;3361
+784,0,as,e,ase,61 73,65,61 73 65,complete,complete,complete,True,good,2522,2522;56
+785,1,ç¤,¾,ç¤¾,E7 A4,BE,E7 A4 BE,prefix,invalid,complete,True,good,3356,0;3356
+786,0,p,t,pt,70,74,70 74,complete,complete,complete,True,good,2509,2509;45
+787,1,æĸ¹,éĿ¢,æĸ¹éĿ¢,E6 96 B9,E9 9D A2,E6 96 B9 E9 9D A2,complete,complete,complete,True,good,3356,0;3356
+788,0,om,en,omen,6F 6D,65 6E,6F 6D 65 6E,complete,complete,complete,True,good,2509,2509;20
+789,0,Ġyou,r,Ġyour,20 79 6F 75,72,20 79 6F 75 72,complete,complete,complete,True,good,2508,2508;80
+790,1,éĩ,ĳ,éĩĳ,E9 87,91,E9 87 91,prefix,invalid,complete,True,good,3346,0;3346
+791,0,on,om,onom,6F 6E,6F 6D,6F 6E 6F 6D,complete,complete,complete,True,good,2474,2474;18
+792,1,æŃ,£,æŃ£,E6 AD,A3,E6 AD A3,prefix,invalid,complete,True,good,3340,0;3340
+793,0,Ġdevelop,ment,Ġdevelopment,20 64 65 76 65 6C 6F 70,6D 65 6E 74,20 64 65 76 65 6C 6F 70 6D 65 6E 74,complete,complete,complete,True,good,2472,2472;6
+794,0,on,e,one,6F 6E,65,6F 6E 65,complete,complete,complete,True,good,2469,2469;68
+795,1,åī,į,åīį,E5 89,8D,E5 89 8D,prefix,invalid,complete,True,good,3321,0;3321
+796,0,Ġne,ed,Ġneed,20 6E 65,65 64,20 6E 65 65 64,complete,complete,complete,True,good,2443,2443;28
+797,1,æ,Ľ,æĽ,E6,9B,E6 9B,prefix,invalid,prefix,False,recoverable,3313,0;3313
+798,0,ec,ial,ecial,65 63,69 61 6C,65 63 69 61 6C,complete,complete,complete,True,good,2442,2442;26
+799,1,Ġä½,Ĩ,Ġä½Ĩ,20 E4 BD,86,20 E4 BD 86,prefix,invalid,complete,True,good,3310,0;3310
+800,0,Ġright,s,Ġrights,20 72 69 67 68 74,73,20 72 69 67 68 74 73,complete,complete,complete,True,good,2415,2415;13
+801,0,Ġk,now,Ġknow,20 6B,6E 6F 77,20 6B 6E 6F 77,complete,complete,complete,True,good,2387,2387;58
+802,1,ç³,»,ç³»,E7 B3,BB,E7 B3 BB,prefix,invalid,complete,True,good,3292,0;3292
+803,0,Ġimp,lement,Ġimplement,20 69 6D 70,6C 65 6D 65 6E 74,20 69 6D 70 6C 65 6D 65 6E 74,complete,complete,complete,True,good,2387,2387;4
+804,1,è°,ĥ,è°ĥ,E8 B0,83,E8 B0 83,prefix,invalid,complete,True,good,3282,0;3282
+805,0,ĠN,o,ĠNo,20 4E,6F,20 4E 6F,complete,complete,complete,True,good,2384,2384;101
+806,0,Ġin,d,Ġind,20 69 6E,64,20 69 6E 64,complete,complete,complete,True,good,2383,2383;24
+807,1,éĥ,½,éĥ½,E9 83,BD,E9 83 BD,prefix,invalid,complete,True,good,3280,0;3280
+808,0,an,c,anc,61 6E,63,61 6E 63,complete,complete,complete,True,good,2380,2380;25
+809,1,è,½,è½,E8,BD,E8 BD,prefix,invalid,prefix,False,recoverable,3269,0;3269
+810,0,Ġthe,y,Ġthey,20 74 68 65,79,20 74 68 65 79,complete,complete,complete,True,good,2369,2369;34
+811,1,æıĲ,ä¾Ľ,æıĲä¾Ľ,E6 8F 90,E4 BE 9B,E6 8F 90 E4 BE 9B,complete,complete,complete,True,good,3261,0;3261
+812,0,ec,h,ech,65 63,68,65 63 68,complete,complete,complete,True,good,2363,2363;33
+813,0,ct,ion,ction,63 74,69 6F 6E,63 74 69 6F 6E,complete,complete,complete,True,good,2355,2355;25
+814,1,åı,Ĺ,åıĹ,E5 8F,97,E5 8F 97,prefix,invalid,complete,True,good,3258,0;3258
+815,0,Ġs,o,Ġso,20 73,6F,20 73 6F,complete,complete,complete,True,good,2346,2346;51
+816,1,æĸ,½,æĸ½,E6 96,BD,E6 96 BD,prefix,invalid,complete,True,good,3252,0;3252
+817,0,p,h,ph,70,68,70 68,complete,complete,complete,True,good,2346,2346;38
+818,0,ĠSec,ret,ĠSecret,20 53 65 63,72 65 74,20 53 65 63 72 65 74,complete,complete,complete,True,good,2321,2321;15
+819,1,æŃ,¤,æŃ¤,E6 AD,A4,E6 AD A4,prefix,invalid,complete,True,good,3240,0;3240
+820,0,Ġu,n,Ġun,20 75,6E,20 75 6E,complete,complete,complete,True,good,2315,2315;165
+821,0,Ġm,y,Ġmy,20 6D,79,20 6D 79,complete,complete,complete,True,good,2312,2312;85
+822,0,if,ic,ific,69 66,69 63,69 66 69 63,complete,complete,complete,True,good,2291,2291;8
+823,1,æŀ,ľ,æŀľ,E6 9E,9C,E6 9E 9C,prefix,invalid,complete,True,good,3218,0;3218
+824,0,d,u,du,64,75,64 75,complete,complete,complete,True,good,2291,2291;17
+825,1,åĽ,¢,åĽ¢,E5 9B,A2,E5 9B A2,prefix,invalid,complete,True,good,3217,0;3217
+826,0,Ġo,b,Ġob,20 6F,62,20 6F 62,complete,complete,complete,True,good,2285,2285;23
+827,0,Ġresol,ution,Ġresolution,20 72 65 73 6F 6C,75 74 69 6F 6E,20 72 65 73 6F 6C 75 74 69 6F 6E,complete,complete,complete,True,good,2279,2279;3
+828,1,ä½,¿,ä½¿,E4 BD,BF,E4 BD BF,prefix,invalid,complete,True,good,3214,0;3214
+829,0,Ġl,i,Ġli,20 6C,69,20 6C 69,complete,complete,complete,True,good,2274,2274;51
+830,1,ä¹,ī,ä¹ī,E4 B9,89,E4 B9 89,prefix,invalid,complete,True,good,3200,0;3200
+831,0,Ġa,m,Ġam,20 61,6D,20 61 6D,complete,complete,complete,True,good,2270,2270;30
+832,0,Ġsu,pport,Ġsupport,20 73 75,70 70 6F 72 74,20 73 75 70 70 6F 72 74,complete,complete,complete,True,good,2269,2269;14
+833,1,æ´,»,æ´»,E6 B4,BB,E6 B4 BB,prefix,invalid,complete,True,good,3169,0;3169
+834,0,Ġof,f,Ġoff,20 6F 66,66,20 6F 66 66,complete,complete,complete,True,good,2268,2268;22
+835,1,æĶ¿,åºľ,æĶ¿åºľ,E6 94 BF,E5 BA 9C,E6 94 BF E5 BA 9C,complete,complete,complete,True,good,3158,0;3158
+836,0,et,ing,eting,65 74,69 6E 67,65 74 69 6E 67,complete,complete,complete,True,good,2268,2268;7
+837,1,ç,Ĥ,çĤ,E7,82,E7 82,prefix,invalid,prefix,False,recoverable,3142,0;3142
+838,0,ri,b,rib,72 69,62,72 69 62,complete,complete,complete,True,good,2256,2256;17
+839,0,ĠR,e,ĠRe,20 52,65,20 52 65,complete,complete,complete,True,good,2251,2251;177
+840,1,æ,®,æ®,E6,AE,E6 AE,prefix,invalid,prefix,False,recoverable,3131,0;3131
+841,0,Ġin,form,Ġinform,20 69 6E,66 6F 72 6D,20 69 6E 66 6F 72 6D,complete,complete,complete,True,good,2249,2249;10
+842,0,Ġt,er,Ġter,20 74,65 72,20 74 65 72,complete,complete,complete,True,good,2241,2241;12
+843,1,æį,®,æį®,E6 8D,AE,E6 8D AE,prefix,invalid,complete,True,good,3126,0;3126
+844,0,o,k,ok,6F,6B,6F 6B,complete,complete,complete,True,good,2237,2237;100
+845,1,å°,Ķ,å°Ķ,E5 B0,94,E5 B0 94,prefix,invalid,complete,True,good,3119,0;3119
+846,0,j,ect,ject,6A,65 63 74,6A 65 63 74,complete,complete,complete,True,good,2235,2235;32
+847,0,Ġc,l,Ġcl,20 63,6C,20 63 6C,complete,complete,complete,True,good,2229,2229;29
+848,1,å¥,½,å¥½,E5 A5,BD,E5 A5 BD,prefix,invalid,complete,True,good,3102,0;3102
+849,0,vent,ion,vention,76 65 6E 74,69 6F 6E,76 65 6E 74 69 6F 6E,complete,complete,complete,True,good,2229,2229;27
+850,1,ä¸,ļ,ä¸ļ,E4 B8,9A,E4 B8 9A,prefix,invalid,complete,True,good,3094,0;3094
+851,0,ie,w,iew,69 65,77,69 65 77,complete,complete,complete,True,good,2226,2226;11
+852,1,åŁ,Ł,åŁŁ,E5 9F,9F,E5 9F 9F,prefix,invalid,complete,True,good,3091,0;3091
+853,0,Ġ),",","Ġ),",20 29,2C,20 29 2C,complete,complete,complete,True,good,2222,2222;86
+854,0,id,ent,ident,69 64,65 6E 74,69 64 65 6E 74,complete,complete,complete,True,good,2217,2217;18
+855,1,ç»,Ń,ç»Ń,E7 BB,AD,E7 BB AD,prefix,invalid,complete,True,good,3080,0;3080
+856,0,Ġpro,c,Ġproc,20 70 72 6F,63,20 70 72 6F 63,complete,complete,complete,True,good,2210,2210;9
+857,1,å,ķ,åķ,E5,95,E5 95,prefix,invalid,prefix,False,recoverable,3080,0;3080
+858,0,u,al,ual,75,61 6C,75 61 6C,complete,complete,complete,True,good,2200,2200;32
+859,0,u,res,ures,75,72 65 73,75 72 65 73,complete,complete,complete,True,good,2189,2189;10
+860,1,é,ľ,éľ,E9,9C,E9 9C,prefix,invalid,prefix,False,recoverable,3077,0;3077
+861,0,ar,a,ara,61 72,61,61 72 61,complete,complete,complete,True,good,2188,2188;89
+862,1,è®,¾,è®¾,E8 AE,BE,E8 AE BE,prefix,invalid,complete,True,good,3068,0;3068
+863,0,Ġre,p,Ġrep,20 72 65,70,20 72 65 70,complete,complete,complete,True,good,2171,2171;11
+864,0,Ġan,y,Ġany,20 61 6E,79,20 61 6E 79,complete,complete,complete,True,good,2162,2162;36
+865,1,æĶ,¯,æĶ¯,E6 94,AF,E6 94 AF,prefix,invalid,complete,True,good,3060,0;3060
+866,0,Ġad,d,Ġadd,20 61 64,64,20 61 64 64,complete,complete,complete,True,good,2150,2150;3
+867,0,ect,ion,ection,65 63 74,69 6F 6E,65 63 74 69 6F 6E,complete,complete,complete,True,good,2130,2130;19
+868,1,æ²,¡,æ²¡,E6 B2,A1,E6 B2 A1,prefix,invalid,complete,True,good,3036,0;3036
+869,0,Ġ19,9,Ġ199,20 31 39,39,20 31 39 39,complete,complete,complete,True,good,2129,2129;1096
+870,1,åħ,±,åħ±,E5 85,B1,E5 85 B1,prefix,invalid,complete,True,good,3029,0;3029
+871,0,ac,k,ack,61 63,6B,61 63 6B,complete,complete,complete,True,good,2129,2129;106
+872,0,im,e,ime,69 6D,65,69 6D 65,complete,complete,complete,True,good,2122,2122;28
+873,1,ä»,Ģ,ä»Ģ,E4 BB,80,E4 BB 80,prefix,invalid,complete,True,good,3029,0;3029
+874,0,Ġon,e,Ġone,20 6F 6E,65,20 6F 6E 65,complete,complete,complete,True,good,2116,2116;45
+875,1,è¡Į,åĬ¨,è¡ĮåĬ¨,E8 A1 8C,E5 8A A8,E8 A1 8C E5 8A A8,complete,complete,complete,True,good,3025,0;3025
+876,0,er,t,ert,65 72,74,65 72 74,complete,complete,complete,True,good,2111,2111;31
+877,0,ĠâĢ,Ŀ,ĠâĢĿ,20 E2 80,9D,20 E2 80 9D,prefix,invalid,complete,True,good,2104,2104;2589
+878,0,se,mb,semb,73 65,6D 62,73 65 6D 62,complete,complete,complete,True,good,2096,2096;2
+879,1,ä»£,è¡¨,ä»£è¡¨,E4 BB A3,E8 A1 A8,E4 BB A3 E8 A1 A8,complete,complete,complete,True,good,2996,0;2996
+880,0,m,s,ms,6D,73,6D 73,complete,complete,complete,True,good,2095,2095;18
+881,0,Ġt,r,Ġtr,20 74,72,20 74 72,complete,complete,complete,True,good,2093,2093;21
+882,1,ç,©,ç©,E7,A9,E7 A9,prefix,invalid,prefix,False,recoverable,2994,0;2994
+883,0,Ġthe,m,Ġthem,20 74 68 65,6D,20 74 68 65 6D,complete,complete,complete,True,good,2087,2087;28
+884,1,ç®,¡,ç®¡,E7 AE,A1,E7 AE A1,prefix,invalid,complete,True,good,2987,0;2987
+885,0,f,t,ft,66,74,66 74,complete,complete,complete,True,good,2073,2073;29
+886,0,Ġpro,gram,Ġprogram,20 70 72 6F,67 72 61 6D,20 70 72 6F 67 72 61 6D,complete,complete,complete,True,good,2072,2072;4
+887,1,Ġå,Ĳ,ĠåĲ,20 E5,90,20 E5 90,prefix,invalid,prefix,False,recoverable,2976,0;2976
+888,0,en,s,ens,65 6E,73,65 6E 73,complete,complete,complete,True,good,2072,2072;21
+889,1,åŃ,Ĳ,åŃĲ,E5 AD,90,E5 AD 90,prefix,invalid,complete,True,good,2942,0;2942
+890,0,rou,p,roup,72 6F 75,70,72 6F 75 70,complete,complete,complete,True,good,2067,2067;13
+891,1,åº,¦,åº¦,E5 BA,A6,E5 BA A6,prefix,invalid,complete,True,good,2940,0;2940
+892,0,ess,ion,ession,65 73 73,69 6F 6E,65 73 73 69 6F 6E,complete,complete,complete,True,good,2063,2063;3
+893,0,semb,ly,sembly,73 65 6D 62,6C 79,73 65 6D 62 6C 79,complete,complete,complete,True,good,2059,2059;2
+894,1,å¼,º,å¼º,E5 BC,BA,E5 BC BA,prefix,invalid,complete,True,good,2932,0;2932
+895,0,il,ity,ility,69 6C,69 74 79,69 6C 69 74 79,complete,complete,complete,True,good,2056,2056;14
+896,1,çŁ,¥,çŁ¥,E7 9F,A5,E7 9F A5,prefix,invalid,complete,True,good,2930,0;2930
+897,0,in,e,ine,69 6E,65,69 6E 65,complete,complete,complete,True,good,2055,2055;82
+898,0,fe,ren,feren,66 65,72 65 6E,66 65 72 65 6E,complete,complete,complete,True,good,2054,2054;17
+899,1,Ġå,¥,Ġå¥,20 E5,A5,20 E5 A5,prefix,invalid,prefix,False,recoverable,2929,0;2929
+900,0,ad,e,ade,61 64,65,61 64 65,complete,complete,complete,True,good,2053,2053;20
+901,1,äº,¤,äº¤,E4 BA,A4,E4 BA A4,prefix,invalid,complete,True,good,2923,0;2923
+902,0,or,s,ors,6F 72,73,6F 72 73,complete,complete,complete,True,good,2043,2043;15
+903,1,åĮ,ĸ,åĮĸ,E5 8C,96,E5 8C 96,prefix,invalid,complete,True,good,2920,0;2920
+904,0,e,op,eop,65,6F 70,65 6F 70,complete,complete,complete,True,good,2039,2039;16
+905,0,Ġsu,ch,Ġsuch,20 73 75,63 68,20 73 75 63 68,complete,complete,complete,True,good,2038,2038;6
+906,1,æĭ,¬,æĭ¬,E6 8B,AC,E6 8B AC,prefix,invalid,complete,True,good,2919,0;2919
+907,0,a,g,ag,61,67,61 67,complete,complete,complete,True,good,2034,2034;87
+908,1,é,«,é«,E9,AB,E9 AB,prefix,invalid,prefix,False,recoverable,2909,0;2909
+909,0,ul,ar,ular,75 6C,61 72,75 6C 61 72,complete,complete,complete,True,good,2031,2031;4
+910,0,or,y,ory,6F 72,79,6F 72 79,complete,complete,complete,True,good,2030,2030;34
+911,1,ç¡,®,ç¡®,E7 A1,AE,E7 A1 AE,prefix,invalid,complete,True,good,2903,0;2903
+912,0,Ġor,ganiz,Ġorganiz,20 6F 72,67 61 6E 69 7A,20 6F 72 67 61 6E 69 7A,complete,complete,complete,True,good,2029,2029;5
+913,1,é¢,Ĩ,é¢Ĩ,E9 A2,86,E9 A2 86,prefix,invalid,complete,True,good,2900,0;2900
+914,0,ver,y,very,76 65 72,79,76 65 72 79,complete,complete,complete,True,good,2026,2026;45
+915,0,Ġj,ust,Ġjust,20 6A,75 73 74,20 6A 75 73 74,complete,complete,complete,True,good,2024,2024;58
+916,1,è¯,·,è¯·,E8 AF,B7,E8 AF B7,prefix,invalid,complete,True,good,2871,0;2871
+917,0,Ġin,v,Ġinv,20 69 6E,76,20 69 6E 76,complete,complete,complete,True,good,2019,2019;8
+918,0,Ġinclud,ing,Ġincluding,20 69 6E 63 6C 75 64,69 6E 67,20 69 6E 63 6C 75 64 69 6E 67,complete,complete,complete,True,good,2018,2018;1
+919,1,æĸ,°,æĸ°,E6 96,B0,E6 96 B0,prefix,invalid,complete,True,good,2870,0;2870
+920,0,ĠAs,sembly,ĠAssembly,20 41 73,73 65 6D 62 6C 79,20 41 73 73 65 6D 62 6C 79,complete,complete,complete,True,good,2016,2016;2
+921,1,Ġå,¤,Ġå¤,20 E5,A4,20 E5 A4,prefix,invalid,prefix,False,recoverable,2869,0;2869
+922,0,Ġwh,o,Ġwho,20 77 68,6F,20 77 68 6F,complete,complete,complete,True,good,2011,2011;30
+923,1,é«,ĺ,é«ĺ,E9 AB,98,E9 AB 98,prefix,invalid,complete,True,good,2869,0;2869
+924,0,er,n,ern,65 72,6E,65 72 6E,complete,complete,complete,True,good,2007,2007;39
+925,0,Ġbe,t,Ġbet,20 62 65,74,20 62 65 74,complete,complete,complete,True,good,2005,2005;24
+926,1,åĨ³,è®®,åĨ³è®®,E5 86 B3,E8 AE AE,E5 86 B3 E8 AE AE,complete,complete,complete,True,good,2866,0;2866
+927,0,ab,l,abl,61 62,6C,61 62 6C,complete,complete,complete,True,good,1995,1995;14
+928,0,a,re,are,61,72 65,61 72 65,complete,complete,complete,True,good,1990,1990;60
+929,1,è,¨,è¨,E8,A8,E8 A8,prefix,invalid,prefix,False,recoverable,2864,0;2864
+930,0,ĠComm,ission,ĠCommission,20 43 6F 6D 6D,69 73 73 69 6F 6E,20 43 6F 6D 6D 69 73 73 69 6F 6E,complete,complete,complete,True,good,1988,1988;6
+931,1,æķ,°,æķ°,E6 95,B0,E6 95 B0,prefix,invalid,complete,True,good,2861,0;2861
+932,0,v,en,ven,76,65 6E,76 65 6E,complete,complete,complete,True,good,1984,1984;39
+933,0,ea,ce,eace,65 61,63 65,65 61 63 65,complete,complete,complete,True,good,1973,1973;6
+934,1,åħ,Ī,åħĪ,E5 85,88,E5 85 88,prefix,invalid,complete,True,good,2860,0;2860
+935,0,Ġ,est,Ġest,20,65 73 74,20 65 73 74,complete,complete,complete,True,good,1958,1958;16
+936,1,åħ,¥,åħ¥,E5 85,A5,E5 85 A5,prefix,invalid,complete,True,good,2842,0;2842
+937,0,Ġw,omen,Ġwomen,20 77,6F 6D 65 6E,20 77 6F 6D 65 6E,complete,complete,complete,True,good,1954,1954;9
+938,1,éĢļ,è¿ĩ,éĢļè¿ĩ,E9 80 9A,E8 BF 87,E9 80 9A E8 BF 87,complete,complete,complete,True,good,2834,0;2834
+939,0,Ġp,ers,Ġpers,20 70,65 72 73,20 70 65 72 73,complete,complete,complete,True,good,1945,1945;9
+940,0,Ġm,ore,Ġmore,20 6D,6F 72 65,20 6D 6F 72 65,complete,complete,complete,True,good,1943,1943;26
+941,1,æł,·,æł·,E6 A0,B7,E6 A0 B7,prefix,invalid,complete,True,good,2833,0;2833
+942,0,Ġy,ear,Ġyear,20 79,65 61 72,20 79 65 61 72,complete,complete,complete,True,good,1940,1940;18
+943,1,å®,¡,å®¡,E5 AE,A1,E5 AE A1,prefix,invalid,complete,True,good,2830,0;2830
+944,0,Ġag,ain,Ġagain,20 61 67,61 69 6E,20 61 67 61 69 6E,complete,complete,complete,True,good,1940,1940;22
+945,0,on,d,ond,6F 6E,64,6F 6E 64,complete,complete,complete,True,good,1939,1939;47
+946,1,é,ļ,éļ,E9,9A,E9 9A,prefix,invalid,prefix,False,recoverable,2829,0;2829
+947,0,Ġn,o,Ġno,20 6E,6F,20 6E 6F,complete,complete,complete,True,good,1937,1937;31
+948,1,å·,²,å·²,E5 B7,B2,E5 B7 B2,prefix,invalid,complete,True,good,2828,0;2828
+949,0,at,ing,ating,61 74,69 6E 67,61 74 69 6E 67,complete,complete,complete,True,good,1936,1936;14
+950,0,Ġu,s,Ġus,20 75,73,20 75 73,complete,complete,complete,True,good,1931,1931;53
+951,1,æľī,åħ³,æľīåħ³,E6 9C 89,E5 85 B3,E6 9C 89 E5 85 B3,complete,complete,complete,True,good,2819,0;2819
+952,0,ĠA,f,ĠAf,20 41,66,20 41 66,complete,complete,complete,True,good,1928,1928;22
+953,0,u,nd,und,75,6E 64,75 6E 64,complete,complete,complete,True,good,1928,1928;23
+954,1,Ġå,į,Ġåį,20 E5,8D,20 E5 8D,prefix,invalid,prefix,False,recoverable,2816,0;2816
+955,0,onom,ic,onomic,6F 6E 6F 6D,69 63,6F 6E 6F 6D 69 63,complete,complete,complete,True,good,1927,1927;13
+956,1,æĥħ,åĨµ,æĥħåĨµ,E6 83 85,E5 86 B5,E6 83 85 E5 86 B5,complete,complete,complete,True,good,2816,0;2816
+957,0,s,u,su,73,75,73 75,complete,complete,complete,True,good,1924,1924;17
+958,0,st,it,stit,73 74,69 74,73 74 69 74,complete,complete,complete,True,good,1923,1923;22
+959,1,åİ,»,åİ»,E5 8E,BB,E5 8E BB,prefix,invalid,complete,True,good,2809,0;2809
+960,0,Ġme,eting,Ġmeeting,20 6D 65,65 74 69 6E 67,20 6D 65 65 74 69 6E 67,complete,complete,complete,True,good,1894,1894;3
+961,1,èĢ,Į,èĢĮ,E8 80,8C,E8 80 8C,prefix,invalid,complete,True,good,2793,0;2793
+962,0,it,ion,ition,69 74,69 6F 6E,69 74 69 6F 6E,complete,complete,complete,True,good,1894,1894;16
+963,1,è§,£,è§£,E8 A7,A3,E8 A7 A3,prefix,invalid,complete,True,good,2786,0;2786
+964,0,Ġo,p,Ġop,20 6F,70,20 6F 70,complete,complete,complete,True,good,1890,1890;20
+965,1,éľ,Ģ,éľĢ,E9 9C,80,E9 9C 80,prefix,invalid,complete,True,good,2783,0;2783
+966,0,ĠR,ep,ĠRep,20 52,65 70,20 52 65 70,complete,complete,complete,True,good,1886,1886;15
+967,0,ic,es,ices,69 63,65 73,69 63 65 73,complete,complete,complete,True,good,1881,1881;9
+968,1,æľº,æŀĦ,æľºæŀĦ,E6 9C BA,E6 9E 84,E6 9C BA E6 9E 84,complete,complete,complete,True,good,2778,0;2778
+969,0,t,ic,tic,74,69 63,74 69 63,complete,complete,complete,True,good,1871,1871;10
+970,1,ç¤¾,ä¼ļ,ç¤¾ä¼ļ,E7 A4 BE,E4 BC 9A,E7 A4 BE E4 BC 9A,complete,complete,complete,True,good,2767,0;2767
+971,0,ĠA,d,ĠAd,20 41,64,20 41 64,complete,complete,complete,True,good,1865,1865;464
+972,0,y,st,yst,79,73 74,79 73 74,complete,complete,complete,True,good,1864,1864;7
+973,1,æ±,Ĥ,æ±Ĥ,E6 B1,82,E6 B1 82,prefix,invalid,complete,True,good,2758,0;2758
+974,0,he,re,here,68 65,72 65,68 65 72 65,complete,complete,complete,True,good,1856,1856;25
+975,0,a,ce,ace,61,63 65,61 63 65,complete,complete,complete,True,good,1851,1851;37
+976,1,è®,º,è®º,E8 AE,BA,E8 AE BA,prefix,invalid,complete,True,good,2754,0;2754
+977,0,Ġn,ational,Ġnational,20 6E,61 74 69 6F 6E 61 6C,20 6E 61 74 69 6F 6E 61 6C,complete,complete,complete,True,good,1850,1850;3
+978,0,Ġb,ut,Ġbut,20 62,75 74,20 62 75 74,complete,complete,complete,True,good,1850,1850;45
+979,1,è¿Ľ,è¡Į,è¿Ľè¡Į,E8 BF 9B,E8 A1 8C,E8 BF 9B E8 A1 8C,complete,complete,complete,True,good,2727,0;2727
+980,0,Ġli,ke,Ġlike,20 6C 69,6B 65,20 6C 69 6B 65,complete,complete,complete,True,good,1846,1846;46
+981,0,is,ion,ision,69 73,69 6F 6E,69 73 69 6F 6E,complete,complete,complete,True,good,1846,1846;3
+982,1,æµ,İ,æµİ,E6 B5,8E,E6 B5 8E,prefix,invalid,complete,True,good,2727,0;2727
+983,0,ro,p,rop,72 6F,70,72 6F 70,complete,complete,complete,True,good,1844,1844;13
+984,0,i,ous,ious,69,6F 75 73,69 6F 75 73,complete,complete,complete,True,good,1844,1844;14
+985,1,é,Ľ,éĽ,E9,9B,E9 9B,prefix,invalid,prefix,False,recoverable,2725,0;2725
+986,0,Ġcont,in,Ġcontin,20 63 6F 6E 74,69 6E,20 63 6F 6E 74 69 6E,complete,complete,complete,True,good,1840,1840;0
+987,0,in,t,int,69 6E,74,69 6E 74,complete,complete,complete,True,good,1827,1827;25
+988,1,éĩ,ĩ,éĩĩ,E9 87,87,E9 87 87,prefix,invalid,complete,True,good,2708,0;2708
+989,0,yst,em,ystem,79 73 74,65 6D,79 73 74 65 6D,complete,complete,complete,True,good,1825,1825;7
+990,1,åı,·,åı·,E5 8F,B7,E5 8F B7,prefix,invalid,complete,True,good,2708,0;2708
+991,0,Ġs,e,Ġse,20 73,65,20 73 65,complete,complete,complete,True,good,1823,1823;29
+992,0,en,c,enc,65 6E,63,65 6E 63,complete,complete,complete,True,good,1818,1818;17
+993,1,ç,Ŀ,çĿ,E7,9D,E7 9D,prefix,invalid,prefix,False,recoverable,2703,0;2703
+994,0,Ġo,ver,Ġover,20 6F,76 65 72,20 6F 76 65 72,complete,complete,complete,True,good,1810,1810;14
+995,0,ĠD,ec,ĠDec,20 44,65 63,20 44 65 63,complete,complete,complete,True,good,1808,1808;35
+996,1,è,¢,è¢,E8,A2,E8 A2,prefix,invalid,prefix,False,recoverable,2699,0;2699
+997,0,Ġ,V,ĠV,20,56,20 56,complete,complete,complete,True,good,1808,1808;149
+998,0,ĠSt,ate,ĠState,20 53 74,61 74 65,20 53 74 61 74 65,complete,complete,complete,True,good,1806,1806;15
+999,1,åį,ģ,åįģ,E5 8D,81,E5 8D 81,prefix,invalid,complete,True,good,2695,0;2695
